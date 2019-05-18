@@ -1,0 +1,42 @@
+@media screen and (max-width:575px){
+    section{
+        width: 28em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    .ca_div{
+        width: 11.8em;
+        margin-right: 2em;
+    }
+    a{
+        font-size: 1em;
+    }
+    .ca_div img{
+        width: 11.24em;
+        height: 7.3475em;
+    }
+    h4{
+        font-size: 1em;
+    }
+    .ca_div p{
+        font-size: 1em;
+    }
+    #ca_div_c01{
+        width: 33%;
+    }
+    #ca_div_c02{
+        width: 33%;
+        left: 12%;
+    }
+    #ca_a_c01{
+        font-size: 1em;
+        left: 8%;
+    }
+    footer{
+        margin-top: 16em;
+    }
+    #ca_div_d{
+        margin-top: 3em;
+    }
+}

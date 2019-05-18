@@ -1,0 +1,37 @@
+
+@media screen and (max-width: 576px){
+    *{
+        font-size: 10px;
+        /* border-style: solid;
+        border-width: 1px; */
+    }
+    *{
+        font-family: 'Noto Sans TC', sans-serif;
+        color: #5b5751;
+        /* border-style: solid;
+        border-width: 1px; */
+    }
+section{
+    position: relative;
+    top: 18em;
+    text-align: center;
+    display: block;
+    
+
+}
+footer{
+    top: 120em;
+}
+
+#se_logo{
+    width: 5em;
+
+}
+.se_no{
+    position: relative;
+    top: 1em;
+    text-align: center;
+    display: block;
+    font-weight: lighter;
+    font-size:1.5em; 
+}
