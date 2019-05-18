@@ -1,11 +1,10 @@
 section{
     margin-left: 5em;
+    margin-right: 5em;
     position: relative;
-    margin-top: 20.6em;
 }
 footer{
     margin-top: 10em;
-
 }
 
 .jo_div_t00{
@@ -247,8 +246,7 @@ footer{
 }
  .jo_other{
         
-    top: 5em;
-    display:inline-block;
+    display:block;
     position: relative;
 }
 .jo_year{
@@ -284,12 +282,6 @@ footer{
    
     .jo_t01{
         
-        width: 100em;
-        display:block;
-        position: relative;
-    }
-    .jo_t02{
-        left: 1em;
         width: 100em;
         display:block;
         position: relative;
@@ -354,18 +346,46 @@ footer{
             top: -0.5em;
             display: inline-block;
         }
-
-    .big_cir01 {
+        .group_swiper-container {
+            overflow-x: hidden;
+        }
+        .group_swiper-container .group_swiper-pagination {
+            text-align: center;
+        }
+        .group_swiper-container .group {
             width: 220px;
             height: 220px;
             background: #6EBFB1;
             position: relative;
             border-radius: 50%;
-            margin-right: 9em;
-            top: 6em;
             display: inline-block;
         }
-
+        .group_swiper-container .swiper-slide {
+            text-align: center;
+        }
+        .group_swiper-container .group p {
+            text-align: center;
+            vertical-align: middle;
+            line-height: 220px;
+        }
+        .group_swiper-container .group_swiper-button-prev,
+        .group_swiper-container .group_swiper-button-next {
+            display: inline-block;
+            cursor: pointer;
+            width: 2em;
+            height: 2em;
+            font-size: 3em;
+            position: absolute;
+            top: 50%;
+            z-index: 2;
+            text-align: center;
+        }
+        .group_swiper-container .group_swiper-button-prev {
+            left: -1em;
+        }
+        .group_swiper-container .group_swiper-button-next {
+            right: -1em;
+        }
         .big_cir02 {
             width: 220px;
             height: 220px;
