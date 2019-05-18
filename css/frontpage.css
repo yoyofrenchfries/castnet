@@ -1,9 +1,4 @@
-section{
-    position: relative;
-    top: 18.6em;
-}
 footer{
-    margin-top: 16em;
 }
 #fp_div_t01 > a{
     display: inline;
@@ -22,8 +17,8 @@ footer{
     margin-top: 0.8em;
 }
 .fp_div_t_img img{
-    width: 25em;
-    height: 14em;
+    width: 100%;
+    height: 100%;
     margin: auto;
 }
 .fp_div_t_div > a{
@@ -41,11 +36,6 @@ footer{
     font-size: 1.625em;
     line-height: 2em;
     margin-top:0.5em;
-    height:6em;
-}
-#fp_i_c01, #fp_i_c02{
-    position: relative;
-    top: 7.2em;
 }
 #fp_i_c02{
     position: absolute;
@@ -80,7 +70,7 @@ footer{
 .fp_div_t_div{
     margin-top: 1.25em;
 }
-.fp_h2_t{
+.issue-info .fp_h2_t{
     display: inline-block;
     margin-right: 0.1em;
     font-size: 2.125em;
@@ -99,13 +89,6 @@ footer{
     color:#5b5751;
     text-decoration: none;
 }
-.fp_div_t{
-    display: inline-block;
-    vertical-align: top;
-    width: 25em;
-    height:30em;
-    margin-left: 4.7em;
-}
 .fp_div_d{
     display: inline-block;
     width: 18.6em;
@@ -123,13 +106,6 @@ footer{
     display: block;
     position: absolute;
     top: 4.4em;
-}
-#fp_div_first{
-    margin-top: 3.5em;
-}
-#fp_div_second{
-    position: relative;
-    top: 17.1em;
 }
 #fp_div_t01{
     margin-left: 67.375em;
@@ -174,7 +150,7 @@ footer{
     width: 86.5em;
     height: 33.125em;
     margin-left: 2.2em;
-    margin-top: 39em;
+    margin-top: 2em;
 }
 #fp_h2_d{
     font-size: 2.125em;
@@ -188,4 +164,54 @@ footer{
     width: 48em;
     height:15em;
     margin: 5em 21.5em;
+}
+.mid_swiper-container {
+    display: block;
+    position: relative;
+}
+.mid_swiper-container .swiper-nav {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 2em;
+}
+.mid_swiper-container .swiper-wrapper {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.mid_swiper-button-prev,
+.mid_swiper-button-next {
+    display: inline-block;
+    position: absolute;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 3;
+}
+.mid_swiper-button-prev {
+    left: 0em;
+}
+.mid_swiper-button-next {
+    right: 0em;
+}
+
+.all-category-line {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+.all-category-line .line {
+    display: inline-block;
+    background-color: #3AAB97;
+    width: 33%;
+    height: 2px;
+}
+.all-category-line a {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+.all-category-line a:hover {
+    color:#5b5751;
+    text-decoration: none;
 }

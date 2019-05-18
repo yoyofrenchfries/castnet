@@ -6,6 +6,8 @@
     <title>castnet_test</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
     <link rel="stylesheet" href="css/all_pages.css">
     <link rel="stylesheet" href="css/frontpage.css">
     <link rel="stylesheet" href="css/mobFrontPage.css">
@@ -18,178 +20,284 @@
             <i id="fp_i_div01" class="fas fa-chevron-up fa-3x"></i>
         </div>
     </a>
-    <div id="fp_div_backgroundcolor"></div>
+    <!-- <div id="fp_div_backgroundcolor"></div> -->
     <header>
-        <div>
+        <div class="logo">
             <a href="index.html">
-                <img id="fp_logo" src="image/castnet.png">
+                <img src="image/castnet.png">
             </a>
         </div>
-        <i id="fp_i_t01" class="fas fa-search fa-2x"></i>
-        <span id="fp_span_t01">搜尋</span>
-        <img id="fp_img_header"  src="image/tree01.png">
-        <span id="fp_span_t02">關於</span>
-        <i id="fp_i_t02" class="fas fa-ellipsis-v fa-2x"></i>
-        <span id="fp_span_t03">卷別</span>
-    </header>
+        <div class="func">
+            <div class="button">
+                <i class="fas fa-search fa-2x"></i>
+                <span>搜尋</span>
+            </div>
+            <div class="button">
+                <img src="image/tree01.png">
+                <span>關於</span>
+            </div>
+            <div class="button">
+                <i class="fas fa-ellipsis-v fa-2x"></i>
+                <span>卷別</span>
+            </div>
+        </div>
 
+        
     <nav>
-        <ul>
-            <li class="fp_li_t">
+        <!-- 這裡的列表應該是getAllPublish 取得的卷別 id下的getCategoty 顯示的為show_front:1 -->
+        <!-- 目前除了八大類目是常駐議題之外，其他校友專刊等等其他類目應該是有出現的時候才會show_front:2 -->
+        <div class="nav_swiper-container">
+            <div class="swiper-wrapper">
+            <!-- 常駐議題 -->
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="catagory.html">社會議題</a>
-            </li>
+            </div>
             
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/180">科技新知</a>
-            </li>
+            </div>
             
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/81">文化現象</a>
-            </li>
+            </div>
 
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/83">人物特寫</a>
-            </li>
+            </div>
 
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/191">藝文評論</a>
-            </li>
+            </div>
 
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/29">照片故事</a>
-            </li>
+            </div>
 
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/85">影音新聞</a>
-            </li>
+            </div>
 
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/77">自由創作</a>
-            </li>
-
-            <li class="fp_li_t">
+            </div>
+            <!-- 有時候才會出現的議題 -->
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="專題頁">專題</a>
-            </li>
-        </ul>
-        <i id="fp_i_nav" class="fas fa-chevron-right fa-lg"></i>
+            </div>
+            
+        </div>
+        
+
+            <!-- <div class="swiper-button-prev"></div> -->
+            <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+        </div>
+        
+        <!-- <i id="fp_i_nav" class="next fas fa-chevron-right fa-lg"></i> -->
     </nav>
     
+        
+    </header>
+    
+
     <section>
-        <div id="fp_div_first">
-            <h2 class="fp_h2_t">第9487期</h2>
-            <h2 class="fp_h2_t" id="fp_h2_t01">編輯精選</h2>
-            <img id="fp_img_t" src="https://castnet.nctu.edu.tw/files/article/892/thumb/20190420113451_1555731291_eDpPkICq3e.jpg">
-            <div id="fp_div_t01">
-                <a>藝文評論</a>
-                <a class="fp_a_report" href="reportpage.html">唐承安</a>
-                <h2>圖解遊戲敘事：阿驢老師說故事</h2>
-                <p>【第九藝術的綻放：獨立遊戲】專題
-                    <br>
-                    <br>遊戲也可以說故事嗎？敘事表現的手法與電影小說有什麼不同？原來我們平常體驗的遊戲劇情不只表面上看到的那麼簡單？今天讓遊戲大師阿驢帶領大家用圖解，配合幾個獨立遊戲的範例，輕鬆瞭解遊戲的敘事世界。</p>
+        <div>
+            <!-- getAllIssue.title -->
+            <div class="issue-info">
+                <h2 class="fp_h2_t">第9487期</h2>
+                <h2 class="fp_h2_t" id="fp_h2_t01">編輯精選</h2>
             </div>
-        </div>
-
-        <div id="fp_div_second">
-            <i id="fp_i_c01" class="fas fa-chevron-left fa-2x" onclick="forward();"></i>
-
-            <div class="fp_div_t" id="fp_div_second01">
-                <div class="fp_div_t_img"><img src="https://castnet.nctu.edu.tw/files/article/892/thumb/20190420113451_1555731291_eDpPkICq3e.jpg"></div>
-                <div class="fp_div_t_div">
-                    <a class="fp_a_report">唐承安</a>
-                    <h2>總編輯的話</h2>
-                    <p>遊戲也可以說故事嗎？敘事表現的手法與電影小說有什麼不同？原來我們平常體驗的遊戲劇情不只表面上看到的那麼簡單？今天讓遊戲大師阿驢帶領大家用圖解，配合幾個獨立遊戲的範例，輕鬆瞭解遊戲的敘事世界。</p>
-                </div>
-            </div>
-
-            <div class="fp_div_t" id="fp_div_second02">
-                <div class="fp_div_t_img"><img src="https://castnet.nctu.edu.tw/files/article/664/thumb/20190420022853_1555698533_9mqCwmThQD.jpg"></div>
-                <div class="fp_div_t_div">
-                    <a>人物特寫</a>
-                    <a class="fp_a_report">唐承安</a>
+            <div class="top-article">
+                <img id="fp_img_t" src="https://castnet.nctu.edu.tw/files/article/892/thumb/20190420113451_1555731291_eDpPkICq3e.jpg">
+                <div id="fp_div_t01">
+                    <!-- getSlideShowArticle.category -->
+                    <a>藝文評論</a>
+                    <!-- getSlideShowArticle.reporter -->
+                    <a class="fp_a_report" href="reportpage.html">唐承安</a>
+                    <!-- getSlideShowArticle.title -->
                     <h2>圖解遊戲敘事：阿驢老師說故事</h2>
-                    <p>遊戲也可以說故事嗎？敘事表現的手法與電影小說有什麼不同？原來我們平常體驗的遊戲劇情不只表面上看到的那麼簡單？今天讓遊戲大師阿驢帶領大家用圖解，配合幾個獨立遊戲的範例，輕鬆瞭解遊戲的敘事世界。</p>
+                    <!-- getSlideShowArticle.abstract -->
+                    <p>【第九藝術的綻放：獨立遊戲】專題
+                        <br>
+                        <br>遊戲也可以說故事嗎？敘事表現的手法與電影小說有什麼不同？原來我們平常體驗的遊戲劇情不只表面上看到的那麼簡單？今天讓遊戲大師阿驢帶領大家用圖解，配合幾個獨立遊戲的範例，輕鬆瞭解遊戲的敘事世界。</p>
                 </div>
             </div>
+        </div>
 
-            <div class="fp_div_t" id="fp_div_second03">
-                <div class="fp_div_t_img"><img src="https://castnet.nctu.edu.tw/files/article/906/thumb/20190421090826_1555808906_RPIztTaapm.png"></div>
-                <div class="fp_div_t_div">
-                    <a>社會議題</a>
-                    <a class="fp_a_report">唐承安</a>
-                    <h2>圖解遊戲敘事：阿驢老師說故事</h2>
-                    <p>遊戲也可以說故事嗎？敘事表現的手法與電影小說有什麼不同？原來我們平常體驗的遊戲劇情不只表面上看到的那麼簡單？今天讓遊戲大師阿驢帶領大家用圖解，配合幾個獨立遊戲的範例，輕鬆瞭解遊戲的敘事世界。</p>
+        <div  class="mid_swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="fp_div_t_img">
+                        <!-- getSlideShowArticle.thumbUrl -->
+                        <img src="https://castnet.nctu.edu.tw/files/article/892/thumb/20190420113451_1555731291_eDpPkICq3e.jpg">
+                    </div>
+                    <div class="fp_div_t_div">
+                        <!-- getSlideShowArticle.reporter -->
+                        <a class="fp_a_report">唐承安</a>
+                        <!-- getSlideShowArticle.category -->
+                        <h2>總編輯的話</h2>
+                        <!-- getSlideShowArticle.abstract -->
+                        <p>遊戲也可以說故事嗎？敘事表現的手法與電影小說有什麼不同？原來我們平常體驗的遊戲劇情不只表面上看到的那麼簡單？今天讓遊戲大師阿驢帶領大家用圖解，配合幾個獨立遊戲的範例，輕鬆瞭解遊戲的敘事世界。</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="fp_div_t_img">
+                        <!-- getSlideShowArticle.thumbUrl -->
+                        <img src="https://castnet.nctu.edu.tw/files/article/664/thumb/20190420022853_1555698533_9mqCwmThQD.jpg">
+                    </div>
+                    <div class="fp_div_t_div">
+                        <!-- getSlideShowArticle.category -->
+                        <a>人物特寫</a>
+                        <!-- getSlideShowArticle.reporter -->
+                        <a class="fp_a_report">唐承安</a>
+                        <!-- getSlideShowArticle.title -->
+                        <h2>圖解遊戲敘事：阿驢老師說故事</h2>
+                        <!-- getSlideShowArticle.abstract -->
+                        <p>遊戲也可以說故事嗎？敘事表現的手法與電影小說有什麼不同？原來我們平常體驗的遊戲劇情不只表面上看到的那麼簡單？今天讓遊戲大師阿驢帶領大家用圖解，配合幾個獨立遊戲的範例，輕鬆瞭解遊戲的敘事世界。</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="fp_div_t_img">
+                        <!-- getSlideShowArticle.thumbUrl -->
+                        <img src="https://castnet.nctu.edu.tw/files/article/906/thumb/20190421090826_1555808906_RPIztTaapm.png">
+                    </div>
+                    <div class="fp_div_t_div">
+                        <!-- getSlideShowArticle.category -->
+                        <a>社會議題</a>
+                        <!-- getSlideShowArticle.reporter -->
+                        <a class="fp_a_report">唐承安</a>
+                        <!-- getSlideShowArticle.title -->
+                        <h2>圖解遊戲敘事：阿驢老師說故事</h2>
+                        <!-- getSlideShowArticle.abstract -->
+                        <p>遊戲也可以說故事嗎？敘事表現的手法與電影小說有什麼不同？原來我們平常體驗的遊戲劇情不只表面上看到的那麼簡單？今天讓遊戲大師阿驢帶領大家用圖解，配合幾個獨立遊戲的範例，輕鬆瞭解遊戲的敘事世界。</p>
+                    </div>
                 </div>
             </div>
-
-            <i id="fp_i_c02" class="fas fa-chevron-right fa-2x"></i>
+            <div class="swiper-nav">
+                <div class="mid_swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+                <div class="mid_swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            
         </div>
 
+        <div class="all-category-line">
+            <div class="line"></div>
+            <a href="all_catagory.html">本期所有文章</a>
+            <div class="line"></div>
+        </div>
+        
         <div>
-            <div id="fp_div_c01"></div>
-            <a id="fp_a_c01" href="all_catagory.html">本期所有文章</a>
-            <div id="fp_div_c02"></div>
+            <iframe id="fp_iframe_c" src="https://www.facebook.com/plugins/video.php?autoplay=true&href=https%3A%2F%2Fwww.facebook.com%2Fcastnet.nctu%2Fvideos%2F293658304899180%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
         </div>
 
-        <div>
-                <iframe id="fp_iframe_c" src="https://www.facebook.com/plugins/video.php?autoplay=true&href=https%3A%2F%2Fwww.facebook.com%2Fcastnet.nctu%2Fvideos%2F293658304899180%2F&show_text=0&width=560" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-        </div>
-
-        <div>
+        <div class="all-category">
             <h2 id="fp_h2_d">各類目精選</h2>
-
+            <!-- 如果那一期有輪播的話這裡就顯示輪播，不然就是顯示上一期最新的文章再不然就是上上期，這期輪播是社會議題、人物特寫、藝文評論，除了這三個類目我就加上一期的文章資訊 -->
+            <!-- 這裡的下面文章沒有按照上面的規則放對應的輪播文章，請助教忽略就好謝謝 -->
             <div class="fp_div_d">
+                <!-- 這期有這類別的輪播，所以放輪播的文章 -->
+                <!-- getSlideShowArticle.category -->
                 <h2>社會議題</h2>
+                <!-- getSlideShowArticle.thumbUrl -->
                 <img src="https://castnet.nctu.edu.tw/files/article/892/thumb/20190420113451_1555731291_eDpPkICq3e.jpg">
+                <!-- getSlideShowArticle.reporter -->
                 <a class="fp_a_report">汪彥彤</a>
+                <!-- getSlideShowArticle.title -->
                 <h4>單科教學落伍　教師跨出一大步</h4>
             </div>
 
             <div class="fp_div_d">
+                <!-- 這期沒有，這裡就放上一期該類別最新的文章，上一期沒有文章就再上一期 -->
+                <!-- getArticleListByCategory.category -->
                 <h2>科技新知</h2>
+                <!-- getArticleListByCategory.thumbUrl -->
                 <img src="https://castnet.nctu.edu.tw/files/article/664/thumb/20190420022853_1555698533_9mqCwmThQD.jpg">
+                <!-- getArticleListByCategory.reporter -->
                 <a class="fp_a_report">卓瑋哲</a>
+                <!-- getArticleListByCategory.title -->
                 <h4>隋姚王之戀：還給王心凌的清白</h4>
             </div>
 
             <div class="fp_div_d">
+                <!-- 這期有這類別的輪播，所以放輪播的文章 -->
+                <!-- getSlideShowArticle.category -->
                 <h2>人物特寫</h2>
+                <!-- getSlideShowArticle.thumbUrl -->
                 <img src="https://castnet.nctu.edu.tw/files/article/899/thumb/20181222215546_1545486946_9GXC84cGZJ.jpg">
+                <!-- getSlideShowArticle.reporter -->
                 <a class="fp_a_report">郭玟妤</a>
+                <!-- getSlideShowArticle.title -->
                 <h4>教育雙語化　拯救國人菜英文？</h4>
             </div>
 
             <div class="fp_div_d">
+                <!-- 這期沒有，這裡就放上一期該類別最新的文章，上一期沒有文章就再上一期 -->
+                <!-- getArticleListByCategory.category -->
                 <h2>文化現象</h2>
+                <!-- getArticleListByCategory.thumbUrl -->
                 <img src="https://castnet.nctu.edu.tw/files/article/880/thumb/20181223134107_1545543667_9ZAmBwPYQ4.jpg">
+                <!-- getArticleListByCategory.reporter -->
                 <a class="fp_a_report">林奕廷</a>
+                <!-- getArticleListByCategory.title -->
                 <h4>生命的守護　兒童安寧療護</h4>
             </div>
 
             <div class="fp_div_d">
+                <!-- 這期有這類別的輪播，所以放輪播的文章 -->
+                <!-- getSlideShowArticle.category -->
                 <h2><a href="article.html">藝文評論</a></h2>
+                <!-- getSlideShowArticle.thumbUrl -->
                 <img src="https://castnet.nctu.edu.tw/files/article/880/thumb/20181223134107_1545543667_9ZAmBwPYQ4.jpg">
+                <!-- getSlideShowArticle.reporter -->
                 <a class="fp_a_report">林侑萱</a>
+                <!-- getSlideShowArticle.title -->
                 <h4>不再只有輪椅和束縛　自立支援</h4>
             </div>
 
             <div class="fp_div_d">
+                <!-- 這期沒有，這裡就放上一期該類別最新的文章，上一期沒有文章就再上一期 -->
+                <!-- getArticleListByCategory.category -->
                 <h2><a href="video_test.html">影音新聞</a></h2>
+                <!-- getArticleListByCategory.thumbUrl -->
                 <img src="https://castnet.nctu.edu.tw/files/article/661/thumb/20181223055048_1545515448_XVKFEbTnhf.jpg">
+                <!-- getArticleListByCategory.reporter -->
                 <a class="fp_a_report">林芷懷</a>
+                <!-- getArticleListByCategory.title -->
                 <h4>實習「薪」不「薪」</h4>
             </div>
 
             <div class="fp_div_d">
+                <!-- 這期沒有，這裡就放上一期該類別最新的文章，上一期沒有文章就再上一期 -->
+                <!-- getArticleListByCategory.category -->
                 <h2><a href="photo_story.html">照片故事</a></h2>
+                <!-- getArticleListByCategory.thumbUrl -->
                 <img src="https://castnet.nctu.edu.tw/files/article/664/thumb/20181220141438_1545286478_YBpxhCkLfb.jpg">
+                <!-- getArticleListByCategory.reporter -->
                 <a class="fp_a_report">卓瑋哲</a>
+                <!-- getArticleListByCategory.title -->
                 <h4>點香燒金　環境的隱憂</h4>
             </div>
 
             <div class="fp_div_d">
-                <h2>自由創作</h2>
+                <!-- 這期沒有，這裡就放上一期該類別最新的文章，上一期沒有文章就再上一期 -->
+                <!-- getArticleListByCategory.category -->
+                <h2>自由創作</h2>  
+                <!-- getArticleListByCategory.tjumbUrl -->
                 <img src="https://castnet.nctu.edu.tw/files/article/659/thumb/20181222210332_1545483812_JwnE7gUzsA.jpg">
+                <!-- getArticleListByCategory.reporter -->
                 <a class="fp_a_report">許家芸</a>
+                <!-- getArticleListByCategory.title -->
                 <h4>「性教育」你知多少？</h4>
             </div>
         </div>
@@ -201,32 +309,66 @@
 
     <footer>
         <div id="fp_div_ft01">
-        <div class="fp_div_ft">
-            <img src="image/logo01.png">
-        </div>
+            <div class="fp_div_ft">
+                <img src="image/logo01.png">
+            </div>
 
-        <div class="fp_div_ft" id="fp_div_ft_c">
-            <ul>
-                <li><a href="aboutCT.html">關於我們</a></li>
-                <li><a href="https://castnet.nctu.edu.tw/group/63">喀報成員</a></li>
-                <li><a href="https://www.facebook.com/messages/t/castnet.castnet">聯絡我們</a></li>
-                <li><a href="https://www.facebook.com/messages/t/castnet.castnet">加入我們</a></li>
-                <li><a href="https://www.facebook.com/castnet.nctu/">Facebook</a></li>
-                <li><a href="https://www.instagram.com/castnet.nctu/?hl=zh-tw">Instagram</a></li>
-            </ul>
-        </div>
+            <div class="fp_div_ft" id="fp_div_ft_c">
+                <ul>
+                    <li><a href="aboutCT.html">關於我們</a></li>
+                    <li><a href="https://castnet.nctu.edu.tw/group/63">喀報成員</a></li>
+                    <li><a href="https://www.facebook.com/messages/t/castnet.castnet">聯絡我們</a></li>
+                    <li><a href="https://www.facebook.com/messages/t/castnet.castnet">加入我們</a></li>
+                    <li><a href="https://www.facebook.com/castnet.nctu/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/castnet.nctu/?hl=zh-tw">Instagram</a></li>
+                </ul>
+            </div>
 
-        <div class="fp_div_ft" id="fp_div_ft_r">
+            <div class="fp_div_ft" id="fp_div_ft_r">
                 <a href="all_catagory.html">所有期別</a>
-        </div>
+            </div>
 
-        <div>
-            <p id="fp_p_ft_d">2007-2019 &copy; 國立交通大學傳播與科技學系 All Rights Reserved.</p>
+            <div>
+                <p id="fp_p_ft_d">2007-2019 &copy; 國立交通大學傳播與科技學系 All Rights Reserved.</p>
+            </div>
         </div>
-        <div>
     </footer>
-   </body>
+   
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+     <script>
+        var nav_swiper = new Swiper('.nav_swiper-container', {
+            slidesPerView: 7,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
 
+        var mid_swiper = new Swiper('.mid_swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.mid_swiper-button-next',
+                prevEl: '.mid_swiper-button-prev',
+            },
+        });
+
+  </script>
     <script>
         var acc = 0;
         function appear(){
@@ -238,6 +380,15 @@
             document.getElementById("fp_i_nav").style.display='none';
             document.getElementById("fp_i_t03").style.display="none";
 
+            var li = document.getElementsByClassName("fp_li_t");
+            for(let i = 0; i<li.length;i++){
+                li[i].style.display="inline-block";
+                li[i].style.float='left';
+                li[i].style.marginTop='0.5em';
+                li[i].style.backgroundColor="#f5f5f5";
+                li[i].style.border='none';
+                li[i].style.width='10.9em';
+            }
             document.getElementById("fp_div_backgroundcolor").style='height:29em; background-image:linear-gradient(#3AAB97, #F5F5F5);';
             if(acc==0){
                 var i_can = document.createElement("i");
@@ -295,4 +446,5 @@
             document.getElementById("fp_div_backgroundcolor").style='height:9.4em; background-image:linear-gradient(#3AAB97 0%, #F5F5F5 6em);';
         }
     </script>
+    </body>
 </html>

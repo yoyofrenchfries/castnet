@@ -6,7 +6,7 @@
 }
 body{
     background-color: #F5F5F5;
-    width: 92em;
+    width: 100%;
     margin: auto;
     overflow-x: hidden;
 }
@@ -17,14 +17,6 @@ footer{
     position: absolute;
     left: 0;
     height: 29.85em;
-}
-nav{
-    position: fixed;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    z-index: 3;
-    margin-top: 13.45em;
-    width: 87.5em;
 }
 ul{
     position: relative;
@@ -132,12 +124,6 @@ a:hover{
     background-image: -ms-linear-gradient(rgba(58, 171, 151) 0%, #F5F5F5 18em);
     z-index: 3;
 }
-#fp_logo{
-    position: fixed;
-    width: 21.7em;
-    z-index: 3;
-    top: 5em
-}
 #fp_i_t01{
     width: 1.4em;
     height: 1.4em;
@@ -227,8 +213,45 @@ a:hover{
     font-size: 12px;
     margin-top: 5%;
 }
-header div{
+header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 250px;
+    z-index: 5;
+    background-image: linear-gradient(rgba(58, 171, 151) 0%, #F5F5F5 18em);
+    background-image: -moz-linear-gradient(rgba(58, 171, 151) 0%, #F5F5F5 18em);
+    background-image: -webkit-linear-gradient(rgba(58, 171, 151) 0%, #F5F5F5 18em);
+    background-image: -o-linear-gradient(rgba(58, 171, 151) 0%, #F5F5F5 18em);
+    background-image: -ms-linear-gradient(rgba(58, 171, 151) 0%, #F5F5F5 18em);
+}
+header .logo {
     display: inline-block;
+    margin: 2em;
+}
+header .func {
+    position: absolute;
+    display: block;
+    right: 2em;
+    top: 150px;
+}
+header .func .button {
+    display: inline-block;
+}
+header .func .button img {
+    width: 32px;
+    height: 32px;
+}
+header nav {
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    bottom: 1em;
+}
+section{
+    position: relative;
+    margin-top: calc(250px + 1em);
 }
 #fp_div01{
     height: 3em;
@@ -244,8 +267,18 @@ header div{
     margin-left: 1.5px;
 }
 #fp_div_ft01{
-    width: 92em;
     margin:auto;
-    height: 29.85em;
     background-color: #5b5751;
+}
+
+.nav_swiper-container{
+    overflow-x: hidden;
+}
+
+.swiper-button-next{
+    background-image: none;
+    top: 50%; 
+}
+.swiper-button-next i{
+    padding: 50%;
 }
