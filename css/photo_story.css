@@ -7,7 +7,7 @@ article{
 }
 #ps_lrbtn{
     z-index:3;
-    margin-top: 30em;
+    /* margin-top: 30em; */
 }
 #ps_lrbtn i{
     font-size: 3em;
@@ -29,6 +29,7 @@ article{
 #ps_section01{
     width: 100%;
     margin-bottom: 1.5em;
+    margin-top: 20em;
 }
 #ps_section01 h2{
     width: 15em;
@@ -65,36 +66,72 @@ article{
     border-color: #3AAB97;
     border-width: 2px;
 }
-#ps_div_t{
+.ps_div_t01{
     background-image: url("https://castnet.nctu.edu.tw/files/images_db/903/20181222141649_1545459409_E3wzFMmW2Z.jpg");
     width: 100vw;
     height: 65em;
     background-repeat:no-repeat;
-    margin-top: 20em;
+    /* margin-top: 20em; */
     background-size: cover;
-    position: absolute;
+    position: relative;
     left: 0;
 }
-#ps_div_div_t{
+
+.ps_div_t02{
+    background-image: url("https://castnet.nctu.edu.tw/files/images_db/903/20181222140437_1545458677_N6QCAQdBQY.jpg");
+    width: 100vw;
+    height: 65em;
+    background-repeat:no-repeat;
+    /* margin-top: 20em; */
+    background-size: cover;
+    /* position: absolute; */
     position: relative;
-    width: 71em;
-    left: 48%;
-    top: 35%;
+    left: 0;
 }
-#ps_div_div_t div p{
+
+.ps_div_t03{
+    background-image: url("https://castnet.nctu.edu.tw/files/images_db/903/20181222141723_1545459443_HT9X2n4CrQ.jpg");
+    width: 100vw;
+    height: 65em;
+    background-repeat:no-repeat;
+    /* margin-top: 20em; */
+    background-size: cover;
+    /* position: absolute; */
     position: relative;
-    display: inline-block;
+    /* left: 0; */
+}
+
+#ps_div_div_t{
+    position: absolute;
+    width: 71em;
+    left: 58%;
+    top: 85%;
+    
+}
+/* #ps_div_div_t div p */
+.infotext{
+    position: relative;
+    display: block;
+    /* display: none; */
     width: 29em;
     padding: 1em;
     font-size: 1.5em;
     background-color: rgba(255 , 255, 255, 0.6);
+    opacity: 0;
+    /* animation-name="slidein";
+    animation-duration: 1s; */
 }
+
+
+
+/* i小標籤 */
 #ps_div_div_t i{
-    position: relative;
+    /* position: relative; */
+    position: absolute;
     display: inline-block;
     color: rgba(255 , 255, 255, 0.8);
-    margin-left: 12.8em;
-    top: -1.8em;
+    margin-left: 65%;
+    top: 50%;
     font-size: 42px;
 }
 .abstract{
@@ -110,7 +147,7 @@ article{
 article{
     width: 80%;
     margin: auto;
-    margin-top: 88em;
+    /* margin-top: 88em; */
 }
 article p{
     font-size: 1.7em;
@@ -189,4 +226,54 @@ article p{
 
 footer{
     margin-top: 27em;
+}
+
+/* swipper設定 (請先稍微研究後再動謝謝) */
+.swiper-wrapper{
+    position: relative;
+}
+.photo_swiper-container{
+    position: relative;
+}
+.photo_swiper-container .swiper-wrapper{
+    width: 100%;
+    height: 100%;
+}
+.photo_swiper-button-prev,.photo_swiper-button-next{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    
+}
+
+.photo_swiper-button-prev i,.photo_swiper-button-next i{
+    font-size: 50px;
+    line-height: 60px;
+    margin-left: 25%;
+}
+ 
+.photo_swiper-button-prev{
+    left: 5%;
+}
+
+.photo_swiper-button-next{
+    right: 5%;
+}
+
+#ps_div_t{
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+}
+
+/* 圖說 */
+.ps_div_div_t i{
+    display: inline-block;
+    /* top: 50%; */
+    /* left: 50%; */
 }

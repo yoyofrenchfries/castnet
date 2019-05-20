@@ -3,228 +3,287 @@
   <head>
     <meta charset=UTF-8>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Photo Story</title>
+    <title>castnet_test</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/video.css">
-    <link rel="stylesheet" href="css/mobVideo.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
     <link rel="stylesheet" href="css/all_pages.css">
     <link rel="stylesheet" href="css/frontpage.css">
     <link rel="stylesheet" href="css/mobFrontPage.css">
+    <link rel="stylesheet" href="css/video.css">
     <link rel="stylesheet" href="css/photo_story.css">
     <link rel="stylesheet" href="css/mobPhotoStory.css">
+    
   </head>
   <body>
     <div id="top"></div>
-    <div id="fp_i_t03"><i class="fas fa-bars fa-2x"></i></div>
+    <div id="fp_i_t03"><i class="fas fa-bars fa-2x" onclick="appear()"></i></div>
     <a href="#top">
         <div id="fp_div01">
             <i id="fp_i_div01" class="fas fa-chevron-up fa-3x"></i>
         </div>
     </a>
-    <div id="fp_div_backgroundcolor"></div>
+    <!-- <div id="fp_div_backgroundcolor"></div> -->
     <header>
-        <div>
-            <a href="https://castnet.nctu.edu.tw/">
-                <img id="fp_logo" src="image/castnet.png">
+        <div class="logo">
+            <a href="index.html">
+                <img src="image/castnet.png">
             </a>
         </div>
-        <i id="fp_i_t01" class="fas fa-search fa-2x"></i>
-        <span id="fp_span_t01">搜尋</span>
-        <img id="fp_img_header"  src="image/tree01.png">
-        <span id="fp_span_t02">關於</span>
-        <i id="fp_i_t02" class="fas fa-ellipsis-v fa-2x"></i>
-        <span id="fp_span_t03">卷別</span>
-    </header>
+        <div class="func">
+            <div class="button">
+                <i class="fas fa-search fa-2x"></i>
+                <span>搜尋</span>
+            </div>
+            <div class="button">
+                <img src="image/tree01.png">
+                <span>關於</span>
+            </div>
+            <div class="button">
+                <i class="fas fa-ellipsis-v fa-2x"></i>
+                <span>卷別</span>
+            </div>
+        </div>
 
+        
     <nav>
-        <ul>
-            <li class="fp_li_t">
-                <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/82">社會議題</a>
-            </li>
+        <!-- 這裡的列表應該是getAllPublish 取得的卷別 id下的getCategoty 顯示的為show_front:1 -->
+        <!-- 目前除了八大類目是常駐議題之外，其他校友專刊等等其他類目應該是有出現的時候才會show_front:2 -->
+        <div class="nav_swiper-container">
+            <div class="swiper-wrapper">
+            <!-- 常駐議題 -->
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
+                <a class="fp_li_a_t" href="catagory.html">社會議題</a>
+            </div>
             
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/180">科技新知</a>
-            </li>
+            </div>
             
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/81">文化現象</a>
-            </li>
+            </div>
 
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/83">人物特寫</a>
-            </li>
+            </div>
 
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/191">藝文評論</a>
-            </li>
+            </div>
 
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/29">照片故事</a>
-            </li>
+            </div>
 
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/85">影音新聞</a>
-            </li>
+            </div>
 
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/77">自由創作</a>
-            </li>
-
-            <li class="fp_li_t">
+            </div>
+            <!-- 有時候才會出現的議題 -->
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="專題頁">專題</a>
-            </li>
-        </ul>
-        <i id="fp_i_nav" class="fas fa-chevron-right fa-lg"></i>
+            </div>
+            
+        </div>
+        
+
+            <!-- <div class="swiper-button-prev"></div> -->
+            <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+        </div>
+        
+        <!-- <i id="fp_i_nav" class="next fas fa-chevron-right fa-lg"></i> -->
     </nav>
     
-    <section id="ps_section01">
-        <h2>It's Mario Time!</h2>
-        <div id="ps_div_section01">
-            <a>照片故事</a>
-            <a id="ps_section_div_a2">陳希妍・報導</a>
-            <p>2018/12/23</p>
-            <a><p>第307期</p></a>
-        </div>
-    </section>
-
-    <div id="ps_div_t">
-        <div id="ps_lrbtn">
-                <i class="fas fa-chevron-left fa-lg"></i>
-                <i class="fas fa-chevron-right fa-lg"></i>
-        </div>
-
-        <div id="ps_div_div_t">
-            <div><p>卸下平日戴著的圓框眼鏡，帶上小鬍子跟紅帽子，徐開炫變身為遊戲角色「Mario（瑪利歐）」。（圖片來源／陳希妍攝）</p></div>
-            <i class="fas fa-info-circle"></i>
-        </div>
-    </div>
-
-    <article>
-            <div class="abstract">
-                平日，徐開炫是一位正經八百的科學家。然而，假日的他，搖身一變，化身為「Mario（瑪利歐）」，在街頭邀請大家一起進入他的遊戲世界。
-            </div>
-
-            <p>每到週末，在華山的茫茫人海中常常可以看見一個與眾不同的身影。紅色襯衫、牛仔吊帶褲是他的招牌打扮，他是駐園街頭藝人徐開炫。以遊戲Mario Games（超級瑪利歐兄弟）作為背景設定，自己則化身成遊戲中的角色「Mario（瑪利歐）」。徐開炫的表演融合戲劇、雜耍、魔術等多種元素，總是吸引大批人潮前來圍觀。而台上活潑逗趣的他，平日竟是一名正經八百的中研院大氣科學家。</p>
-
-            <p>在徐開炫就讀研究所時，一次偶然的機會下，他走上街頭開啟了表演生涯。「角色的轉換是一種紓壓」，對徐開炫來說，街頭表演是紓解平日工作壓力的放鬆方式，因此很享受自己的這兩種特殊身分。</p>
-
-            <p>然而，這也是一項很大的挑戰，平時只需要與機器、數據溝通的他，站上街頭後，必須學習如何與台下的人們互動、交流。透過每一次的表演經驗和其他演出者的觀摩指導，他慢慢建立起自己與觀眾之間的連結，帶著大家一起進入他的遊戲世界。</p>
-
-            <p>縮圖來源：陳希妍攝</p>
-    </article>
+        
+    </header>
     
-    <section id="section02">
-        <div id="ps_div_links">
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fas fa-link"></i>
-        </div>
-        <div id="vi_bottom">
-                <div id="vi_bo_t00">
-                <hr class="vi_line1"><p class="other">延伸閱讀</p><hr class="vi_line2">
-                </div>
-                <div id="vi_bo_t01">
-                    <p class="vi_head">共同類目</p>
-                    <div id="vi_bo_t000">
-                    <img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/881/thumb/20190330170118_1553936478_wRhkvc323H.jpg" >
-                </div>
-                    <div id="vi_bo_t001">
-                    <p class="vi_bo_ar1">影音新聞</p>
-                 
-                    <p class="vi_bo_ar2">唐安安 翁繃繃</p>
+
+    <section>
+        <section id="ps_section01">
+            <h2>It's Mario Time!</h2>
+            <div id="ps_div_section01">
+                <a>照片故事</a>
+                <a id="ps_section_div_a2">陳希妍・報導</a>
+                <p>2018/12/23</p>
+                <a><p>第307期</p></a>
+            </div>
+        </section>
+    
+        <div class="photo_swiper-container"> 
+                <div class="photo_swiper-button-prev"><i class="fas fa-chevron-left fa-lg"></i></div>
+                <div class="photo_swiper-button-next"><i class="fas fa-chevron-right fa-lg"></i></div>
+            
+            <div id="ps_lrbtn" class="swiper-wrapper">
+            <!-- picture -->
+                <div class="ps_div_t01 swiper-slide">
+                    <!-- <div class="img01"></div> -->
+                    <div id="ps_div_div_t">
+                        <div><p class="infotext">卸下平日戴著的圓框眼鏡，帶上小鬍子跟紅帽子，徐開炫變身為遊戲角色「Mario（瑪利歐）」。（圖片來源／陳希妍攝）</p></div>
+                        <i class="fas fa-info-circle"></i>
+                    </div>
                     
-                    <p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
-                </div>
-                <div id="vi_bo_t000">
-                    <img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/883/thumb/20190409200137_1554811297_V6e9MvAYWg.jpg" >
-                </div>
-                    <div id="vi_bo_t001">
-                    <p class="vi_bo_ar1">影音新聞</p>
-                 
-                    <p class="vi_bo_ar2">唐安安 翁繃繃</p>
-                    
-                    <p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
                 </div>
                 
-                <div id="vi_bo_t000">
-                    <img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/893/thumb/20181215161635_1544861795_LEGkhSrP4E.jpg" >
-                </div>
-                    <div id="vi_bo_t001">
-                    <p class="vi_bo_ar1">影音新聞</p>
-                 
-                    <p class="vi_bo_ar2">唐安安 翁繃繃</p>
-                    
-                    <p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
-                </div>
-                </div>
-                <div id="vi_bo_t01">
-                    <p class="vi_head">本期其他</p>
-                    <div id="vi_bo_t000">
-                    <img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/897/thumb/20190404222632_1554387992_PRZs6zXKDa.jpg" >
-                </div>
-                    <div id="vi_bo_t001">
-                    <p class="vi_bo_ar1">影音新聞</p>
-                 
-                    <p class="vi_bo_ar2">唐安安 翁繃繃</p>
-                    
-                    <p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
-                </div>
-                <div id="vi_bo_t000">
-                    <img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/876/thumb/20190414122920_1555216160_rfeHjkQLzu.jpg" >
-                </div>
-                    <div id="vi_bo_t001">
-                    <p class="vi_bo_ar1">影音新聞</p>
-                 
-                    <p class="vi_bo_ar2">唐安安 翁繃繃</p>
-                    
-                    <p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
-                </div>
-                <div id="vi_bo_t000">
-                    <img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/899/thumb/20190406233958_1554565198_WgJF39qMjI.png" >
-                </div>
-                    <div id="vi_bo_t001">
-                    <p class="vi_bo_ar1">影音新聞</p>
-                 
-                    <p class="vi_bo_ar2">唐安安 翁繃繃</p>
-                    
-                    <p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
-                </div>
-                </div>
-                <div id="vi_bo_t01">
-                    <p class="vi_head">記者其他</p>
-                    <div id="vi_bo_t000">
-                    <img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/899/thumb/20190406233958_1554565198_WgJF39qMjI.png" >
-                </div>
-                    <div id="vi_bo_t001">
-                    <p class="vi_bo_ar1">影音新聞</p>
-                 
-                    <p class="vi_bo_ar2">唐安安 翁繃繃</p>
-                    
-                    <p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
-                </div>
-                <div id="vi_bo_t000">
-                    <img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/884/thumb/20190406222647_1554560807_QI5qB74KwA.png" >
-                </div>
-                    <div id="vi_bo_t001">
-                    <p class="vi_bo_ar1">影音新聞</p>
-                 
-                    <p class="vi_bo_ar2">唐安安 翁繃繃</p>
-                    
-                    <p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
-                </div>
-                <div id="vi_bo_t000">
-                    <img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/884/thumb/20180918224942_1537282182_emDUywFR4x.jpg" >
-                </div>
-                    <div id="vi_bo_t001">
-                    <p class="vi_bo_ar1">影音新聞</p>
-                 
-                    <p class="vi_bo_ar2">唐安安 翁繃繃</p>
-                    
-                    <p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
-                </div>
-                </div>
+                <div class="ps_div_t02 swiper-slide">
+                        <!-- <div class="img02"></div> -->
+                        <div id="ps_div_div_t">
+                            <div><p class="infotext">在工作的空檔，徐開炫喜歡動腦發想新點子，偶爾也會利用實驗室外的空地練習。（圖片來源／陳希妍攝）</p></div>
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+
+                    </div>
+    
+                    <div class="ps_div_t03 swiper-slide">
+                            <!-- <div class="img02"></div> -->
+                            <div id="ps_div_div_t">
+                                <div><p class="infotext">帶著一整天觀眾們的微笑，瑪利歐提著厚重的行李，緩緩走離華山，回歸徐開炫的科學家日常。（圖片來源／陳希妍攝）</p></div>
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                    </div>
             </div>
+            
+        </div>
+    
+        <article>
+                <div class="abstract">
+                    平日，徐開炫是一位正經八百的科學家。然而，假日的他，搖身一變，化身為「Mario（瑪利歐）」，在街頭邀請大家一起進入他的遊戲世界。
+                </div>
+    
+                <p>每到週末，在華山的茫茫人海中常常可以看見一個與眾不同的身影。紅色襯衫、牛仔吊帶褲是他的招牌打扮，他是駐園街頭藝人徐開炫。以遊戲Mario Games（超級瑪利歐兄弟）作為背景設定，自己則化身成遊戲中的角色「Mario（瑪利歐）」。徐開炫的表演融合戲劇、雜耍、魔術等多種元素，總是吸引大批人潮前來圍觀。而台上活潑逗趣的他，平日竟是一名正經八百的中研院大氣科學家。</p>
+    
+                <p>在徐開炫就讀研究所時，一次偶然的機會下，他走上街頭開啟了表演生涯。「角色的轉換是一種紓壓」，對徐開炫來說，街頭表演是紓解平日工作壓力的放鬆方式，因此很享受自己的這兩種特殊身分。</p>
+    
+                <p>然而，這也是一項很大的挑戰，平時只需要與機器、數據溝通的他，站上街頭後，必須學習如何與台下的人們互動、交流。透過每一次的表演經驗和其他演出者的觀摩指導，他慢慢建立起自己與觀眾之間的連結，帶著大家一起進入他的遊戲世界。</p>
+    
+                <p>縮圖來源：陳希妍攝</p>
+        </article>
+        
+        <section id="section02">
+            <div id="ps_div_links">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fas fa-link"></i>
+            </div>
+            <div id="vi_bottom">
+                    <div id="vi_bo_t00">
+                    <hr class="vi_line1"><p class="other">延伸閱讀</p><hr class="vi_line2">
+                    </div>
+                    <div id="vi_bo_t01">
+                        <p class="vi_head">共同類目</p>
+                        <div id="vi_bo_t000">
+                        <img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/881/thumb/20190330170118_1553936478_wRhkvc323H.jpg" >
+                    </div>
+                        <div id="vi_bo_t001">
+                        <p class="vi_bo_ar1">影音新聞</p>
+                     
+                        <p class="vi_bo_ar2">唐安安 翁繃繃</p>
+                        
+                        <p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
+                    </div>
+                    <div id="vi_bo_t000">
+                        <img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/883/thumb/20190409200137_1554811297_V6e9MvAYWg.jpg" >
+                    </div>
+                        <div id="vi_bo_t001">
+                        <p class="vi_bo_ar1">影音新聞</p>
+                     
+                        <p class="vi_bo_ar2">唐安安 翁繃繃</p>
+                        
+                        <p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
+                    </div>
+                    
+                    <div id="vi_bo_t000">
+                        <img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/893/thumb/20181215161635_1544861795_LEGkhSrP4E.jpg" >
+                    </div>
+                        <div id="vi_bo_t001">
+                        <p class="vi_bo_ar1">影音新聞</p>
+                     
+                        <p class="vi_bo_ar2">唐安安 翁繃繃</p>
+                        
+                        <p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
+                    </div>
+                    </div>
+                    <div id="vi_bo_t01">
+                        <p class="vi_head">本期其他</p>
+                        <div id="vi_bo_t000">
+                        <img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/897/thumb/20190404222632_1554387992_PRZs6zXKDa.jpg" >
+                    </div>
+                        <div id="vi_bo_t001">
+                        <p class="vi_bo_ar1">影音新聞</p>
+                     
+                        <p class="vi_bo_ar2">唐安安 翁繃繃</p>
+                        
+                        <p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
+                    </div>
+                    <div id="vi_bo_t000">
+                        <img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/876/thumb/20190414122920_1555216160_rfeHjkQLzu.jpg" >
+                    </div>
+                        <div id="vi_bo_t001">
+                        <p class="vi_bo_ar1">影音新聞</p>
+                     
+                        <p class="vi_bo_ar2">唐安安 翁繃繃</p>
+                        
+                        <p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
+                    </div>
+                    <div id="vi_bo_t000">
+                        <img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/899/thumb/20190406233958_1554565198_WgJF39qMjI.png" >
+                    </div>
+                        <div id="vi_bo_t001">
+                        <p class="vi_bo_ar1">影音新聞</p>
+                     
+                        <p class="vi_bo_ar2">唐安安 翁繃繃</p>
+                        
+                        <p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
+                    </div>
+                    </div>
+                    <div id="vi_bo_t01">
+                        <p class="vi_head">記者其他</p>
+                        <div id="vi_bo_t000">
+                        <img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/899/thumb/20190406233958_1554565198_WgJF39qMjI.png" >
+                    </div>
+                        <div id="vi_bo_t001">
+                        <p class="vi_bo_ar1">影音新聞</p>
+                     
+                        <p class="vi_bo_ar2">唐安安 翁繃繃</p>
+                        
+                        <p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
+                    </div>
+                    <div id="vi_bo_t000">
+                        <img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/884/thumb/20190406222647_1554560807_QI5qB74KwA.png" >
+                    </div>
+                        <div id="vi_bo_t001">
+                        <p class="vi_bo_ar1">影音新聞</p>
+                     
+                        <p class="vi_bo_ar2">唐安安 翁繃繃</p>
+                        
+                        <p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
+                    </div>
+                    <div id="vi_bo_t000">
+                        <img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/884/thumb/20180918224942_1537282182_emDUywFR4x.jpg" >
+                    </div>
+                        <div id="vi_bo_t001">
+                        <p class="vi_bo_ar1">影音新聞</p>
+                     
+                        <p class="vi_bo_ar2">唐安安 翁繃繃</p>
+                        
+                        <p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
+                    </div>
+                    </div>
+                </div>
+        </section>
     </section>
 
     <footer>
@@ -235,7 +294,7 @@
 
             <div class="fp_div_ft" id="fp_div_ft_c">
                 <ul>
-                    <li><a href="https://castnet.nctu.edu.tw/castnet/about">關於我們</a></li>
+                    <li><a href="aboutCT.html">關於我們</a></li>
                     <li><a href="https://castnet.nctu.edu.tw/group/63">喀報成員</a></li>
                     <li><a href="https://www.facebook.com/messages/t/castnet.castnet">聯絡我們</a></li>
                     <li><a href="https://www.facebook.com/messages/t/castnet.castnet">加入我們</a></li>
@@ -253,5 +312,152 @@
             </div>
         </div>
     </footer>
-   </body>
+   
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+     <script>
+        var nav_swiper = new Swiper('.nav_swiper-container', {
+            slidesPerView: 7,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script>
+            var photo_swiper = new Swiper('.photo_swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                slidesPerGroup: 1,
+                loop: true,
+                loopFillGroupWithBlank: false,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.photo_swiper-button-next',
+                    prevEl: '.photo_swiper-button-prev',
+                },
+            });
+
+            
+    </script>
+        
+
+  
+    <script>
+    // 手機板選單
+        var acc = 0;
+        function appear(){
+            document.getElementsByTagName("nav")[0].style.display='block';
+            document.getElementsByTagName("nav")[0].style.marginTop='8em';
+            document.getElementsByTagName("ul")[0].style.height='20em';
+            document.getElementsByTagName("ul")[0].style.width='100%';
+            document.getElementsByTagName("ul")[0].style.overflow='auto';
+            document.getElementById("fp_i_nav").style.display='none';
+            document.getElementById("fp_i_t03").style.display="none";
+
+            var li = document.getElementsByClassName("fp_li_t");
+            for(let i = 0; i<li.length;i++){
+                li[i].style.display="inline-block";
+                li[i].style.float='left';
+                li[i].style.marginTop='0.5em';
+                li[i].style.backgroundColor="#f5f5f5";
+                li[i].style.border='none';
+                li[i].style.width='10.9em';
+            }
+            document.getElementById("fp_div_backgroundcolor").style='height:29em; background-image:linear-gradient(#3AAB97, #F5F5F5);';
+            if(acc==0){
+                var i_can = document.createElement("i");
+                i_can.style.fontSize="3em";
+                i_can.style.color="#3AAB97";
+                i_can.style.position="relative";
+                i_can.style.marginLeft="-1.2em";
+                i_can.style.top="-7.3em";
+                document.getElementsByTagName('nav')[0].appendChild(i_can);
+                i_can.className="fas fa-times";
+                i_can.setAttribute("id", "create_i");
+                i_can.setAttribute("onclick", "cancel();");
+                acc= acc+1;
+
+                var green_bar = document.createElement("div");
+                green_bar.style.height="3px";
+                green_bar.style.backgroundColor="#3AAB97";
+                green_bar.style.position="relative";
+                green_bar.style.top="-9em";
+                document.getElementsByTagName('nav')[0].appendChild(green_bar);
+
+                var container = document.createElement("div");
+                container.style.position='relative';
+                container.style.marginTop='-8em';
+                container.setAttribute("id", "contain_create")
+                document.getElementsByTagName('nav')[0].appendChild(container);
+
+                var foote = ['所有期別', '關於我們', '喀報成員', 'Facebook'];
+                for(let i = 0; i < foote.length; i++){
+                    var foot_top = document.createElement("a");
+                    foot_top.style.display="inline-block";
+                    foot_top.style.width='13.08em';
+                    foot_top.innerText=foote[i];
+                    foot_top.className='foot_top';
+                    foot_top.style.textAlign="center";
+                    foot_top.color="#3AAB97";
+                    
+                    if(i==0){
+                        foot_top.href="all_catagory.html";
+                    }else if(i==1){
+                        foot_top.href="aboutCT.html";
+                    }else if(i==2){
+                        foot_top.href="喀報成員";
+                    }else{
+                        foot_top.href="https://www.facebook.com/messages/t/castnet.castnet";
+                    }
+                    document.getElementById('contain_create').appendChild(foot_top);
+                }
+            }
+        }
+
+        function cancel(){
+            document.getElementsByTagName('nav')[0].style.display='none';
+            document.getElementById("fp_i_t03").style.display="block";
+            document.getElementById("fp_div_backgroundcolor").style='height:9.4em; background-image:linear-gradient(#3AAB97 0%, #F5F5F5 6em);';
+        }
+
+        var infobtn = document.getElementsByClassName('fa-info-circle');
+        var infotext = document.getElementsByClassName('infotext');
+        console.log(infotext);
+        console.log(infobtn);
+        var isAppear = false;
+        for(let icon of infobtn){
+            icon.addEventListener("click",function(){
+                isAppear = !isAppear;
+                console.log(isAppear);
+               for(let i = 0; i<infotext.length;i++){
+                    if(isAppear){
+                        infotext[i].style.opacity = '100';
+                        // infotext[i].style.display = 'block';
+                        infotext[i].style.transition = '1s';
+                    }else{
+                        infotext[i].style.opacity = '0';
+                        // infotext[i].style.opacity = 'none';
+                        infotext[i].style.transition = '1s';
+                    }
+                    
+                }
+            });
+        }
+        
+    </script>
+    </body>
 </html>
+
+
