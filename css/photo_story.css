@@ -102,22 +102,25 @@ article{
 }
 
 #ps_div_div_t{
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
     width: 71em;
-    left: 58%;
+    left: 40%;
     top: 85%;
     
 }
 /* #ps_div_div_t div p */
 .infotext{
-    position: relative;
-    display: block;
+    /* position: relative; */
+    position:absolute;
+    display: inline-block;
     /* display: none; */
     width: 29em;
     padding: 1em;
     font-size: 1.5em;
     background-color: rgba(255 , 255, 255, 0.6);
     opacity: 0;
+    margin-top: -1.5em;
     /* animation-name="slidein";
     animation-duration: 1s; */
 }
@@ -133,6 +136,7 @@ article{
     margin-left: 65%;
     top: 50%;
     font-size: 42px;
+    z-index: 5;
 }
 .abstract{
     border-style: solid;
