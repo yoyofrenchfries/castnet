@@ -125,7 +125,15 @@ article{
     animation-duration: 1s; */
 }
 
-
+.fa-info-circle{
+    position: absolute;
+    display: inline-block;
+    color: rgba(255 , 255, 255, 0.8);
+    margin-left: 88%;
+    top: 85%;
+    font-size: 42px;
+    z-index: 5;
+}
 
 /* i小標籤 */
 #ps_div_div_t i{
