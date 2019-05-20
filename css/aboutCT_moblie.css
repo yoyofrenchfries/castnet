@@ -13,7 +13,7 @@
     #ab_intro{
         margin-top: 10em;
         width: 100%;
-        height: 37em;
+        height: auto;
         padding: 2em;
         background-color:#ECE2D5;
         display: block;
@@ -24,16 +24,13 @@
         border: 3px #DEC6A6 solid;
         background-color:rgba(255,255,255,0.5);
         margin: 0 auto;
-        
     }
-    
     #ab_div2{
         width: 10em;
         height: 10em;
         border: 3px #B4B4B4 solid;
         background-color:rgba(255,255,255,0.5);
         transform:rotate(5deg);
-        
     }
     
     #ab_div3{
@@ -45,12 +42,15 @@
     }
     #ab_intro .text {
         margin-top: 3em;
+        margin: 3em auto;
     }
 
     #ab_intro .text p {
-        width: 300px;
+        width: 100%;
+        padding: 1em;
         font-weight: lighter;
         font-size: 1.5em;
+        text-align: justify;
     }
 
     .ab_about{
