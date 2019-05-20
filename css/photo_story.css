@@ -125,7 +125,7 @@ article{
     animation-duration: 1s; */
 }
 
-.swiper-slide .fa-info-circle{
+#ps_lrbtn i{
     position: absolute;
     display: inline-block;
     color: rgba(255 , 255, 255, 0.8);
