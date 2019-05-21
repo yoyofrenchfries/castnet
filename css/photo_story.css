@@ -1,50 +1,52 @@
+
+
 section{
     margin-top: 3em;
-}
-article{
+    }
+    article{
     display: block;
     margin-top: 20em;
-}
-#ps_lrbtn{
+    }
+    #ps_lrbtn{
     z-index:3;
     /* margin-top: 30em; */
-}
-#ps_lrbtn i{
+    }
+    #ps_lrbtn i{
     font-size: 3em;
-}
-#ps_lrbtn .fa-chevron-left{
+    }
+    #ps_lrbtn .fa-chevron-left{
     position: relative;
     left: 5%;
     background-color: rgba(255,255,255,0.8);
     border-radius: 50%;
     padding: 7px;
-}
-#ps_lrbtn .fa-chevron-right{
+    }
+    #ps_lrbtn .fa-chevron-right{
     position: relative;
     left: 90%;
     background-color: rgba(255,255,255,0.8);
     border-radius: 50%;
     padding: 7px;
-}
-#ps_section01{
+    }
+    #ps_section01{
     width: 100%;
     margin-bottom: 1.5em;
     margin-top: 20em;
-}
-#ps_section01 h2{
+    }
+    #ps_section01 h2{
     width: 15em;
     font-size: 3em;
     margin: auto;
-}
-#ps_div_section01{
+    }
+    #ps_div_section01{
     width: 45em;
     margin: auto;
-}
-#ps_div_section01 a{
+    }
+    #ps_div_section01 a{
     font-size: 2em;
-    font-weight:lighter; 
-}
-#ps_section_div_a2{
+    font-weight:lighter;
+    }
+    #ps_section_div_a2{
     border-left-width: 2px;
     border-right-width: 2px;
     border-left-style: solid;
@@ -52,21 +54,21 @@ article{
     border-color: #3AAB97;
     padding: 0 0.5em;
     margin: 0 0.5em;
-}
-#ps_div_section01 p{
+    }
+    #ps_div_section01 p{
     font-size: 2em;
     display: inline;
-    font-weight:lighter; 
-}
-#ps_div_section01 a p{
+    font-weight:lighter;
+    }
+    #ps_div_section01 a p{
     font-size: 1em;
     display: inline;
     font-weight:lighter;
     border-style: solid;
     border-color: #3AAB97;
     border-width: 2px;
-}
-.ps_div_t01{
+    }
+    .ps_div_t01{
     background-image: url("https://castnet.nctu.edu.tw/files/images_db/903/20181222141649_1545459409_E3wzFMmW2Z.jpg");
     width: 100vw;
     height: 65em;
@@ -75,9 +77,9 @@ article{
     background-size: cover;
     position: relative;
     left: 0;
-}
-
-.ps_div_t02{
+    }
+    
+    .ps_div_t02{
     background-image: url("https://castnet.nctu.edu.tw/files/images_db/903/20181222140437_1545458677_N6QCAQdBQY.jpg");
     width: 100vw;
     height: 65em;
@@ -87,9 +89,9 @@ article{
     /* position: absolute; */
     position: relative;
     left: 0;
-}
-
-.ps_div_t03{
+    }
+    
+    .ps_div_t03{
     background-image: url("https://castnet.nctu.edu.tw/files/images_db/903/20181222141723_1545459443_HT9X2n4CrQ.jpg");
     width: 100vw;
     height: 65em;
@@ -99,18 +101,17 @@ article{
     /* position: absolute; */
     position: relative;
     /* left: 0; */
-}
-
-#ps_div_div_t{
+    }
+    
+    #ps_div_div_t{
     /* position: absolute; */
     position: relative;
     width: 71em;
     left: 40%;
     top: 85%;
-    
-}
-/* #ps_div_div_t div p */
-.infotext{
+    }
+    /* #ps_div_div_t div p */
+    .infotext{
     /* position: relative; */
     position:absolute;
     display: inline-block;
@@ -121,11 +122,12 @@ article{
     background-color: rgba(255 , 255, 255, 0.6);
     opacity: 0;
     margin-top: -1.5em;
+    border: 1px solid #5b5751;
     /* animation-name="slidein";
     animation-duration: 1s; */
-}
-
-#ps_lrbtn i{
+    }
+    
+    #ps_lrbtn i{
     position: absolute;
     display: inline-block;
     color: rgba(255 , 255, 255, 0.8);
@@ -133,10 +135,14 @@ article{
     top: 85%;
     font-size: 42px;
     z-index: 5;
-}
-
-/* i小標籤 */
-#ps_div_div_t i{
+    border: 1px solid #5b5751;
+    border-radius: 50%;
+    /* border-left-width:1px solid #5b5751; */
+    background: #5b5751;
+    }
+    
+    /* i小標籤 */
+    #ps_div_div_t i{
     /* position: relative; */
     position: absolute;
     display: inline-block;
@@ -145,147 +151,148 @@ article{
     top: 50%;
     font-size: 42px;
     z-index: 5;
-}
-.abstract{
+    }
+    .abstract{
     border-style: solid;
     border-width: 1px;
     border-color: #3AAB97;
     padding: 1em;
     font-size: 1.7em;
     margin: 2em auto;
-    font-weight:lighter; 
-}
-
-article{
+    font-weight:lighter;
+    }
+    
+    article{
     width: 80%;
     margin: auto;
     /* margin-top: 88em; */
-}
-article p{
+    }
+    article p{
     font-size: 1.7em;
     margin-top: 1em;
-    font-weight:lighter; 
-}
-
-#section02{
+    font-weight:lighter;
+    }
+    
+    #section02{
     margin-top: 0;
-}
-
-#ps_div_links{
+    }
+    
+    #ps_div_links{
     width: 18.5em;
     margin: auto;
     position: relative;
     margin-top: -15em;
-}
-
-#ps_div_links i{
+    }
+    
+    #ps_div_links i{
     color: black;
     margin-right: 0.5em;
     font-size: 4em;
-}
-
-#ps_div_section02{
+    }
+    
+    #ps_div_section02{
     margin: auto;
     margin-top: 4em;
     width: 80%;
-}
-
-.ps_div_bars{
+    }
+    
+    .ps_div_bars{
     width: 33%;
     height: 2px;
     background-color: #3AAB97;
     display: inline-block;
-}
-
-#ps_div_section02 p{
+    }
+    
+    #ps_div_section02 p{
     font-size: 2.0625em;
     display: inline-block;
     padding: 0 3em;
     margin-top: 1em;
-}
-
-.ps_div_d{
-    width:30em; 
+    }
+    
+    .ps_div_d{
+    width:30em;
     display: inline-block;
     margin-top: 5em;
-}
-
-.ps_div_d h2{
+    }
+    
+    .ps_div_d h2{
     font-size: 2.5em;
-}
-
-.ps_div_d img{
+    }
+    
+    .ps_div_d img{
     display: inline-block;
     width: 14.35em;
     height: 9.38em;
     margin-top: -8em;
-}
-
-.ps_div_div_d{
+    }
+    
+    .ps_div_div_d{
     display: inline-block;
     width: 14em;
-}
-
-.ps_div_d a{
+    }
+    
+    .ps_div_d a{
     display: block;
     font-size: 1.875em;
     font-weight: lighter;
-}
-.ps_div_d h4{
+    }
+    .ps_div_d h4{
     display: block;
     font-size: 1.875em;
-}
-
-footer{
+    }
+    
+    footer{
     margin-top: 27em;
-}
-
-/* swipper設定 (請先稍微研究後再動謝謝) */
-.swiper-wrapper{
+    }
+    
+    /* swipper設定 (請先稍微研究後再動謝謝) */
+    .swiper-wrapper{
     position: relative;
-}
-.photo_swiper-container{
+    }
+    .photo_swiper-container{
     position: relative;
-}
-.photo_swiper-container .swiper-wrapper{
+    }
+    .photo_swiper-container .swiper-wrapper{
     width: 100%;
     height: 100%;
-}
-.photo_swiper-button-prev,.photo_swiper-button-next{
+    }
+    .photo_swiper-button-prev,.photo_swiper-button-next{
     width: 60px;
     height: 60px;
-    background-color: white;
+    background-color:rgba(255 , 255, 255, 0.6);
     border-radius: 30px;
     display: inline-block;
     position: absolute;
     top: 50%;
     z-index: 4;
+    border: 1px solid #5b5751;
+    /* opacity: 0.6; */
+    }
     
-}
-
-.photo_swiper-button-prev i,.photo_swiper-button-next i{
+    .photo_swiper-button-prev i,.photo_swiper-button-next i{
     font-size: 50px;
     line-height: 60px;
     margin-left: 25%;
-}
- 
-.photo_swiper-button-prev{
+    }
+    .photo_swiper-button-prev{
     left: 5%;
-}
-
-.photo_swiper-button-next{
+    }
+    
+    .photo_swiper-button-next{
     right: 5%;
-}
-
-#ps_div_t{
+    }
+    
+    #ps_div_t{
     position: absolute;
     display: inline-block;
     width: 100%;
-}
-
-/* 圖說 */
-.ps_div_div_t i{
+    }
+    
+    /* 圖說 */
+    .ps_div_div_t i{
     display: inline-block;
     /* top: 50%; */
     /* left: 50%; */
-}
+    }
+    
