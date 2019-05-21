@@ -315,10 +315,10 @@ body > .menu .search-bar i {
 body > .menu .categories a {
     display: inline-block;
     color: #3AAB97;
-    width: 43%;
+    width: 40%;
     background-color: #FFF;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 0.5em 0.5em;
     padding: 0.5em;
 }
@@ -329,9 +329,9 @@ body > .menu hr {
 body > .menu .links a {
     display: inline-block;
     color: #3AAB97;
-    width: 43%;
+    width: 40%;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 0.5em 0.5em;
     padding: 0.5em;
 }
@@ -365,6 +365,7 @@ section{
 @media screen and (max-width: 575px){
     .container {
         padding: 2rem;
+        padding-top: 0px;
     }
     header .logo {
         width: 200px;
@@ -420,13 +421,18 @@ section{
         transform: none;
         border: none;
         padding-top: 0px;
-        padding-left: 0px;
+        padding-left: 0.5em;
     }
     footer .top .all-category {
         width: 80px;
     }
     footer .top .all-category .wrapper {
         text-align: center;
+        padding-left: 0px;
+    }
+    footer .top .links .wrapper a {
+        font-size: 1em;
+        width: 45%;
     }
 }
 /* end of mobile device style */
