@@ -635,3 +635,23 @@
             /*font-size: 14px;
             font-weight: 100;*/
         }
+        @media screen and (max-width: 575px){
+            footer{
+                margin-top: 20em;
+            }
+            section {
+                position: relative;
+                top: 11.86em;
+                margin-top: 0;
+            }
+            
+            #section02 {
+                top: 0;
+            }
+            article{
+                margin-top: 2em;
+            }
+            article img {
+                width: 20em;
+            }
+        }

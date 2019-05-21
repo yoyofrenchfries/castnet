@@ -32,7 +32,7 @@
     	}
     	.title{
     		display: inline;
-    		margin-top: 10em;
+    		margin-top: 20em;
     		margin-bottom: 2em;
     		font-size: 16px;
     	}
@@ -82,8 +82,7 @@
 		}
 
 		/*底下*/
-		.ct_div_b > div{
-		}
+		
 		.greenlongbar{
 			/*position: absolute;*/
 			/*top: 50%;*/
@@ -99,4 +98,33 @@
 			white-space:nowrap;
 			letter-spacing: 10px;
 			margin-top: 2em;
+		}
+
+		@media (min-width:768px) {
+			.ct_div > img{
+				width: 14em;
+			 }
+			}
+		@media screen and (max-width: 575px){
+			#fp_div_ft01 {
+				width: 30.67em;
+				height: 14.85em;
+				
+				margin: auto;
+				background-color: #5b5751;
+			}
+			.fp_div_ft {
+				display: inline-block;
+				vertical-align: top;
+				/* margin: 2em auto; */
+				z-index: 3;
+				position: relative;
+			}
+			.fp_div_ft > img {
+				height: 4.67em;
+				z-index: 5;
+				position: relative;
+				left: 25%;
+				top: 3em;
+			}
 		}
