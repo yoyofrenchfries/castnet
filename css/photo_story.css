@@ -121,6 +121,7 @@ article{
     background-color: rgba(255 , 255, 255, 0.6);
     opacity: 0;
     margin-top: -1.5em;
+    border: 1px solid #5b5751;
     /* animation-name="slidein";
     animation-duration: 1s; */
 }
@@ -133,6 +134,10 @@ article{
     top: 85%;
     font-size: 42px;
     z-index: 5;
+    border: 1px solid #5b5751;
+    border-radius: 50%;
+    /* border-left-width:1px solid #5b5751; */
+    background: #5b5751;
 }
 
 /* i小標籤 */
@@ -254,19 +259,21 @@ footer{
 .photo_swiper-button-prev,.photo_swiper-button-next{
     width: 60px;
     height: 60px;
-    background-color: white;
+    background-color:rgba(255 , 255, 255, 0.6);
     border-radius: 30px;
     display: inline-block;
     position: absolute;
     top: 50%;
     z-index: 4;
-    
+    border: 1px solid #5b5751;
+    /* opacity: 0.6; */
 }
 
 .photo_swiper-button-prev i,.photo_swiper-button-next i{
     font-size: 50px;
     line-height: 60px;
     margin-left: 25%;
+    
 }
  
 .photo_swiper-button-prev{
