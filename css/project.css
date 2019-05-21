@@ -16,6 +16,7 @@ section {
   padding: 1em;
   width: 95%;
   margin: 0 auto;
+  margin-bottom: 1em;
 }
 .project .pj_info .pj_title {
   display: inline;
