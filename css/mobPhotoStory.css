@@ -2,11 +2,19 @@
     body{
         overflow-x: hidden;
     }
+    .abstract{
+        margin: 2em;
+    }
+    article p{
+        margin: 1em 2em;
+    }
     #ps_lrbtn{
         margin-top: 12em;
     }
     #ps_lrbtn i{
-        font-size: 1em;
+        font-size: 2em;
+        margin-left: 83%;
+        top: 75%;
     }
     #ps_lrbtn .fa-chevron-left{
         position: relative;
@@ -31,6 +39,7 @@
     }
     #ps_section01 h2{
         font-size: 2em;
+        text-align: center;
     }
     #ps_div_section01 a, #ps_div_section01 p{
         font-size: 1.1em;
@@ -50,7 +59,7 @@
     #ps_div_div_t div p{
         font-size: 1em;
         width: 20em;
-        padding: 0;
+        padding: 0.2em;
     }
     #ps_div_div_t i{
         position: relative;
@@ -65,7 +74,7 @@
     }
     article{
         position: relative;
-        margin-top: 33em;
+        /* margin-top: 33em; */
         width: 100%;
     }
     article p{
@@ -120,7 +129,38 @@
         font-size: 1.5em;
     }
     footer{
-        margin-top: 225em;
+        position: relative;
         top: 0;
+        margin-top: 20em;
+    }
+
+    .photo_swiper-container {
+        position: relative;
+        margin-top: -8em;
+    }
+    /* 照片大小 */
+    .ps_div_t01,.ps_div_t02,.ps_div_t03{
+        height: 20em;
+    }
+
+    .photo_swiper-button-prev, .photo_swiper-button-next {
+        width: 30px;
+        height: 30px;
+    }
+
+    .photo_swiper-button-prev i, .photo_swiper-button-next i {
+        font-size: 20px;
+        line-height: 20px;
+        margin-left: 25%;
+        margin-top: 10%;
+    }
+
+    /* 延伸閱讀 淳妤的東西調整 */
+    .vi_line1,.vi_line2{
+        width: 8em;
+    }
+    
+    .vi_head{
+        margin-top: 1.5em;
     }
 }

@@ -1,85 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Article</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/video.css">
-  <link rel="stylesheet" href="css/mobVideo.css">
-	<link rel="stylesheet" href="css/all_pages.css">
-	<link rel="stylesheet" href="css/mobFrontPage.css">
-	<link rel="stylesheet" href="css/article.css">
-</head>
-<body>
-	<!-- 加d-flex會縮小 -->
-	<div class="container justify-content-center">
+<html>
+  <head>
+    <meta charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>castnet_test</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 
-		<div id="top"></div>
-		<div id="fp_i_t03"><i class="fas fa-bars fa-2x"></i></div>
-		<a href="#top">
-			<div id="fp_div01">
-				<i id="fp_i_div01" class="fas fa-chevron-up fa-3x"></i>
-			</div>
-		</a>
-		<div id="fp_div_backgroundcolor"></div>
-		<header>
-			<div>
-				<a href="index.html">
-					<img id="fp_logo" src="image/castnet.png">
-				</a>
-			</div>
-			<i id="fp_i_t01" class="fas fa-search fa-2x"></i>
-			<span id="fp_span_t01">搜尋</span>
-			<img id="fp_img_header"  src="image/tree01.png">
-			<span id="fp_span_t02">關於</span>
-			<i id="fp_i_t02" class="fas fa-ellipsis-v fa-2x"></i>
-			<span id="fp_span_t03">卷別</span>
-		</header>
-	
-		<nav>
-			<ul>
-				<li class="fp_li_t">
-					<a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/82">社會議題</a>
-				</li>
-				
-				<li class="fp_li_t">
-					<a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/180">科技新知</a>
-				</li>
-				
-				<li class="fp_li_t">
-					<a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/81">文化現象</a>
-				</li>
-	
-				<li class="fp_li_t">
-					<a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/83">人物特寫</a>
-				</li>
-	
-				<li class="fp_li_t">
-					<a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/191">藝文評論</a>
-				</li>
-	
-				<li class="fp_li_t">
-					<a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/29">照片故事</a>
-				</li>
-	
-				<li class="fp_li_t">
-					<a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/85">影音新聞</a>
-				</li>
-	
-				<li class="fp_li_t">
-					<a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/77">自由創作</a>
-				</li>
-	
-				<li class="fp_li_t">
-					<a class="fp_li_a_t" href="專題頁">專題</a>
-				</li>
-			</ul>
-			<i id="fp_i_nav" class="fas fa-chevron-right fa-lg"></i>
-		</nav>
+    <link rel="stylesheet" href="css/all_pages.css">
+    <link rel="stylesheet" href="css/frontpage.css">
+		<link rel="stylesheet" href="css/mobFrontPage.css">
+		<link rel="stylesheet" href="css/video.css">
+		<link rel="stylesheet" href="css/article.css">
+  </head>
+  <body>
+    <div id="top"></div>
+    <div id="fp_i_t03"><i class="fas fa-bars fa-2x" onclick="appear()"></i></div>
+    <a href="#top">
+        <div id="fp_div01">
+            <i id="fp_i_div01" class="fas fa-chevron-up fa-3x"></i>
+        </div>
+    </a>
+    <!-- <div id="fp_div_backgroundcolor"></div> -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="image/castnet.png">
+            </a>
+        </div>
+        <div class="func">
+            <div class="button">
+                <i class="fas fa-search fa-2x"></i>
+                <span>搜尋</span>
+            </div>
+            <div class="button">
+                <img src="image/tree01.png">
+                <span>關於</span>
+            </div>
+            <div class="button">
+                <i class="fas fa-ellipsis-v fa-2x"></i>
+                <span>卷別</span>
+            </div>
+        </div>
 
-	<!-- section -->
-		   <article>
+        
+    <nav>
+        <!-- 這裡的列表應該是getAllPublish 取得的卷別 id下的getCategoty 顯示的為show_front:1 -->
+        <!-- 目前除了八大類目是常駐議題之外，其他校友專刊等等其他類目應該是有出現的時候才會show_front:2 -->
+        <div class="nav_swiper-container">
+            <div class="swiper-wrapper">
+            <!-- 常駐議題 -->
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
+                <a class="fp_li_a_t" href="catagory.html">社會議題</a>
+            </div>
+            
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
+                <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/180">科技新知</a>
+            </div>
+            
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
+                <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/81">文化現象</a>
+            </div>
+
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
+                <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/83">人物特寫</a>
+            </div>
+
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
+                <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/191">藝文評論</a>
+            </div>
+
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
+                <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/29">照片故事</a>
+            </div>
+
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
+                <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/85">影音新聞</a>
+            </div>
+
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
+                <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/77">自由創作</a>
+            </div>
+            <!-- 有時候才會出現的議題 -->
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
+                <a class="fp_li_a_t" href="專題頁">專題</a>
+            </div>
+            
+        </div>
+        
+
+            <!-- <div class="swiper-button-prev"></div> -->
+            <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+        </div>
+        
+        <!-- <i id="fp_i_nav" class="next fas fa-chevron-right fa-lg"></i> -->
+    </nav>
+    
+        
+    </header>
+    
+
+    <section>
+				<article>
             <h1>《青春有你》　有版權卻不火</h1>
                         <p class="reports">
                             <a href='https://castnet.nctu.edu.tw/aboutAuthor/888' class='viewUser'>黃齡萱</a>               文              &nbsp;<span class='pull-right'>2019/05/05</span>
@@ -183,193 +215,271 @@
 <p>若製作公司想再次創造奇蹟，那就得看目前仍正運行中的男女團如何發展了！倘若經營得好，粉絲自然捨不得他們解散，解散後再度推出新的團體，接受度也可能較高。目前幾個限定團體未來發展之路還很長，《青你》推出新的九位男會帶給娛樂圈和觀眾怎樣的驚喜，非常令人期待！</p>
 
 <p>縮圖來源：<a href="https://www.weibo.com/p/1002066870452244/home?from=page_100206&amp;mod=TAB#place" target="_blank">愛奇藝青春有你官方微博</a></p>
-            <div class="mobile-social-plugin d-block d-sm-none">
+            <!-- <div class="mobile-social-plugin d-block d-sm-none">
               <ul>
                 <li><a href="https://castnet.nctu.edu.tw/castnet/article/13646?issueID=724" class="btn-circle fb"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                 <li><a href="https://plus.google.com/share?url=https://castnet.nctu.edu.tw/castnet/article/13646?issueID=724" class="btn-circle gplug"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
                 <li><a href="https://twitter.com/share?text=《青春有你》　有版權卻不火&url=https://castnet.nctu.edu.tw/castnet/article/13646?issueID=724" class="btn-circle twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                 <li><a href="javascript:void(0);" rel='https://castnet.nctu.edu.tw/castnet/article/13646?issueID=724' class="btn-circle link"><i class="fa fa-link fa-rotate-270" aria-hidden="true"></i></a></li>
               </ul>
-						</div>
+						</div> -->
 						
 
-<!-- icons -->
-<div class="row ar_div_06" style="margin-left: 1em">
-		<i class="fab fa-facebook-square"></i>
-		<i class="fab fa-instagram"></i>
-		<i class="fas fa-link"></i>
-	</div>
 
-	<div id="vi_bottom">
-			<div id="vi_bo_t00">
-			<hr class="vi_line1"><p class="other">延伸閱讀</p><hr class="vi_line2">
-			</div>
-			<div id="vi_bo_t01">
-					<p class="vi_head">共同類目</p>
-					<div id="vi_bo_t000">
-					<img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/881/thumb/20190330170118_1553936478_wRhkvc323H.jpg" >
-			</div>
-					<div id="vi_bo_t001">
-					<p class="vi_bo_ar1">影音新聞</p>
-			 
-					<p class="vi_bo_ar2">唐安安 翁繃繃</p>
-					
-					<p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
-			</div>
-			<div id="vi_bo_t000">
-					<img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/883/thumb/20190409200137_1554811297_V6e9MvAYWg.jpg" >
-			</div>
-					<div id="vi_bo_t001">
-					<p class="vi_bo_ar1">影音新聞</p>
-			 
-					<p class="vi_bo_ar2">唐安安 翁繃繃</p>
-					
-					<p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
-			</div>
-			
-			<div id="vi_bo_t000">
-					<img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/893/thumb/20181215161635_1544861795_LEGkhSrP4E.jpg" >
-			</div>
-					<div id="vi_bo_t001">
-					<p class="vi_bo_ar1">影音新聞</p>
-			 
-					<p class="vi_bo_ar2">唐安安 翁繃繃</p>
-					
-					<p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
-			</div>
-			</div>
-			<div id="vi_bo_t01">
-					<p class="vi_head">本期其他</p>
-					<div id="vi_bo_t000">
-					<img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/897/thumb/20190404222632_1554387992_PRZs6zXKDa.jpg" >
-			</div>
-					<div id="vi_bo_t001">
-					<p class="vi_bo_ar1">影音新聞</p>
-			 
-					<p class="vi_bo_ar2">唐安安 翁繃繃</p>
-					
-					<p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
-			</div>
-			<div id="vi_bo_t000">
-					<img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/876/thumb/20190414122920_1555216160_rfeHjkQLzu.jpg" >
-			</div>
-					<div id="vi_bo_t001">
-					<p class="vi_bo_ar1">影音新聞</p>
-			 
-					<p class="vi_bo_ar2">唐安安 翁繃繃</p>
-					
-					<p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
-			</div>
-			<div id="vi_bo_t000">
-					<img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/899/thumb/20190406233958_1554565198_WgJF39qMjI.png" >
-			</div>
-					<div id="vi_bo_t001">
-					<p class="vi_bo_ar1">影音新聞</p>
-			 
-					<p class="vi_bo_ar2">唐安安 翁繃繃</p>
-					
-					<p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
-			</div>
-			</div>
-			<div id="vi_bo_t01">
-					<p class="vi_head">記者其他</p>
-					<div id="vi_bo_t000">
-					<img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/899/thumb/20190406233958_1554565198_WgJF39qMjI.png" >
-			</div>
-					<div id="vi_bo_t001">
-					<p class="vi_bo_ar1">影音新聞</p>
-			 
-					<p class="vi_bo_ar2">唐安安 翁繃繃</p>
-					
-					<p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
-			</div>
-			<div id="vi_bo_t000">
-					<img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/884/thumb/20190406222647_1554560807_QI5qB74KwA.png" >
-			</div>
-					<div id="vi_bo_t001">
-					<p class="vi_bo_ar1">影音新聞</p>
-			 
-					<p class="vi_bo_ar2">唐安安 翁繃繃</p>
-					
-					<p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
-			</div>
-			<div id="vi_bo_t000">
-					<img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/884/thumb/20180918224942_1537282182_emDUywFR4x.jpg" >
-			</div>
-					<div id="vi_bo_t001">
-					<p class="vi_bo_ar1">影音新聞</p>
-			 
-					<p class="vi_bo_ar2">唐安安 翁繃繃</p>
-					
-					<p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
-			</div>
-			</div>
-	</div>
 </article>
+<section id="section02">
+		<div id="ps_div_links">
+				<i class="fab fa-facebook-square"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fas fa-link"></i>
+		</div>
+		<div id="vi_bottom">
+						<div id="vi_bo_t00">
+						<hr class="vi_line1"><p class="other">延伸閱讀</p><hr class="vi_line2">
+						</div>
+						<div id="vi_bo_t01">
+								<p class="vi_head">共同類目</p>
+								<div id="vi_bo_t000">
+								<img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/881/thumb/20190330170118_1553936478_wRhkvc323H.jpg" >
+						</div>
+								<div id="vi_bo_t001">
+								<p class="vi_bo_ar1">影音新聞</p>
+						 
+								<p class="vi_bo_ar2">唐安安 翁繃繃</p>
+								
+								<p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
+						</div>
+						<div id="vi_bo_t000">
+								<img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/883/thumb/20190409200137_1554811297_V6e9MvAYWg.jpg" >
+						</div>
+								<div id="vi_bo_t001">
+								<p class="vi_bo_ar1">影音新聞</p>
+						 
+								<p class="vi_bo_ar2">唐安安 翁繃繃</p>
+								
+								<p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
+						</div>
+						
+						<div id="vi_bo_t000">
+								<img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/893/thumb/20181215161635_1544861795_LEGkhSrP4E.jpg" >
+						</div>
+								<div id="vi_bo_t001">
+								<p class="vi_bo_ar1">影音新聞</p>
+						 
+								<p class="vi_bo_ar2">唐安安 翁繃繃</p>
+								
+								<p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
+						</div>
+						</div>
+						<div id="vi_bo_t01">
+								<p class="vi_head">本期其他</p>
+								<div id="vi_bo_t000">
+								<img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/897/thumb/20190404222632_1554387992_PRZs6zXKDa.jpg" >
+						</div>
+								<div id="vi_bo_t001">
+								<p class="vi_bo_ar1">影音新聞</p>
+						 
+								<p class="vi_bo_ar2">唐安安 翁繃繃</p>
+								
+								<p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
+						</div>
+						<div id="vi_bo_t000">
+								<img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/876/thumb/20190414122920_1555216160_rfeHjkQLzu.jpg" >
+						</div>
+								<div id="vi_bo_t001">
+								<p class="vi_bo_ar1">影音新聞</p>
+						 
+								<p class="vi_bo_ar2">唐安安 翁繃繃</p>
+								
+								<p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
+						</div>
+						<div id="vi_bo_t000">
+								<img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/899/thumb/20190406233958_1554565198_WgJF39qMjI.png" >
+						</div>
+								<div id="vi_bo_t001">
+								<p class="vi_bo_ar1">影音新聞</p>
+						 
+								<p class="vi_bo_ar2">唐安安 翁繃繃</p>
+								
+								<p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
+						</div>
+						</div>
+						<div id="vi_bo_t01">
+								<p class="vi_head">記者其他</p>
+								<div id="vi_bo_t000">
+								<img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/899/thumb/20190406233958_1554565198_WgJF39qMjI.png" >
+						</div>
+								<div id="vi_bo_t001">
+								<p class="vi_bo_ar1">影音新聞</p>
+						 
+								<p class="vi_bo_ar2">唐安安 翁繃繃</p>
+								
+								<p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
+						</div>
+						<div id="vi_bo_t000">
+								<img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/884/thumb/20190406222647_1554560807_QI5qB74KwA.png" >
+						</div>
+								<div id="vi_bo_t001">
+								<p class="vi_bo_ar1">影音新聞</p>
+						 
+								<p class="vi_bo_ar2">唐安安 翁繃繃</p>
+								
+								<p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
+						</div>
+						<div id="vi_bo_t000">
+								<img class="se_img_article" src="https://castnet.nctu.edu.tw/files/article/884/thumb/20180918224942_1537282182_emDUywFR4x.jpg" >
+						</div>
+								<div id="vi_bo_t001">
+								<p class="vi_bo_ar1">影音新聞</p>
+						 
+								<p class="vi_bo_ar2">唐安安 翁繃繃</p>
+								
+								<p class="vi_bo_ar3">圖解遊戲敘事：<br>阿驢老師說故事</p>
+						</div>
+						</div>
+				</div>
+</section>
+</section>
 
+    <footer>
+        <div id="fp_div_ft01">
+            <div class="fp_div_ft">
+                <img src="image/logo01.png">
+            </div>
 
-		
+            <div class="fp_div_ft" id="fp_div_ft_c">
+                <ul>
+                    <li><a href="aboutCT.html">關於我們</a></li>
+                    <li><a href="https://castnet.nctu.edu.tw/group/63">喀報成員</a></li>
+                    <li><a href="https://www.facebook.com/messages/t/castnet.castnet">聯絡我們</a></li>
+                    <li><a href="https://www.facebook.com/messages/t/castnet.castnet">加入我們</a></li>
+                    <li><a href="https://www.facebook.com/castnet.nctu/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/castnet.nctu/?hl=zh-tw">Instagram</a></li>
+                </ul>
+            </div>
 
+            <div class="fp_div_ft" id="fp_div_ft_r">
+                <a href="all_catagory.html">所有期別</a>
+            </div>
 
-		<!-- footer -->
-		<!-- <footer>
-			<div class="fp_div_ft row d-flex" style="margin-left: 4em;">
-				<div class="fp_div_ft_img">
-		            <img src='image/logo01.png' style="display: inline;" />
-		        	
-		        </img>
-		        </div>
-		        
-				<ul class="footer_ul row">
-	                <li class="col-4" style="display: inline-block;white-space:nowrap;padding-right: -15px;"><a>關於我們</a></li>
-	                <li class="col-4"  style="display: inline-block;white-space:nowrap;"><a>喀報成員</a></li>
-	                <li class="col-4"  style="display: inline-block;white-space:nowrap;"><a>聯絡我們</a></li>
-	                
-	            	<li class="col-4"  style="display: inline-block;white-space:nowrap;"><a>加入我們</a></li>
-	                <li class="col-4"  style="display: inline-block;white-space:nowrap;"><a>Facebook</a></li>
-	                <li class="col-4"  style="display: inline-block;white-space:nowrap;"><a>Instagram</a></li>
+            <div>
+                <p id="fp_p_ft_d">2007-2019 &copy; 國立交通大學傳播與科技學系 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+   
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+     <script>
+        var nav_swiper = new Swiper('.nav_swiper-container', {
+            slidesPerView: 7,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
 
-	            </ul>
-	            <ul class="row">
-	            	<li class="col" style="display: inline-block;white-space:nowrap;"><a>所有期別</a></li>
-	            </ul>
-	           				
-				
-	        </div>
-	            
-	        
-	        <div>
-	            <p id="fp_p_ft_d">2007-2019 &copy; 國立交通大學傳播與科技學系 All Rights Reserved.</p>
-	        </div>
-	    </footer> -->
+        var mid_swiper = new Swiper('.mid_swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.mid_swiper-button-next',
+                prevEl: '.mid_swiper-button-prev',
+            },
+        });
 
-	    <footer>
-			<div id="fp_div_ft01">
-			<div class="fp_div_ft">
-				<img src="image/logo01.png">
-			</div>
-	
-			<div class="fp_div_ft" id="fp_div_ft_c">
-				<ul>
-					<li><a href="https://castnet.nctu.edu.tw/castnet/about">關於我們</a></li>
-					<li><a href="https://castnet.nctu.edu.tw/group/63">喀報成員</a></li>
-					<li><a href="https://www.facebook.com/messages/t/castnet.castnet">聯絡我們</a></li>
-					<li><a href="https://www.facebook.com/messages/t/castnet.castnet">加入我們</a></li>
-					<li><a href="https://www.facebook.com/castnet.nctu/">Facebook</a></li>
-					<li><a href="https://www.instagram.com/castnet.nctu/?hl=zh-tw">Instagram</a></li>
-				</ul>
-			</div>
-	
-			<div class="fp_div_ft" id="fp_div_ft_r">
-					<a href="all_catagory.html">所有期別</a>
-			</div>
-	
-			<div>
-				<p id="fp_p_ft_d">2007-2019 &copy; 國立交通大學傳播與科技學系 All Rights Reserved.</p>
-			</div>
-			<div>
-		</footer>
+  </script>
+    <script>
+    // 手機板選單
+        var acc = 0;
+        function appear(){
+            document.getElementsByTagName("nav")[0].style.display='block';
+            document.getElementsByTagName("nav")[0].style.marginTop='8em';
+            document.getElementsByTagName("ul")[0].style.height='20em';
+            document.getElementsByTagName("ul")[0].style.width='100%';
+            document.getElementsByTagName("ul")[0].style.overflow='auto';
+            document.getElementById("fp_i_nav").style.display='none';
+            document.getElementById("fp_i_t03").style.display="none";
 
-	</div>
-</body>
+            var li = document.getElementsByClassName("fp_li_t");
+            for(let i = 0; i<li.length;i++){
+                li[i].style.display="inline-block";
+                li[i].style.float='left';
+                li[i].style.marginTop='0.5em';
+                li[i].style.backgroundColor="#f5f5f5";
+                li[i].style.border='none';
+                li[i].style.width='10.9em';
+            }
+            document.getElementById("fp_div_backgroundcolor").style='height:29em; background-image:linear-gradient(#3AAB97, #F5F5F5);';
+            if(acc==0){
+                var i_can = document.createElement("i");
+                i_can.style.fontSize="3em";
+                i_can.style.color="#3AAB97";
+                i_can.style.position="relative";
+                i_can.style.marginLeft="-1.2em";
+                i_can.style.top="-7.3em";
+                document.getElementsByTagName('nav')[0].appendChild(i_can);
+                i_can.className="fas fa-times";
+                i_can.setAttribute("id", "create_i");
+                i_can.setAttribute("onclick", "cancel();");
+                acc= acc+1;
+
+                var green_bar = document.createElement("div");
+                green_bar.style.height="3px";
+                green_bar.style.backgroundColor="#3AAB97";
+                green_bar.style.position="relative";
+                green_bar.style.top="-9em";
+                document.getElementsByTagName('nav')[0].appendChild(green_bar);
+
+                var container = document.createElement("div");
+                container.style.position='relative';
+                container.style.marginTop='-8em';
+                container.setAttribute("id", "contain_create")
+                document.getElementsByTagName('nav')[0].appendChild(container);
+
+                var foote = ['所有期別', '關於我們', '喀報成員', 'Facebook'];
+                for(let i = 0; i < foote.length; i++){
+                    var foot_top = document.createElement("a");
+                    foot_top.style.display="inline-block";
+                    foot_top.style.width='13.08em';
+                    foot_top.innerText=foote[i];
+                    foot_top.className='foot_top';
+                    foot_top.style.textAlign="center";
+                    foot_top.color="#3AAB97";
+                    
+                    if(i==0){
+                        foot_top.href="all_catagory.html";
+                    }else if(i==1){
+                        foot_top.href="aboutCT.html";
+                    }else if(i==2){
+                        foot_top.href="喀報成員";
+                    }else{
+                        foot_top.href="https://www.facebook.com/messages/t/castnet.castnet";
+                    }
+                    document.getElementById('contain_create').appendChild(foot_top);
+                }
+            }
+        }
+
+        function cancel(){
+            document.getElementsByTagName('nav')[0].style.display='none';
+            document.getElementById("fp_i_t03").style.display="block";
+            document.getElementById("fp_div_backgroundcolor").style='height:9.4em; background-image:linear-gradient(#3AAB97 0%, #F5F5F5 6em);';
+        }
+    </script>
+    </body>
 </html>

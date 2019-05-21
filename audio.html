@@ -1,113 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/video.css">
-    <link rel="stylesheet" href="css/mobVideo.css">
-	<link rel="stylesheet" href="css/all_pages.css">
+<html>
+  <head>
+    <meta charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>castnet_test</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
+    <link rel="stylesheet" href="css/all_pages.css">
+    <link rel="stylesheet" href="css/frontpage.css">
 	<link rel="stylesheet" href="css/mobFrontPage.css">
+	<link rel="stylesheet" href="css/video.css">
+	<link rel="stylesheet" href="css/article.css">
 	<link rel="stylesheet" href="css/audio.css">
-</head>
-<body>
-	<!-- 加d-flex會縮小 -->
-	<div id="top"></div>
-    <div id="fp_i_t03"><i class="fas fa-bars fa-2x"></i></div>
+	
+  </head>
+  <body>
+    <div id="top"></div>
+    <div id="fp_i_t03"><i class="fas fa-bars fa-2x" onclick="appear()"></i></div>
     <a href="#top">
         <div id="fp_div01">
             <i id="fp_i_div01" class="fas fa-chevron-up fa-3x"></i>
         </div>
     </a>
-    <div id="fp_div_backgroundcolor"></div>
+    <!-- <div id="fp_div_backgroundcolor"></div> -->
     <header>
-        <div>
+        <div class="logo">
             <a href="index.html">
-                <img id="fp_logo" src="image/castnet.png">
+                <img src="image/castnet.png">
             </a>
         </div>
-        <i id="fp_i_t01" class="fas fa-search fa-2x"></i>
-        <span id="fp_span_t01">搜尋</span>
-        <img id="fp_img_header"  src="image/tree01.png">
-        <span id="fp_span_t02">關於</span>
-        <i id="fp_i_t02" class="fas fa-ellipsis-v fa-2x"></i>
-        <span id="fp_span_t03">卷別</span>
-    </header>
+        <div class="func">
+            <div class="button">
+                <i class="fas fa-search fa-2x"></i>
+                <span>搜尋</span>
+            </div>
+            <div class="button">
+                <img src="image/tree01.png">
+                <span>關於</span>
+            </div>
+            <div class="button">
+                <i class="fas fa-ellipsis-v fa-2x"></i>
+                <span>卷別</span>
+            </div>
+        </div>
 
+        
     <nav>
-        <ul>
-            <li class="fp_li_t">
-                <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/82">社會議題</a>
-            </li>
+        <!-- 這裡的列表應該是getAllPublish 取得的卷別 id下的getCategoty 顯示的為show_front:1 -->
+        <!-- 目前除了八大類目是常駐議題之外，其他校友專刊等等其他類目應該是有出現的時候才會show_front:2 -->
+        <div class="nav_swiper-container">
+            <div class="swiper-wrapper">
+            <!-- 常駐議題 -->
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
+                <a class="fp_li_a_t" href="catagory.html">社會議題</a>
+            </div>
             
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/180">科技新知</a>
-            </li>
+            </div>
             
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/81">文化現象</a>
-            </li>
+            </div>
 
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/83">人物特寫</a>
-            </li>
+            </div>
 
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/191">藝文評論</a>
-            </li>
+            </div>
 
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/29">照片故事</a>
-            </li>
+            </div>
 
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/85">影音新聞</a>
-            </li>
+            </div>
 
-            <li class="fp_li_t">
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="https://castnet.nctu.edu.tw/castnet/category/77">自由創作</a>
-            </li>
-
-            <li class="fp_li_t">
+            </div>
+            <!-- 有時候才會出現的議題 -->
+            <div class="swiper-slide fp_li_t">
+                <!-- getCategoty.show_front:1 -->
                 <a class="fp_li_a_t" href="專題頁">專題</a>
-            </li>
-        </ul>
-        <i id="fp_i_nav" class="fas fa-chevron-right fa-lg"></i>
+            </div>
+            
+        </div>
+        
+
+            <!-- <div class="swiper-button-prev"></div> -->
+            <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+        </div>
+        
+        <!-- <i id="fp_i_nav" class="next fas fa-chevron-right fa-lg"></i> -->
     </nav>
-	<div class="container justify-content-center">
+    
+        
+    </header>
+    
 
-		
-		<div class="audiobox imgbox_04" style="margin-top: 20em;">
-			 	<img id = "onair" src="image/onair.png">
-			 	
-			 	<!-- song/song.mp3 -->
-			 	<!-- https://castnet.nctu.edu.tw/files/article/875/multimedia/蕃薯市集＿喀報廣播_缩混.mp3 -->
-			 	<!-- use IFRAME -->
-				<audio id="player" src="song/song.mp3" preload="auto"></audio>
-				<!-- try css -->
-				
-				   <button id = "play" class="cleanbtnstyle"><i class="fas fa-play"></i></button>
-				   <span id="tracktime"></span>
-				   <div id="progress">
-				   	<div id="progressbar">
-				   		<div class="littlecircle"></div>
-				   	</div>
-				   </div>
-					<button id = "volume" class="cleanbtnstyle"><i class="fas fa-volume-up"></i></button>
-					<!-- <a id="dl_Link" href="https://castnet.nctu.edu.tw/files/article/875/multimedia/%E8%95%83%E8%96%AF%E5%B8%82%E9%9B%86%EF%BC%BF%E5%96%80%E5%A0%B1%E5%BB%A3%E6%92%AD_%E7%BC%A9%E6%B7%B7.mp3" download><button id = "download" class="cleanbtnstyle"download><i class="fas fa-download"></i></button></a> -->
-					<!-- <a id = "download" class="cleanbtnstyle" href="song/song.mp3" download><i class="fas fa-download"></i></a> -->
-				   <!-- <a id = "download" class="cleanbtnstyle" href="https://castnet.nctu.edu.tw/files/article/875/multimedia/%E8%95%83%E8%96%AF%E5%B8%82%E9%9B%86%EF%BC%BF%E5%96%80%E5%A0%B1%E5%BB%A3%E6%92%AD_%E7%BC%A9%E6%B7%B7.mp3" download>111</a> -->
-				   <a id = "download" class="cleanbtnstyle" href="song/song.mp3" download><i class="fas fa-download"></i></a>
-				   <!-- <button class="cleanbtnstyle" onclick = "document.getElementById('player').volume += 0.2">Vol+</button>
-				   <button class="cleanbtnstyle" onclick = "document.getElementById('player').volume -= 0.2">Vol-</button> -->
+    <section>
+
+		<div class="audiobox imgbox_04" style="margin-top: 10em;">
+					<img id = "onair" src="image/onair.png">
+					
+					<!-- song/song.mp3 -->
+					<!-- https://castnet.nctu.edu.tw/files/article/875/multimedia/蕃薯市集＿喀報廣播_缩混.mp3 -->
+					<!-- use IFRAME -->
+				   <audio id="player" src="song/song.mp3" preload="auto"></audio>
+				   <!-- try css -->
 				   
-				
-			 </div>
-
-	
-	<!-- section -->
-		   <article>
+					  <button id = "play" class="cleanbtnstyle"><i class="fas fa-play"></i></button>
+					  <span id="tracktime"></span>
+					  <div id="progress">
+						  <div id="progressbar">
+							  <div class="littlecircle"></div>
+						  </div>
+					  </div>
+					   <button id = "volume" class="cleanbtnstyle"><i class="fas fa-volume-up"></i></button>
+					   <!-- <a id="dl_Link" href="https://castnet.nctu.edu.tw/files/article/875/multimedia/%E8%95%83%E8%96%AF%E5%B8%82%E9%9B%86%EF%BC%BF%E5%96%80%E5%A0%B1%E5%BB%A3%E6%92%AD_%E7%BC%A9%E6%B7%B7.mp3" download><button id = "download" class="cleanbtnstyle"download><i class="fas fa-download"></i></button></a> -->
+					   <!-- <a id = "download" class="cleanbtnstyle" href="song/song.mp3" download><i class="fas fa-download"></i></a> -->
+					  <!-- <a id = "download" class="cleanbtnstyle" href="https://castnet.nctu.edu.tw/files/article/875/multimedia/%E8%95%83%E8%96%AF%E5%B8%82%E9%9B%86%EF%BC%BF%E5%96%80%E5%A0%B1%E5%BB%A3%E6%92%AD_%E7%BC%A9%E6%B7%B7.mp3" download>111</a> -->
+					  <a id = "download" class="cleanbtnstyle" href="song/song.mp3" download><i class="fas fa-download"></i></a>
+					  <!-- <button class="cleanbtnstyle" onclick = "document.getElementById('player').volume += 0.2">Vol+</button>
+					  <button class="cleanbtnstyle" onclick = "document.getElementById('player').volume -= 0.2">Vol-</button> -->
+		</div>
+				<article>
             <h1>《青春有你》　有版權卻不火</h1>
                         <p class="reports">
                             <a href='https://castnet.nctu.edu.tw/aboutAuthor/888' class='viewUser'>黃齡萱</a>               文              &nbsp;<span class='pull-right'>2019/05/05</span>
@@ -137,98 +168,16 @@
 <p>第一季最高票出道的蔡徐坤，在微博的明星勢力榜中，截自2019年4月29日已蟬聯內地榜52周冠軍，他的微博閱讀人數已達1.6億，社會影響力更是高達3.4億。（圖片來源／黃齡萱製）資料來源：<a href="https://topstar.h5.weibo.cn/rank?rType=5" target="_blank">微博明星勢力月排行榜</a>、<a href="https://m.weibo.cn/u/5177678970?jumpfrom=weibocom" target="_blank">微博明星勢力榜</a></p>
 </div>
 
-<h2>偶像市場從缺到飽和　</h2>
 
-<p>談大陸的偶像養成節目的市場，需從「歸國四子」帶來的「流量明星」風潮說起，他們的「歸國」逐漸改變了大陸對偶像的定義。「歸國四子」是指四位在韓國EXO男團發展的中國籍成員──鹿晗、吳亦凡、黃子韜和張藝興。2014年起，陸續解除合約回歸大陸發展，如今只剩張藝興一人還保有與韓國SM娛樂公司的合約。四人當年出道後，被粉絲們稱為「天朝四子」，氣勢如虹，但在這不細談他們各自的合約糾紛。</p>
 
-<div class="picture-box"><img alt="" src="https://dodo.nctu.edu.tw/files/images_db/888/20190505050730_1557004050_RZPVrwxqva.jpg" />
-<p>歸國四子，從左至右依序為鹿唅、黃子韜、吳亦凡、張藝興，在大陸都有極高的人氣。（圖片來源／<a href="https://www.weibo.com/p/1006062533607591/home?from=page_100606&amp;mod=TAB#place" target="_blank">SMTOWN官方微博</a>）</p>
-</div>
-
-<p>曾經的天朝四子、如今的歸國四子，他們在大陸的網絡影響力是相當驚人的，其中鹿晗曾靠微博評論轉發數量，破金氏世界紀錄，他們的粉絲量就等於經濟資本，粉絲越多其商業價值越高。歸國四子不僅作為第一批流量明星，更在大陸掀開了「韓式偶像」的商機。在四子歸國前，「偶像」在大陸不如韓國那般以團體為主，有網路流量、名氣的男團女團更是少之又少。曾為韓國男團成員的歸國四子帶回來的除了流量，也使大陸娛樂圈吹起一股「男團」風。再加上2016年起韓國推出《Produce101》系列的成功，讓「養成偶像團體」成為趨勢，愛奇藝推出《偶練》可說是恰逢其時。</p>
-
-<p>《青你》應該是想抓住偶像團體養成風潮的尾巴，很可惜卻生不逢時。經過2018年兩款男女團選秀節目──《偶練》、《創造101》的洗禮，大陸不像韓國有完整的練習生培訓體系，《偶練》已經是沉寂多年的練習生集大成。到了《青春有你》時，如同這塊土地的寶藏被掏盡，來參加比賽的練習生多半練習時長只有兩三個月，甚至只練習幾天就被公司派來分一杯羹。</p>
-
-<p>作為觀眾代理人，也就是「全民製作人」代表的張藝興，在初期節目中也對這一批訓練生感到失望，我很認同他在節目中說的一番話：「是這個市場太浮躁了，機會來得太快、太容易。」</p>
-
-<p>讓觀眾對偶像養成節目疲乏還有一個關鍵因素，無疑就是「麻痺了」！隨著2018年《偶練》、《創造101》的成功，浮躁的市場再也按耐不住，2019年愛奇藝、騰訊、優酷三家平台分別推出三款男團選秀節目：《青你》、《創造營2019》（創造101第二季）、《以團之名》，一次有300個男性練習生浮上檯面，令人眼花撩亂，且他們皆主打推出「頂級男團」。</p>
-
-<p>然而真正可以成為華人地區頂級男團的，能有幾個呢？</p>
-
-<h2>《青你》vs《偶練》　比較心態難免</h2>
-
-<p>《青你》的導師陣容相當華麗，除了延續去年的張藝興、李榮浩、歐陽靖，新加入了亞洲天后蔡依林、現役韓團SEVENTEEN成員徐明浩、《中國有嘻哈》季軍艾福杰尼等，讓觀眾期待值越堆越高。經過了《偶練》長期的熱度加持以及製作方的持續預熱，節目開始前已有不少粉絲與觀眾在觀望，抱著既期待又害怕受傷害的心情等待第二季的到來。</p>
-
-<div class="picture-box"><img alt="" src="https://dodo.nctu.edu.tw/files/images_db/888/20190505143803_1557038283_Xz4aBXGamQ.jpg" />
-<p>《青你》導師陣容華麗，未開播就引起大量討論。（圖片來源／截圖自<a href="https://tw.iqiyi.com/v_19rqqz1lx4.html" target="_blank">愛奇藝</a>）</p>
-</div>
-
-<p>首先節目名稱《青春有你》公開後就讓觀眾一頭霧水，原本甚至想改成「年少有你」，去除「偶像」、「練習生」等字眼。其原因是大陸廣電總局不允許「偶像」或「練習生」等詞出現在節目當中，所以節目中的練習生都改被稱為「訓練生」，讓觀眾很不習慣，進而看節目時容易產生抗拒感。</p>
-
-<p>再者，節目不再強調打造「偶像」，個人風格與美妝造型的重要性弱化許多，第二季一上線，關鍵字「青春有你令你臉盲」就登上微博熱搜，觀眾普遍認為第二季的選手辨識度較低。看完他們初評級的表演，只記得來口音很重像是來搞笑的、剃平頭的、被老師罵的選手等，實在令期待已久的觀眾失望。很多人跟我一樣，在看第二季時難免會抱著比較的心態，無法從《偶練》眾多有實力與魅力的選手帶來的驚豔感中抽離。第二季大多數的選手實力明顯不如以前扎實，尤其是與前一季練習生來自同個公司的選手，若實力不足，更容易遭觀眾的冷眼與謾罵。</p>
-
-<h2>節目搞創新　觀眾卻不買單</h2>
-
-<p>回到節目內容本身，節目最開始經典的「選座位」內容被一剪而空，原本是讓觀眾認識所有公司與練習生的機會，卻直接在節目開始前於網路上讓觀眾「預測實力排名」，安排好1至100名的選手座位。60名以後的選手，被安排在戶外的第二現場，這樣的安排令人匪夷所思。</p>
-
-<div class="picture-box"><img alt="" src="https://dodo.nctu.edu.tw/files/images_db/888/20190505051559_1557004559_hbguUj9IA9.png" />
-<p>《青你》中網友實力預測排名在60名以後的選手，不能在初級評定表演所在的室內第一現場。（圖片來源／截圖自<a href="https://tw.iqiyi.com/v_19rqqz1lx4.html" target="_blank">愛奇藝</a>）</p>
-</div>
-
-<p>選手方面，《青你》的選手很容易被貼上「蹭熱度」卻沒實力的標籤，其實也有實力不錯的練習生存在，但在節目剪輯處理過後，大多匆匆帶過，練習表演的片段與練習生之間的日常互動也少了許多，節目有時前一小時剪入一些缺乏可看性的「上課」過程。也許是第一季的模式大家已經很熟悉，對於相似的老師與學生上課內容難免感到無趣，若沒有笑點、效果著實會想讓人跳過，只看舞台表演的片段。</p>
-
-<p>與去年有相當的不同，第二季節目增添了更多強調「青春」、「正能量」的畫面，每集都可見「公益」內容，讓練習生與其他公益組織合作去照顧身心障礙兒童、老人，去沙漠種樹、鼓勵閱讀書本等多方面的公益項目。製作方的初衷是是值得嘉許的，利用節目的影響力去鼓勵觀眾趁年輕、有能力時多做公益。</p>
-
-<div class="picture-box"><img alt="" src="https://dodo.nctu.edu.tw/files/images_db/888/20190505052734_1557005254_AipZ7n8YMx.png" />
-<p>《青你》節目中，練習生到偏鄉協助植樹種林。（圖片來源／截圖自<a href="https://tw.iqiyi.com/v_19rshsn6xo.html" target="_blank">愛奇藝</a>）</p>
-</div>
-
-<p>但這是一部「偶像養成節目」，作為忠實觀眾，不禁會思考，明明節目時長與訓練時期皆與去年相同，那麼這些練習生是不是都沒在練習、不準備表演，都在做公益嗎？我認為這些片段不應放在節目裡，而是將公益服務改放到幕後花絮中。觀眾想看的無非是那些練習生之間的情感、競爭、互相扶持，完整的舞台表演與背後付出的汗水。透過私下的互動與舞台上的表現來「圈粉」。節目花了大篇幅在公益片段，減少了許多有趣與動人的「真情實感」，確實有些可惜。</p>
-
-<p>觀眾無法理解節目如此呈現的用意，使《青你》流失不少粉絲，也帶來「買了版權就敢亂搞」的責罵。</p>
-
-<h2>「UNINE」出道　仍值得期待</h2>
-
-<p>「藝人出道是沒有時間限制的，兩年、一年訓練的，兩個月、一個月的也有，甚至五天就出道......那又能走多長呢？」張藝興在節目中強調即使出道了，藝人要能走得長久才是關鍵。</p>
-
-<p>《青春有你》伴隨著觀眾的不理解與調侃，仍於2019年4月6日順利落幕。這款不溫不火的偶像選秀節目結束已事隔一個月了，推出的男團「UNINE」目前的發展，能與NINEPERCENT一樣熱度持續延燒嗎？</p>
-
-<div class="picture-box"><img alt="" src="https://dodo.nctu.edu.tw/files/images_db/888/20190505053022_1557005422_hrvvReTESE.jpg" /><br />
-《青你》決賽出道限定男團「UNINE」。（圖片來源／截圖自<a href="https://www.weibo.com/p/1002065598468343/home?from=page_100206&amp;mod=TAB#place" target="_blank">UNINE官方微博</a>）</div>
-
-<p>NINEPERCENT男團是大陸各家經紀公司合作的首例，出道前的《偶練》時期就已經讓經紀公司看準無限的商機，九位男孩出道後馬不停蹄的個人行程安排，讓九人能合體成為「奇蹟」。負責管理NINEPERCENT團體活動的是一家無資源、無經驗的小公司，NINEPERCENT的各個成員如同單飛不解散，各自發展得很好，代言與綜藝曝光度高，然而限定一年半的團體活動承諾形同泡沫，讓眾多粉絲不滿，嚷嚷著不如趕緊解散。</p>
-
-<p>韓國推出的限定團體，出道後都會搭配「團體綜藝」，將成員集體住宿生活、演唱會籌備、發片籌備等內容拍攝成小型節目，以鞏固粉絲。反觀NINEPERCENT一個完整的團體綜藝都沒有，如今第二季的推出，讓粉絲更是心碎，NINEPERCENT合體成為一場夢。</p>
-
-<p>所以，第二次愛奇藝汲取教訓，與有經驗的公司合作，UNINE出道隔天立刻推出住宿生活的Vlog，以穩定粉絲不安的心，對於團體發展重新燃起信心。出道之今一個月，UNINE的發展有越來越好的跡象，於4月底時成功追過NINEPERCENT，獲得微博明星勢力組合榜中4月的冠軍。</p>
-
-<div class="picture-box"><img alt="" src="https://dodo.nctu.edu.tw/files/images_db/888/20190505060032_1557007232_4yMraacLA4.jpg" />
-<p>UNINE獲得明星勢力組合排行榜4月份冠軍。（圖片來源／<a href="https://m.weibo.cn/u/5177678970?jumpfrom=weibocom" target="_blank">微博明星勢力榜</a>）</p>
-</div>
-
-<p>大陸的偶像養成節目市場似乎被逼向了終點，我認為大陸短期內不需要再多一個男團了，2019年一次推出三款男團選秀節目已是非常驚人的現象。大陸的偶像市場還尚未成熟，出道後的團體不如韓國有強大的經紀公司撐腰，也沒有可以打歌的舞台節目可以好好推廣新歌，只能一直分散到綜藝節目擔任嘉賓，維持線上曝光度。大陸也沒辦法如韓國般，有足夠多的成熟練習生可以支援源源不絕的選秀節目。</p>
-
-<p>若製作公司想再次創造奇蹟，那就得看目前仍正運行中的男女團如何發展了！倘若經營得好，粉絲自然捨不得他們解散，解散後再度推出新的團體，接受度也可能較高。目前幾個限定團體未來發展之路還很長，《青你》推出新的九位男會帶給娛樂圈和觀眾怎樣的驚喜，非常令人期待！</p>
-
-<p>縮圖來源：<a href="https://www.weibo.com/p/1002066870452244/home?from=page_100206&amp;mod=TAB#place" target="_blank">愛奇藝青春有你官方微博</a></p>
-            <div class="mobile-social-plugin d-block d-sm-none">
-              <ul>
-                <li><a href="https://castnet.nctu.edu.tw/castnet/article/13646?issueID=724" class="btn-circle fb"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="https://plus.google.com/share?url=https://castnet.nctu.edu.tw/castnet/article/13646?issueID=724" class="btn-circle gplug"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                <li><a href="https://twitter.com/share?text=《青春有你》　有版權卻不火&url=https://castnet.nctu.edu.tw/castnet/article/13646?issueID=724" class="btn-circle twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="javascript:void(0);" rel='https://castnet.nctu.edu.tw/castnet/article/13646?issueID=724' class="btn-circle link"><i class="fa fa-link fa-rotate-270" aria-hidden="true"></i></a></li>
-              </ul>
-			</div>
-			
-
-			<div class="row ar_div_06" style="margin-left: 1em">
-					<i class="fab fa-facebook-square"></i>
-					<i class="fab fa-instagram"></i>
-					<i class="fas fa-link"></i>
-				</div>
-		
-				
-				<div id="vi_bottom">
+</article>
+<section id="section02">
+		<div id="ps_div_links">
+				<i class="fab fa-facebook-square"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fas fa-link"></i>
+		</div>
+		<div id="vi_bottom">
 						<div id="vi_bo_t00">
 						<hr class="vi_line1"><p class="other">延伸閱讀</p><hr class="vi_line2">
 						</div>
@@ -333,180 +282,290 @@
 						</div>
 						</div>
 				</div>
-</article>
+</section>
+</section>
 
+    <footer>
+        <div id="fp_div_ft01">
+            <div class="fp_div_ft">
+                <img src="image/logo01.png">
+            </div>
 
-		<!-- icons -->
-		
-	</div>
-	<footer>
-		<div id="fp_div_ft01">
-		<div class="fp_div_ft">
-			<img src="image/logo01.png">
-		</div>
+            <div class="fp_div_ft" id="fp_div_ft_c">
+                <ul>
+                    <li><a href="aboutCT.html">關於我們</a></li>
+                    <li><a href="https://castnet.nctu.edu.tw/group/63">喀報成員</a></li>
+                    <li><a href="https://www.facebook.com/messages/t/castnet.castnet">聯絡我們</a></li>
+                    <li><a href="https://www.facebook.com/messages/t/castnet.castnet">加入我們</a></li>
+                    <li><a href="https://www.facebook.com/castnet.nctu/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/castnet.nctu/?hl=zh-tw">Instagram</a></li>
+                </ul>
+            </div>
 
-		<div class="fp_div_ft" id="fp_div_ft_c">
-			<ul>
-				<li><a href="https://castnet.nctu.edu.tw/castnet/about">關於我們</a></li>
-				<li><a href="https://castnet.nctu.edu.tw/group/63">喀報成員</a></li>
-				<li><a href="https://www.facebook.com/messages/t/castnet.castnet">聯絡我們</a></li>
-				<li><a href="https://www.facebook.com/messages/t/castnet.castnet">加入我們</a></li>
-				<li><a href="https://www.facebook.com/castnet.nctu/">Facebook</a></li>
-				<li><a href="https://www.instagram.com/castnet.nctu/?hl=zh-tw">Instagram</a></li>
-			</ul>
-		</div>
+            <div class="fp_div_ft" id="fp_div_ft_r">
+                <a href="all_catagory.html">所有期別</a>
+            </div>
 
-		<div class="fp_div_ft" id="fp_div_ft_r">
-				<a href="all_catagory.html">所有期別</a>
-		</div>
+            <div>
+                <p id="fp_p_ft_d">2007-2019 &copy; 國立交通大學傳播與科技學系 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+   
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+     <script>
+        var nav_swiper = new Swiper('.nav_swiper-container', {
+            slidesPerView: 7,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
 
-		<div>
-			<p id="fp_p_ft_d">2007-2019 &copy; 國立交通大學傳播與科技學系 All Rights Reserved.</p>
-		</div>
-		<div>
-	</footer>
+        var mid_swiper = new Swiper('.mid_swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.mid_swiper-button-next',
+                prevEl: '.mid_swiper-button-prev',
+            },
+        });
 
-	<script type="text/javascript">
-		window.onload = updateTime;
-		var progressbar = document.querySelector('#progressbar');
-		
+  </script>
+  <script type="text/javascript">
+	window.onload = updateTime;
+	var progressbar = document.querySelector('#progressbar');
+	
+	var player = document.getElementById('player');
+	var play = document.getElementById('play');
+	var volume = document.getElementById('volume');
+	console.log(play);
+	// isGo要設在外面才能切換!
+	var isGo = false;
+	var isOn = false;
+	play.onclick = function(){
+		//每案一次就切換
+		isGo = !isGo;
 		var player = document.getElementById('player');
 		var play = document.getElementById('play');
-		var volume = document.getElementById('volume');
-		console.log(play);
-		// isGo要設在外面才能切換!
-		var isGo = false;
-		var isOn = false;
-		play.onclick = function(){
-			//每案一次就切換
-			isGo = !isGo;
-			var player = document.getElementById('player');
-			var play = document.getElementById('play');
-			// var play = document.getElementById('play');
+		// var play = document.getElementById('play');
+		
+		if(isGo) {
+			console.log(1);
 			
-			if(isGo) {
-				console.log(1);
-				
-				play.innerHTML='<i class="fas fa-pause"></i>';
-				player.play();
-				
-			}else{
-				console.log(2);
-				play.innerHTML = '<i class="fas fa-play"></i>';
-				player.pause();
-				
-			}
+			play.innerHTML='<i class="fas fa-pause"></i>';
+			player.play();
 			
-		};
-
-		volume.onclick = function(){
-			//每案一次就切換
-			isOn = !isOn;
-			// var play = document.getElementById('play');
-			
-			if(isOn) {
-				console.log(1);
-				
-				volume.innerHTML='<i class="fas fa-volume-mute"></i>';
-				player.volume = 0;
-				
-			}else{
-				console.log(2);
-				volume.innerHTML = '<i class="fas fa-volume-up"></i>';
-				player.volume = 1;
-				
-			}
-			
-		};
-		
-		
-		player.addEventListener('timeupdate', handleProgress);
-		console.log(player.currentTime); //現在時間
-		console.log(player.duration); //總長多久
-		player1 = document.getElementById('player1');
-		var progress = document.getElementById('progress');
-		var progressbar = document.getElementById('progressbar');
-		var littlecircle = document.getElementsByClassName('littlecircle');
-		function handleProgress() {
-		  const percent = (player.currentTime / player.duration) * 100;
-		  const wwidth = progressbar.style.width;
-		  progressbar.style.width =`${percent}%`;
-
-		}
-		function scrub(e) {
-		  const scrubTime = (e.offsetX / progress.offsetWidth) * player.duration;
-		  player.currentTime = scrubTime;
-		}
-		
-		let mousedown = false;
-		player.addEventListener('timeupdate', handleProgress);
-		progress.addEventListener('click', scrub);
-		progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
-		progress.addEventListener('mousedown', () => mousedown = true);
-		progress.addEventListener('mouseup', () => mousedown = false);
-
-		
-	var audio = document.getElementsByTagName("audio")[0];
-	console.log(audio);
-	function updateTime(){
-		
-		
-		const min = Math.floor(this.currentTime / 60);
-		const dmin = Math.floor(this.duration / 60);
-		const dsec = Math.floor(this.duration % 60);
-		const ddsec = Math.floor(this.duration);
-		let durationTime = "";
-		function calcDuration(){
-			
-			if (dmin == 0){
-				if (ddsec < 10){
-				 durationTime = '00:0' + ddsec;
-				}
-				else{
-					durationTime = '00:' + ddsec;
-				}
-			}
-			else{
-				if (dsec < 10){
-				durationTime = '0' + dmin + ":0" + dsec;
-				}
-				else{
-					durationTime = '0' + dmin + ":" + dsec;
-				}
-			}
-			return durationTime;
-		}
-		console.log(durationTime);
-
-		if (min == 0){
-			if (Math.floor(this.currentTime) < 10){
-			document.getElementById('tracktime').innerHTML = '00:0' + Math.floor(this.currentTime) + ' / ' + calcDuration();
-			}
-			else{
-				document.getElementById('tracktime').innerHTML = '00:' + Math.floor(this.currentTime) + ' / ' + calcDuration();
-			}
 		}else{
-
-			if (Math.floor(this.currentTime % 60) < 10){
-			document.getElementById('tracktime').innerHTML = '0' + min + ":0" + Math.floor(this.currentTime % 60) + ' / ' + calcDuration();
-			}
-			else{
-				document.getElementById('tracktime').innerHTML = '0' + min + ":" + Math.floor(this.currentTime % 60) + ' / ' + calcDuration();
-			}
+			console.log(2);
+			play.innerHTML = '<i class="fas fa-play"></i>';
+			player.pause();
+			
 		}
 		
+	};
 
+	volume.onclick = function(){
+		//每案一次就切換
+		isOn = !isOn;
+		// var play = document.getElementById('play');
 		
+		if(isOn) {
+			console.log(1);
+			
+			volume.innerHTML='<i class="fas fa-volume-mute"></i>';
+			player.volume = 0;
+			
+		}else{
+			console.log(2);
+			volume.innerHTML = '<i class="fas fa-volume-up"></i>';
+			player.volume = 1;
+			
+		}
+		
+	};
+	
+	
+	player.addEventListener('timeupdate', handleProgress);
+	console.log(player.currentTime); //現在時間
+	console.log(player.duration); //總長多久
+	player1 = document.getElementById('player1');
+	var progress = document.getElementById('progress');
+	var progressbar = document.getElementById('progressbar');
+	var littlecircle = document.getElementsByClassName('littlecircle');
+	function handleProgress() {
+	  const percent = (player.currentTime / player.duration) * 100;
+	  const wwidth = progressbar.style.width;
+	  progressbar.style.width =`${percent}%`;
 
-		
-		 console.log(this.currentTime);
 	}
+	function scrub(e) {
+	  const scrubTime = (e.offsetX / progress.offsetWidth) * player.duration;
+	  player.currentTime = scrubTime;
+	}
+	
+	let mousedown = false;
+	player.addEventListener('timeupdate', handleProgress);
+	progress.addEventListener('click', scrub);
+	progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
+	progress.addEventListener('mousedown', () => mousedown = true);
+	progress.addEventListener('mouseup', () => mousedown = false);
+
+	
+var audio = document.getElementsByTagName("audio")[0];
+console.log(audio);
+function updateTime(){
+	
+	
+	const min = Math.floor(this.currentTime / 60);
+	const dmin = Math.floor(this.duration / 60);
+	const dsec = Math.floor(this.duration % 60);
+	const ddsec = Math.floor(this.duration);
+	let durationTime = "";
+	function calcDuration(){
+		
+		if (dmin == 0){
+			if (ddsec < 10){
+			 durationTime = '00:0' + ddsec;
+			}
+			else{
+				durationTime = '00:' + ddsec;
+			}
+		}
+		else{
+			if (dsec < 10){
+			durationTime = '0' + dmin + ":0" + dsec;
+			}
+			else{
+				durationTime = '0' + dmin + ":" + dsec;
+			}
+		}
+		return durationTime;
+	}
+	console.log(durationTime);
+
+	if (min == 0){
+		if (Math.floor(this.currentTime) < 10){
+		document.getElementById('tracktime').innerHTML = '00:0' + Math.floor(this.currentTime) + ' / ' + calcDuration();
+		}
+		else{
+			document.getElementById('tracktime').innerHTML = '00:' + Math.floor(this.currentTime) + ' / ' + calcDuration();
+		}
+	}else{
+
+		if (Math.floor(this.currentTime % 60) < 10){
+		document.getElementById('tracktime').innerHTML = '0' + min + ":0" + Math.floor(this.currentTime % 60) + ' / ' + calcDuration();
+		}
+		else{
+			document.getElementById('tracktime').innerHTML = '0' + min + ":" + Math.floor(this.currentTime % 60) + ' / ' + calcDuration();
+		}
+	}
+	
+
+	
+
+	
+	 console.log(this.currentTime);
+}
 
 
-	var onairimg = document.getElementById('onair');
-	onairimg.addEventListener('onload', updateTime);
-	audio.addEventListener('onload', updateTime);
-	audio.addEventListener('timeupdate', updateTime);
-	</script>
-</body>
+var onairimg = document.getElementById('onair');
+onairimg.addEventListener('onload', updateTime);
+audio.addEventListener('onload', updateTime);
+audio.addEventListener('timeupdate', updateTime);
+</script>
+    <script>
+    // 手機板選單
+        var acc = 0;
+        function appear(){
+            document.getElementsByTagName("nav")[0].style.display='block';
+            document.getElementsByTagName("nav")[0].style.marginTop='8em';
+            document.getElementsByTagName("ul")[0].style.height='20em';
+            document.getElementsByTagName("ul")[0].style.width='100%';
+            document.getElementsByTagName("ul")[0].style.overflow='auto';
+            document.getElementById("fp_i_nav").style.display='none';
+            document.getElementById("fp_i_t03").style.display="none";
+
+            var li = document.getElementsByClassName("fp_li_t");
+            for(let i = 0; i<li.length;i++){
+                li[i].style.display="inline-block";
+                li[i].style.float='left';
+                li[i].style.marginTop='0.5em';
+                li[i].style.backgroundColor="#f5f5f5";
+                li[i].style.border='none';
+                li[i].style.width='10.9em';
+            }
+            document.getElementById("fp_div_backgroundcolor").style='height:29em; background-image:linear-gradient(#3AAB97, #F5F5F5);';
+            if(acc==0){
+                var i_can = document.createElement("i");
+                i_can.style.fontSize="3em";
+                i_can.style.color="#3AAB97";
+                i_can.style.position="relative";
+                i_can.style.marginLeft="-1.2em";
+                i_can.style.top="-7.3em";
+                document.getElementsByTagName('nav')[0].appendChild(i_can);
+                i_can.className="fas fa-times";
+                i_can.setAttribute("id", "create_i");
+                i_can.setAttribute("onclick", "cancel();");
+                acc= acc+1;
+
+                var green_bar = document.createElement("div");
+                green_bar.style.height="3px";
+                green_bar.style.backgroundColor="#3AAB97";
+                green_bar.style.position="relative";
+                green_bar.style.top="-9em";
+                document.getElementsByTagName('nav')[0].appendChild(green_bar);
+
+                var container = document.createElement("div");
+                container.style.position='relative';
+                container.style.marginTop='-8em';
+                container.setAttribute("id", "contain_create")
+                document.getElementsByTagName('nav')[0].appendChild(container);
+
+                var foote = ['所有期別', '關於我們', '喀報成員', 'Facebook'];
+                for(let i = 0; i < foote.length; i++){
+                    var foot_top = document.createElement("a");
+                    foot_top.style.display="inline-block";
+                    foot_top.style.width='13.08em';
+                    foot_top.innerText=foote[i];
+                    foot_top.className='foot_top';
+                    foot_top.style.textAlign="center";
+                    foot_top.color="#3AAB97";
+                    
+                    if(i==0){
+                        foot_top.href="all_catagory.html";
+                    }else if(i==1){
+                        foot_top.href="aboutCT.html";
+                    }else if(i==2){
+                        foot_top.href="喀報成員";
+                    }else{
+                        foot_top.href="https://www.facebook.com/messages/t/castnet.castnet";
+                    }
+                    document.getElementById('contain_create').appendChild(foot_top);
+                }
+            }
+        }
+
+        function cancel(){
+            document.getElementsByTagName('nav')[0].style.display='none';
+            document.getElementById("fp_i_t03").style.display="block";
+            document.getElementById("fp_div_backgroundcolor").style='height:9.4em; background-image:linear-gradient(#3AAB97 0%, #F5F5F5 6em);';
+        }
+    </script>
+    </body>
 </html>
