@@ -315,7 +315,7 @@ body > .menu .search-bar i {
 body > .menu .categories a {
     display: inline-block;
     color: #3AAB97;
-    width: 45%;
+    width: 43%;
     background-color: #FFF;
     text-align: center;
     font-size: 1.2em;
@@ -329,7 +329,7 @@ body > .menu hr {
 body > .menu .links a {
     display: inline-block;
     color: #3AAB97;
-    width: 45%;
+    width: 43%;
     text-align: center;
     font-size: 1.2em;
     margin: 0.5em 0.5em;
