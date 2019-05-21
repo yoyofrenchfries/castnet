@@ -1,10 +1,11 @@
 section{
     margin-left: 5em;
-    margin-right: 5em;
     position: relative;
+    margin-top: 20.6em;
 }
 footer{
-    margin-top: 10em;
+    margin-top: 12em;
+
 }
 
 .jo_div_t00{
@@ -12,7 +13,6 @@ footer{
     position: relative;
     top: 2em;
     left: 35em;
-    
 }
 .jo_depart{
     position: relative;
@@ -23,9 +23,9 @@ footer{
     padding-right: 1em;
 }
 .jo_box{
-    width: 10em;
+    width: 7em;
     height: 8em;
-    margin: 0 2em;
+    margin: 1.5em 3em;
     display: inline-block;
 }
 .jo_member{
@@ -39,6 +39,7 @@ footer{
     border-left-color: #3AAB97;
 }
 .jo_teacher{
+    margin-left: 1.5em;
     padding-left: 0.7em;
     border-left-style: solid;
     border-left-width: 2.5px;
@@ -47,11 +48,9 @@ footer{
     font-size: 1.4em;
     font-weight: normal;
     display: inline-block;
- 
 }
 .jo_tea01{
     left: -1.3em;
-    margin-left:2em;
     padding-left: 0.65em;
     border-left-style: solid;
     border-left-width: 2.5px;
@@ -62,7 +61,7 @@ footer{
     display: inline-block;
 }
 .jo_assistant{
-    margin-left:2em;
+    margin-left: 1.5em;
     padding-left: 0.65em;
     border-left-style: solid;
     border-left-width: 2.5px;
@@ -71,84 +70,74 @@ footer{
     font-size: 1.4em;
     font-weight: normal;
     display: inline-block;
-    left: -2em;
- 
 }
 .jo_tea_t01{
-    width: 50em;
-    left: 5em;
-    top: -4em;
+    width: 53em;
     position: relative;
 }
 .jo_tea_t02{
     width: 40em;
-    left: 5em;
-    
     position: relative;
 }
 .jo_img_teacher01{
     border-radius: 50%;
     width: 6.5em;
-    display: inline-block;
+    display: block;
     position: relative;
-    left: -4.5em;
-    top: 5em;
 }
 .jo_img_teacher02{
     border-radius: 50%;
     width: 6.5em;
-    display: inline-block;
+    display: block;
     position: relative;
-    left: -1.5em;
-    top: 5em;
 }
 .jo_img_teacher03{
     border-radius: 50%;
     width: 6.5em;
-    display: inline-block;
+    display: block;
     position: relative;
-    left: 1.5em;
-    top: 5em;
 }
 .jo_img_teacher04{
     border-radius: 50%;
     width: 6.5em;
-    display: inline-block;
+    display: block;
     position: relative;
-    left: 4.5em;
-    top: 5em;
 }
 .jo_p_teacher01{
     font-size: 1em;
     font-weight: normal;
-    top:10em;
-    left: -9em;
     position: relative;
     display: inline-block;
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
 }
 .jo_p_teacher02{
     font-size: 1em;
     font-weight: normal;
-    top:10em;
-    left: -6.5em;
     position: relative;
     display: inline-block;
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
 }
 .jo_p_teacher03{
     font-size: 1em;
     font-weight: normal;
-    top:10em;
-    left: -3.5em;
     position: relative;
     display: inline-block;
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
 }
 .jo_p_teacher04{
     font-size: 1em;
     font-weight: normal;
-    top:10em;
-    left: -0.5em;
     position: relative;
     display: inline-block;
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
 }
 
 .jo_img_assistant01{
@@ -156,54 +145,53 @@ footer{
     width: 6.5em;
     display: inline-block;
     position: relative;
-    left: -3.5em;
-    top: 1em;
-}.jo_img_assistant02{
+}
+.jo_img_assistant02{
     border-radius: 50%;
     width: 6.5em;
     display: inline-block;
     position: relative;
-    left: -0.5em;
-    top: 1em;
 }
 .jo_p_assistant01{
     font-size: 0.8m;
     font-weight: normal;
-    top:6em;
-    left: -8.5em;
     position: relative;
     display: inline-block;
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
 }
     
 .jo_p_assistant02{
     font-size: 0.8m;
     font-weight: normal;
-    top:6em;
-    left: -5.5em;
     position: relative;
     display: inline-block;
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
 }
 
 .jo_div_t01{
     display: inline-block;
-    width: 30em;
+    width: 51em;
+    margin-top: 3em;
     position: relative;
-    top: 5em;
-    left: 2em;
 }
 .jo_div_t02{
-    width: 15em;
+    width: 27em;
+    margin-left: 1.5em;
+    margin-top: 3em;
     position: relative;
-    top: 5em;
-    left: 22.5em;
     display: inline-block;
 }
 
 .jo_div_t03{
-    width: 100%;
+    width: 80em;
     position: relative;
-    top: 10em;
-    left: 2em;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-left: 0em;
     display: inline-block;
 }
 .jo_rep_t01{
@@ -214,7 +202,7 @@ footer{
 }
 
 .jo_reporters{
-    margin-left:2em;
+    margin-left:1.5em;
     padding-left: 0.65em;
     border-left-style: solid;
     border-left-width: 2.5px;
@@ -223,7 +211,7 @@ footer{
     font-size: 1.4em;
     font-weight: normal;
     display: block;
-    left: -2em;
+    left: 0em;
 }
 
 .jo_img_reporter{
@@ -235,17 +223,21 @@ footer{
 
 .jo_div_journ{
     width: 100%;
-    height: 80em;
+    height: 60em;
+    margin: auto;
 }
 
 .jo_p_reporter{
     font-size: 1em;
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
     font-weight: normal;
     position: relative;
     display: inline-block;
 }
  .jo_other{
-        
+        top: 5em;
     display:block;
     position: relative;
 }
@@ -282,7 +274,12 @@ footer{
    
     .jo_t01{
         
-        width: 100em;
+        width: 100%;
+        display:block;
+        position: relative;
+    }
+    .jo_t02{
+        width: 100%;
         display:block;
         position: relative;
     }
@@ -297,7 +294,7 @@ footer{
              border-style: solid;
              border-width: 2px;
              position: relative;
-             left: -3em;
+             left: -2.7em;
              top: -0.5em;
              display: inline-block;
          }
@@ -328,7 +325,7 @@ footer{
             border-width: 2px;
             position: relative;
             display: inline-block;
-            left: 5em;
+            left: 5.3em;
             top: -0.5em;
         }
         .small_cir04 {
@@ -348,88 +345,93 @@ footer{
         }
         .group_swiper-container {
             overflow-x: hidden;
+            
         }
         .group_swiper-container .group_swiper-pagination {
             text-align: center;
         }
-        .group_swiper-container .group {
-            width: 220px;
-            height: 220px;
+        .group_swiper-container .group1 {
+            margin-top: 3em;
+            
+            width: 200px;
+            height: 200px;
             background: #6EBFB1;
+            position: relative;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .group_swiper-container .group2 {
+            margin-top: 3em;
+            
+            width: 200px;
+            height: 200px;
+            background: #A3A093;
+            position: relative;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .group_swiper-container .group3 {
+            margin-top: 3em;
+            width: 200px;
+            height: 200px;
+            background: #9FB7B3;
             position: relative;
             border-radius: 50%;
             display: inline-block;
         }
         .group_swiper-container .swiper-slide {
             text-align: center;
+            
         }
         .group_swiper-container .group p {
             text-align: center;
             vertical-align: middle;
-            line-height: 220px;
+            line-height: 200px;
         }
         .group_swiper-container .group_swiper-button-prev,
         .group_swiper-container .group_swiper-button-next {
             display: inline-block;
             cursor: pointer;
-            width: 2em;
-            height: 2em;
+            width: 1em;
+            height: 1em;
             font-size: 3em;
             position: absolute;
             top: 50%;
-            z-index: 2;
+            z-index: 1;
             text-align: center;
         }
         .group_swiper-container .group_swiper-button-prev {
             left: -1em;
         }
         .group_swiper-container .group_swiper-button-next {
-            right: -1em;
+            right: 0em;
         }
-        .big_cir02 {
-            width: 220px;
-            height: 220px;
-            background: #A3A093;
-            border-radius: 50%;
-            position: relative;
-            margin-right: 9em;
-            top: 6em;
-            display: inline-block;
-        }
-        .big_cir03 {
-            width: 220px;
-            height: 220px;
-            background: #9FB7B3;
-            border-radius: 50%;
-            position: relative;
-            top: 6em;
-            display: inline-block;
-        }
+        
         .journ_years01{
+            margin-top: 1.1em;
             font-size: 2.7em;
             font-weight: bold;
             position: relative;
-            left: 1.6em;
-            top: 1.2em;
+            text-align: center;
         }
         .journ_years02{
+            margin-top: -1em;
             font-size: 1.5em;
             font-weight: normal;
             position: relative;
-            left: 3.5em;
-            top: 1.5em;
+            text-align: center;
         }
         #jo_i_01{
             display: inline-block;
             position: relative;
-            margin-right: 3em;
-            top: 3em;
+            margin-right: 0em;
+            top: 2em;
         }
         #jo_i_02{
             display: inline-block;
             position: relative;
-            margin-left: 3em;
-            top: 3em;
+            margin-left: 0em;
+            top: 2em;
         }
         .small_circle01{
             width: 20px;
@@ -476,7 +478,6 @@ footer{
             display: inline-block;
         }
         .jo_and{
-            left: -10em;
             width: 13em;
             margin: auto;
             margin-top: 10em;
