@@ -1,19 +1,30 @@
 @media screen and (max-width:575px){
     section{
-        width: 28em;
+        margin-top: calc(150px + 1em);
     }
     h2{
         font-size: 1em;
     }
     .ca_div{
-        width: 11.8em;
-        margin-right: 2em;
+        width: 11.58em;
+        margin-left: 0em;
+        margin-right: 3.7em;
+        margin-top: 1em;
+    }
+    .ca_div:nth-of-type(even){
+        margin-right: 0em;
     }
     a{
         font-size: 1em;
     }
+    .ca_div a{
+        margin-right: 0em;
+    }
+    .ca_a_time{
+        padding-left: 0.25em;
+    }
     .ca_div img{
-        width: 11.24em;
+        width: 11.58em;
         height: 7.3475em;
     }
     h4{
@@ -33,10 +44,11 @@
         font-size: 1em;
         left: 8%;
     }
-    footer{
-        margin-top: 16em;
-    }
+
     #ca_div_d{
+        margin-top: 3em;
+    }
+    footer{
         margin-top: 3em;
     }
 }

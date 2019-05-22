@@ -1,11 +1,5 @@
-section{
-    position: relative;
-    top: 18.6em;
-    width: 86em;
-    margin: auto;
-}
 footer{
-    margin-top: 24em;
+    margin-top: 5em;
 }
 h2{
     font-size: 2.83em;
@@ -22,7 +16,8 @@ a{
     display: inline-block;
     width: 18.6em;
     margin-top: 3em;
-    margin-right: 2.65em;
+    margin-left: 2.45em;
+    margin-right: 2.45em;
 }
 .ca_a_time{
     padding-left: 0.75em;
@@ -46,6 +41,7 @@ h4{
 .ca_div p{
     font-size: 1.0625em;
     line-height: 2.25;
+    font-weight: lighter;
 }
 #ca_div_c01{
     background-color: #3AAB97;
@@ -73,5 +69,5 @@ h4{
     color: #5b5751;
 }
 #ca_div_d{
-    margin-top: 7em;
+    margin-top: 5em;
 }
