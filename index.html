@@ -435,6 +435,13 @@
         document.querySelector('#close-btn').addEventListener('click', () => {
             $('.menu').slideToggle();
         });
+        window.addEventListener('scroll', e => {
+            if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+                $("#top-arrow").fadeIn();
+            } else {
+                $("#top-arrow").fadeOut();
+            }
+        })
         var nav_swiper = new Swiper('.nav_swiper-container', {
             slidesPerView: 8,
             spaceBetween: 10,

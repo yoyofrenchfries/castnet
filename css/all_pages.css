@@ -340,15 +340,17 @@ section{
     margin-top: calc(230px + 1em);
 }
 #top-arrow{
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
     height: 3em;
     width: 3em;
     border: solid 1px #5b5751;
     background-color: #F5F5F5;
-    position: fixed;
-    right: 2em;
-    bottom: 2em;
     text-align: center;
     cursor: pointer;
+    z-index: 99;
+    display: none;
 }
 .nav_swiper-container{
     overflow-x: hidden;
