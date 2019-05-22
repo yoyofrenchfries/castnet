@@ -9,20 +9,26 @@ section{
 
 #ab_intro{
     width: 100%;
-    height: 30em;
-    padding: 10em;
     background-color:#ECE2D5;
     margin-bottom: 1em;
-    margin-top: 220px;
     display: flex;
+    padding: 2em 1em;
+}
+
+#ab_intro .icon-wrapper {
+    flex: 1;
+    position: relative;
 }
 
 #ab_div1{
     width: 15em;
     height: 15em;
-    margin-left: 3em;
     border: 3px #DEC6A6 solid;
     background-color:rgba(255,255,255,0.5);
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #ab_div2{
@@ -35,25 +41,25 @@ section{
 }
 
 #ab_div3{
-    width: 5em;
-    height: 10em;
-    margin-left: 1.2em;
+    width: 100%;
+    height: 100%;
     font-size: 65px;
     transform:rotate(-7deg);
+    text-align: center;
 }
 
 .ab_about{
-    width: 150px;
-    height: 0px;
+    width: 100%;
+    height: 100%;
+    padding-top: 16px;
 }
 #ab_intro .text {
-    margin-top: 2em;
-    margin-left: 4em;
+    flex: 2;
 }
 #ab_intro .text p {
-    width: 700px;
     font-weight: lighter;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    padding: 2em 1em 2em 2em;
 }
 
 #ab_timeline{
