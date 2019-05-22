@@ -1,20 +1,27 @@
 @media screen and (max-width:575px){
     section{
-        width: 28em;
+        margin-top: calc(150px + 1em);
     }
     h2{
         font-size: 1em;
     }
     .ca_div{
-        width: 11.8em;
-        margin-right: 2em;
+        width: 45%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
     a{
         font-size: 1em;
     }
+    .ca_div a{
+        margin-right: 0em;
+    }
+    .ca_a_time{
+        padding-left: 0.25em;
+    }
     .ca_div img{
-        width: 11.24em;
-        height: 7.3475em;
+        width: 100%;
+        height: 60%;
     }
     h4{
         font-size: 1em;
@@ -23,20 +30,21 @@
         font-size: 1em;
     }
     #ca_div_c01{
-        width: 33%;
+        width: 35%;
     }
     #ca_div_c02{
-        width: 33%;
+        width: 35%;
         left: 12%;
     }
     #ca_a_c01{
         font-size: 1em;
         left: 8%;
     }
-    footer{
-        margin-top: 16em;
-    }
+
     #ca_div_d{
+        margin-top: 3em;
+    }
+    footer{
         margin-top: 3em;
     }
 }
