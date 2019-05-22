@@ -231,16 +231,49 @@ header .top {
 }
 header .top .func {
     position: absolute;
-    display: block;
+    display: table;
     bottom: 0px;
     right: 0px;
 }
 header .func .button {
-    display: inline-block;
+    display: table-cell;
+    font-size: 14px;
+    cursor: pointer;
+    width: 3em;
+    height: 3em;
+    line-height: 1;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    z-index: 5;
 }
-header .func .button img {
-    width: 32px;
-    height: 32px;
+header .func .button svg {
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+.svg_transform {
+    opacity: 0;
+    transform: scale(1.7, 0.5);
+    transition: all 0.3s ease-in-out;
+ }
+header .func .button span:not(.span_transform) {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 700;
+    opacity: 0;
+    position: absolute;
+    vertical-align: middle;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.span_transform {
+    opacity: 1;
+    transition: all 0.3s ease-in-out 0s;
 }
 header nav {
     position: relative;
