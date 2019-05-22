@@ -6,13 +6,9 @@
         font-size: 1em;
     }
     .ca_div{
-        width: 11.58em;
-        margin-left: 0em;
-        margin-right: 3.7em;
-        margin-top: 1em;
-    }
-    .ca_div:nth-of-type(even){
-        margin-right: 0em;
+        width: 45%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
     a{
         font-size: 1em;
@@ -24,8 +20,8 @@
         padding-left: 0.25em;
     }
     .ca_div img{
-        width: 11.58em;
-        height: 7.3475em;
+        width: 100%;
+        height: 60%;
     }
     h4{
         font-size: 1em;
@@ -34,10 +30,10 @@
         font-size: 1em;
     }
     #ca_div_c01{
-        width: 33%;
+        width: 35%;
     }
     #ca_div_c02{
-        width: 33%;
+        width: 35%;
         left: 12%;
     }
     #ca_a_c01{

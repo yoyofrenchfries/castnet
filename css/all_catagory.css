@@ -19,6 +19,12 @@ a{
     margin-left: 2.45em;
     margin-right: 2.45em;
 }
+.ca_div a{
+    color: #5b5751;
+}
+.ca_div a:hover, .ca_div a:visited{
+    color: #5b5751;
+}
 .ca_a_time{
     padding-left: 0.75em;
     border-left-style: solid;
