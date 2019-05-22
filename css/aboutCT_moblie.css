@@ -14,9 +14,10 @@
         margin-top: 10em;
         width: 100%;
         height: auto;
-        padding: 2em;
+        padding: 1em;
         background-color:#ECE2D5;
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     #ab_div1{
         width: 10em;
@@ -38,11 +39,9 @@
         height: 100%;
         font-size: 65px;
         transform:rotate(-5deg);
-        margin-left: 0.9em;
     }
     #ab_intro .text {
         margin-top: 3em;
-        margin: 3em auto;
     }
 
     #ab_intro .text p {
@@ -51,11 +50,12 @@
         font-weight: lighter;
         font-size: 1.5em;
         text-align: justify;
+        padding-bottom: 0px;
     }
 
     .ab_about{
         font-size: 30px;
-        margin-left:-1em;
+        padding-top: 30px;
     }
     
     #ab_div4{
