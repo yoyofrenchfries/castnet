@@ -1,0 +1,19 @@
+@media screen and (max-width: 575px){
+    .swiper-button-prev, .swiper-button-next{
+        margin-top: -12%;
+
+    }
+    .swiper-button-prev{
+        left:0;
+    }
+    .swiper-button-next{
+        left: 91%;
+    }
+    .swiper-button-prev > i, .swiper-button-next > i{
+        font-size: 3em;
+
+    }
+    .swiper-button-next > i{
+        padding: 0;
+    }
+}
