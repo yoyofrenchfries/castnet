@@ -235,28 +235,29 @@ header .top {
 header .top .func {
     position: absolute;
     display: table;
-    bottom: 0px;
     right: 0px;
+    border-spacing: 1em;
+    bottom: -1em;
 }
 header .func .button {
     display: table-cell;
     font-size: 14px;
     cursor: pointer;
-    width: 3em;
-    height: 3em;
+    width: 2em;
+    height: 2em;
     line-height: 1;
     vertical-align: middle;
     text-align: center;
     position: relative;
     z-index: 5;
 }
-header .func .button svg {
+header .func .button img {
     position: absolute;
     height: 100%;
     top: 0px;
     left: 0px;
 }
-.svg_transform {
+.img_transform {
     opacity: 0;
     transform: scale(1.7, 0.5);
     transition: all 0.3s ease-in-out;
