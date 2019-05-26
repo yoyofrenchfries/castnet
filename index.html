@@ -67,20 +67,20 @@
         <div class="container">
             <div class="top">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="/">
                         <img src="image/castnet.png">
                     </a>
                 </div>
                 <div class="func">
-                    <div class="button">
+                    <div class="button" action="search">
                         <img src="css/icon/search.png" alt="search">
                         <span>搜尋</span>
                     </div>
-                    <div class="button">
+                    <div class="button" action="about">
                         <img src="css/icon/about.png" alt="about">
                         <span>關於</span>
                     </div>
-                    <div class="button">
+                    <div class="button" action="publish">
                         <img src="css/icon/points.png" alt="publish">
                         <span>卷別</span>
                     </div>
@@ -466,6 +466,12 @@
             e => { // mouse out
                 $(e.currentTarget.children[0]).toggleClass('img_transform');
                 $(e.currentTarget.children[1]).toggleClass('span_transform');
+            });
+            $(btn).click(e => {
+                let action = e.currentTarget.getAttribute('action');
+                if (action === 'about') {
+                    window.location.href = '/about.html';
+                }
             });
         });
         window.addEventListener('scroll', e => {
