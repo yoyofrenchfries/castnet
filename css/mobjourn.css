@@ -8,25 +8,25 @@ section{
     top: 16em;
     margin: 0em;
     margin-left:2em;
-    width: 26em;
+    width: 30em;
     }
 
 footer{
-    margin-top: 25em;
+    margin-top: 30em;
 
 }
 
 .jo_div_t00{
-    width: 100%;
+    width: 18em;
     display: block;
     position: relative;
     top: 10em;
-    left: 0em;
+    margin-left: 5em;
     margin: auto;
 }
 .jo_depart{
     position: relative;
-    font-size: 1.4em;
+    font-size: 2em;
     font-weight: normal;
     display: inline-block;
     color: rgb(138, 138, 138);
@@ -34,7 +34,7 @@ footer{
 }
 .jo_member{
     position: relative;
-    font-size: 1.4em;
+    font-size: 1.8em;
     font-weight: normal;
     display: inline-block;
     padding-left: 1em;
@@ -44,25 +44,29 @@ footer{
 }
 .jo_div_t01{
     display: inline-block;
-    width: 35em;
+    width: 45em;
     position: relative;
     top: 8em;
-    left: 0em;
+    margin-left: 1em;
 }
 .jo_tea_t01{
     display: block;
     position: relative;
-    width: 100%;
-    margin-left: 1.5em;
+    width: 47em;
+    margin-left: 0em;
     top: 0em;
     height: 20em;
 }
 .jo_box{
     display: inline-block;
     position: relative;
-    width: 5em;
+    width: 10em;
     height: 10em;
-    margin: 0 1.5em;
+    
+    margin-left: 5em;
+    margin-right: 0em;
+    margin-top: 0em;
+    margin-bottom: 8em;
     float: left;
 }
 .jo_box:nth-of-type(3n+1){
@@ -74,83 +78,37 @@ footer{
     border-left-width: 2.5px;
     border-left-color: #3AAB97;
     position: relative;
-    font-size: 1.4em;
+    font-size: 1.8em;
     font-weight: normal;
     display: block;
     
 }
-.jo_img_teacher01{
+.jo_img_01{
     border-radius: 50%;
-    width: 5em;
+    width: 10em;
     display: inline-block;
     position: relative;
     top: 1em;
     left: 0em;
+    margin-left: 0em;
 }
-.jo_img_teacher02{
-    border-radius: 50%;
-    width: 5em;
-    display: inline-block;
-    position: relative;
-    top: 1em;
-    left: 0em;
-}
-.jo_img_teacher03{
-    border-radius: 50%;
-    width: 5em;
-    top: 1em;
-    left: 0em;
-    display: inline-block;
-    position: relative;
-}
-.jo_img_teacher04{
-    border-radius: 50%;
-    width: 5em;
-    top: 1em;
-    left: 0em;
-    display: inline-block;
-    position: relative;
-}
-.jo_p_teacher01{
-    font-size: 1.2em;
-    font-weight: normal;
-    position: relative;
-    display: block;
-    top: 0em;
-    left: 0em;
-    width: 4em;
-}
-.jo_p_teacher02{
-    font-size: 1.2em;
-    font-weight: normal;
-    top: 0em;
-    left: 0em;
-    position: relative;
-    display: inline-block;
-    width: 4em;
-}
-.jo_p_teacher03{
-    font-size: 1.2em;
-    font-weight: normal;
-    top: 0em;
-    left: 0em;
-    position: relative;
-    display: inline-block;
-    width: 4em;
-}
-.jo_p_teacher04{
-    font-size: 1.2em;
-    left: 0em;
-    top: 0em;
+.jo_p_01{
+    font-size: 1.7em;
     font-weight: normal;
     position: relative;
     display: inline-block;
+    top: 0em;
+    left: 0em;
+    margin-left: 1em;
+    margin-top: 1em;
     width: 4em;
+    text-align: center;
 }
+
 .jo_div_t02{
     position: relative;
     top: 10em;
-    margin-left: 2em;
+    margin-left: 1em;
     width: 100%;
     height: 15em;
     margin-top: 0em;
@@ -158,59 +116,24 @@ footer{
 }
 .jo_tea_t02{
     margin-top: 1em;
-    margin-left: -0.5em;
+    margin-left: 0em;
     display: block;
     top: 0em;
     position: relative;
     left: 0em;
 }
 .jo_assistant{
-    margin-left: 0em;
+    margin-left: 1.5em;
     top: 0em;
     padding-left: 0.65em;
     border-left-style: solid;
     border-left-width: 2.5px;
     border-left-color: #3AAB97;
     position: relative;
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: normal;
     display: block;
 
-}
-.jo_img_assistant01{
-    border-radius: 50%;
-    width: 5em;
-    display: inline-block;
-    position: relative;
-    top: 1em;
-    left: 0em;
-}
-.jo_img_assistant02{
-    border-radius: 50%;
-    width: 5em;
-    display: inline-block;
-    position: relative;
-    top: 1em;
-    left: 0em;
-}
-.jo_p_assistant01{
-    font-size: 1.2em;
-    font-weight: normal;
-    top:1.5em;
-    left: 0em;
-    position: relative;
-    display: inline-block;
-    width:4em;
-}
-    
-.jo_p_assistant02{
-    font-size: 1.2em;
-    font-weight: normal;
-    top : 1.5em;
-    left: 0em;
-    position: relative;
-    display : inline-block;
-    width:4em;
 }
 
 .jo_div_t03{
@@ -220,7 +143,7 @@ footer{
     position: relative;
     top: 0em;
     left: 0em;
-    display: inline-block;
+    display: block;
 }
 .jo_rep_t01{
     display: inline-block;
@@ -231,39 +154,24 @@ footer{
     height: 25em;;
 }
 .jo_reporters{
-    margin-left: 1.5em;
+    margin-top: 6.5em;
+    margin-left: -17.3em;
     padding-left: 0.65em;
     border-left-style: solid;
     border-left-width: 2.5px;
     border-left-color: #3AAB97;
     position: relative;
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-weight: normal;
-    display: block;
+    display: inline-block;
 }
 
-.jo_img_reporter{
-    border-radius: 50%;
-    width: 5em;
-    display: inline-block;
-    position: relative;
-    left: 0em;
-    top: 0em;
-}
-.jo_p_reporter{
-    font-size: 1.2em;
-    font-weight: normal;
-    top: 0em;
-    left: 0em;
-    width: 4em;
-    position: relative;
-    display: inline-block;
-}
+
 .jo_div_journ{
     display: block;
     position: relative;
-    height: 90em;
-    margin-top: 0em;
+    
+    margin-top: 1em;
     top: 10em;
     width: 100%;
     margin: auto;
@@ -272,12 +180,13 @@ footer{
     position: relative;
     display: inline;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.8em;
     padding-top:6em; 
     text-align: center;
-    left: 0em;
+    left: 1.5em;
     top: 0em;
-    margin-left: 0.5em;
+    margin-left: 0em;
+    margin-left: 0em;
     
     }
     .jo_line1{
@@ -285,63 +194,59 @@ footer{
         height: 2px;
         background-image: linear-gradient(to right, #3AAB97, #3AAB97, #3AAB97);
         width: 25%;
-        top: 0.5em;
-        left: 0em;
-        margin-left: -0.4em;
+        top: 0.2em;
+        left: -0.3em;
+        margin-left: 0em;
+        
         display: inline-block;
         position: relative;
     }
     .jo_line2{
       
-        margin-left: -0.4em;
+        margin-left: -0.2em;
         border: 0;
         height: 2px;
         background-image: linear-gradient(to right, #3AAB97, #3AAB97, #3AAB97);
         width: 25%;
         left: 0em;
-        top: 0.5em;
+        top: 0.2em;
         display: inline-block;
         position: relative;
     }
     .jo_other{
-        left: 0em;
-        width:26em;
-        margin-top: 1em;
-        display:block;
+        
+        width:50em;
+        margin-top: 0em;
+        display:inline-block;
         position: relative;
     }
     .jo_t01{
-        left: 0em;
+        
         display:block;
         position: relative;
         margin: auto;
-        margin-top: 10em;
-        width: 22em;
+        margin-top: 5em;
+        width: 50em;
     }
-    .jo_t02{
-        width: 26em;
-        left: 0em;
-        margin-top: 2em;
-        display:block;
-        position: relative;
-    }
+   
     
     .small_cir01 {
-        width: 12px;
-        height: 12px;
+        width: 20px;
+        height: 20px;
         border-radius: 50px;
         border-color: #3AAB97;
         border-style: solid;
         border-width: 2px;
         position: relative;
-        margin-left: -0.5em;
+        margin-left: 2em;
+        margin-top: 0em;
         left: 0em;
         top: 0em;
         display: inline-block;
          }
          .small_cir02 {
-            width: 12px;
-            height: 12px;
+            width: 20px;
+            height: 20px;
             border-radius: 50px;
             border-color: #3AAB97;
             border-style: solid;
@@ -349,12 +254,12 @@ footer{
             position: relative;
             display: inline-block;
             left: 0em;
-            margin-left: -0.4em;
+            margin-left: -0.5em;
             top: 0em;
         }
         .small_cir03 {
-            width: 12px;
-            height: 12px;
+            width: 20px;
+            height: 20px;
             border-radius: 50px;
             border-color: #3AAB97;
             border-style: solid;
@@ -362,12 +267,12 @@ footer{
             position: relative;
             display: inline-block;
             left: 0em;
-            margin-left: 0.5em;
+            margin-left: 5.6em;
             top: 0em;
         }
         .small_cir04 {
-            width: 12px;
-            height: 12px;
+            width: 20px;
+            height: 20px;
             border-radius: 50px;
             border-color: #3AAB97;
             border-style: solid;
@@ -388,8 +293,8 @@ footer{
         .group_swiper-container .group1 {
             margin-top: 2em;
             
-            width: 50px;
-            height: 50px;
+            width: 100px;
+            height: 100px;
             background: #6EBFB1;
             position: relative;
             border-radius: 50%;
@@ -398,8 +303,8 @@ footer{
         .group_swiper-container .group2 {
             margin-top: 2em;
             
-            width: 50px;
-            height: 50px;
+            width: 100px;
+            height: 100px;
             background: #A3A093;
             position: relative;
             border-radius: 50%;
@@ -407,8 +312,8 @@ footer{
         }
         .group_swiper-container .group3 {
             margin-top: 2em;
-            width: 50px;
-            height: 50px;
+            width: 100px;
+            height: 100px;
             background: #9FB7B3;
             position: relative;
             border-radius: 50%;
@@ -427,104 +332,50 @@ footer{
         .group_swiper-container .group_swiper-button-next {
             display: inline-block;
             cursor: pointer;
-            width: 1em;
-            height: 1em;
-            font-size: 3em;
+            width: 2em;
+            height: 2em;
+            font-size: 5em;
             position: absolute;
             top: 30%;
             z-index: 1;
             text-align: center;
         }
         .group_swiper-container .group_swiper-button-prev {
-            left: -0.5em;
+            left: -0.7em;
         }
         .group_swiper-container .group_swiper-button-next {
-            right: -0.5em;
+            right: -0.8em;
         }
         
         .journ_years01{
-            margin-top: 0.6em;
+            margin-top: 1.5em;
             font-size: 1.5em;
             font-weight: bold;
             position: relative;
             text-align: center;
         }
-        .journ_years02{
-            margin-top: -1.5em;
-            font-size: 1em;
-            font-weight: normal;
-            position: relative;
-            text-align: center;
-        }
-        #jo_i_01{
-            display: inline-block;
-            position: relative;
-            margin-right: 0em;
-            top: 0em;
-        }
-        #jo_i_02{
-            display: inline-block;
-            position: relative;
-            margin-left: 0em;
-            top: 0em;
-        }
-        .small_circle01{
-            width: 12px;
-            height: 12px;
-            border-radius: 50px;
-            border-color: #707070;
-            border-style: solid;
-            border-width: 2px;
-            position: relative;
-            display: inline-block;
-            left: 0em;
-            margin-right: 1em;
-            top: 0em;
-        }
-        .small_circle02{
-            width: 12px;
-            height: 12px;
-            border-radius: 50px;
-            border-color: #707070;
-            border-style: solid;
-            border-width: 2px;
-            position: relative;
-            display: inline-block;
-            left: 0em;
-            margin-right: 1em;
-            top: 0em;
-        }
-        .small_circle03{
-            width: 12px;
-            height: 12px;
-            border-radius: 50px;
-            border-color: #707070;
-            border-style: solid;
-            border-width: 2px;
-            position: relative;
-            display: inline-block;
-            left: 0em;
-            margin-right: 1em;
-            top: 0em;
-        }
-        .small_circle04{
-            width: 12px;
-            height: 12px;
-            border-radius: 50px;
-            border-color: #707070;
-            border-style: solid;
-            border-width: 2px;
-            position: relative;
-            display: inline-block;
-            left: 0em;
-            margin-right: 0em;
-            top: 0em;
-        }
+     
+        
         .jo_and{
             width: 7em;
             position: relative;
             display: block;
             margin: auto;
-            margin-top: 2em;
+            margin-top: 5em;
             
-        }}
+        }
+    .fa-caret-right{
+        width: 2em;
+        height: 2em;
+        font-size: 0.5em;
+        margin-top: 3em;
+        
+    }
+    .fa-caret-left{
+        margin-top: 3em;
+        width: 2em;
+        height: 2em;
+        font-size: 0.5em;
+        
+
+    }}

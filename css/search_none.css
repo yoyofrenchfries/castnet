@@ -6,23 +6,25 @@
 }
 section{
     position: relative;
-    top: 20em;
+    top: 0em;
     text-align: center;
     display: block;
-    
+    margin-bottom: 32em;
 
 }
 footer{
-    top: 120em;
+    top: 100em;
 }
 
 #se_logo{
     width: 5em;
-
+    top: 2em;
+    display: inline-block;
+    position: relative;
 }
 .se_no{
     position: relative;
-    top: 1em;
+    top: 2em;
     text-align: center;
     display: block;
     font-weight: lighter;

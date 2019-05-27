@@ -1,32 +1,39 @@
-@media screen and (max-width: 575px){
+@media screen and (max-width: 576px){
+    section{
+        top: 16em;
+        margin: 0em;
+        margin-left:0em;
+        width: 20em;
+        }
     #re_intro{
-        margin-top: 0em;
-        margin-left: 0;
-        display: block;
+        
+       
+        display: inline-block;
+        position: relative;
+        width: 100%;
+
     }
     footer{
-        margin-top: 15em;
+        margin-top: 20em;
     }
     
     #re_img_reporter{
         border-radius: 50%;
-        width: 8.815em;
+        width: 11em;
         display: inline-block;
         position:relative; 
-        margin-left: 0;
-        margin-top: 5em;
-        left:0;
-        top: 0;
+        margin-left: 3em;
+        margin-top: 2em;
+        top: 0em;
     }
 
     #re_div_t00{
         display: inline-block;
-        width: 15.22em;
+        width: 8em;
         position: relative;
-        left: 0;
-        top: 0;
-        margin-top: 5em;
-        margin-left: 2em;
+        
+        margin-top: 3em;
+        margin-left: 1.8em;
         vertical-align: top;
     }
     #re_div_t00 > a{
@@ -38,14 +45,14 @@
         left: 0;
     }
     #re_div_t00 > h2{
-        font-size: 1em;
+        font-size: 0.8em;
         margin: 0;
         margin-left: 1em;
         margin-top: 0.6em;
         font-weight: normal;
     }
     #re_div_t00 > p{
-        font-size:1em;
+        font-size:0.8em;
         font-weight: lighter;
         margin: 0;
         margin-left: 1em;
@@ -63,14 +70,15 @@
     }
     
     #re_history_article{
-        display: block;
+        display: inline-block;
         position: relative;
         width: 25.59em;
         margin: auto;
-        left:0;
-        top: 5em;
+        margin-left:1em;
+        top: 1.5em;
         margin-top: 2em;
-        margin: 0;
+        width: 100%;
+       
     }
     #re_history_article > a {
         padding-left: 0.65em;
@@ -91,114 +99,24 @@
         background-color:#ECE2D5; 
     }
     .re_p_article{
-        width: 9em;
-        font-size:1.25em;
+        width: 13em;
+        font-size:1em;
         font-weight: normal;
-        margin-left: 1.5em;
+        margin-left: 1.3em;
         position: relative; 
     }
 
-    #re_div_t01{
+    .re_div_t01{
         margin-left: 0em;
         left: 0;
-        width: 25.58em;
+        width: 70%;
         height: 7.57em;
         position: relative;  
-        background-color:#ECE2D5; 
+        background-color:#ECE2D5;
+        
     }
  
-    #re_div_t02{
-        margin-left: 0em;
-        left: 0;
-        width: 25.58em;
-        height: 7.57em;
-        position: relative; 
-        background-color:#ECE2D5; 
-        margin-top: 2em;
-    }
-    
-    #re_div_t03{
-        position: relative;  
-        margin-left: 0em;
-        left: 0;
-        width: 25.58em;
-        height: 7.57em;
-        background-color:#ECE2D5; 
-    }
-    
-    #re_div_t04{
-        position: relative; 
-        margin-left: 0em;
-        left: 0;
-        width: 25.58em;
-        height: 7.57em;
-        background-color:#ECE2D5; 
-    }
-    
-    #re_div_t05{
-        position: relative;  
-        margin-left: 0em;
-        left: 0;
-        width: 25.58em;
-        height: 7.57em;
-        background-color:#ECE2D5; 
-    }
-    
-    
-    #re_project{
-        position: relative;
-        left:0em;
-        top: 0em;
-        margin-top:7em;
-        display: block;
-    }
-    #re_project > a{
-        padding-left: 0.65em;
-        border-left-style: solid;
-        border-left-width: 2px;
-        border-left-color: #3AAB97;
-        position: relative; 
-        font-size: 1.08em;
-        margin-left: 1em;
-        font-weight: bold;
-    }
-    
-    #re_div_t10{
-        position: relative; 
-        margin-left: 0em;
-        left: 0;
-        width: 25.58em;
-        height: 7.57em;
-        background-color:#ECE2D5; 
-    }
-    
-   
-    #re_div_t11{
-        position: relative; 
-        margin-left: 0em;
-        left: 0;
-        width: 25.58em;
-        height: 7.57em;
-        background-color:#ECE2D5; 
-    }
-   
-    #re_div_t12{
-        position: relative; 
-        margin-left: 0em;
-        left: 0;
-        width: 25.58em;
-        height: 7.57em;
-        background-color:#ECE2D5; 
-    }
-   
-    #re_div_t13{
-        position: relative; 
-        margin-left: 0em;
-        left: 0;
-        width: 25.58em;
-        height: 7.57em;
-        background-color:#ECE2D5; 
-    }
+  
 }
    
 

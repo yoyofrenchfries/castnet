@@ -13,7 +13,7 @@
 }
 
 footer{
-    margin-top: 27em;
+    margin-top: 10em;
 }
 #vi_div_t00{
     position: relative;
@@ -46,16 +46,7 @@ footer{
     width:40em;
     
 }
-.vi_article{
-    padding-left: 0.65em;
-    border-left-style: solid;
-    border-left-width: 3px;
-    border-left-color: #3AAB97;
-    font-size: 1.8em;
-    font-weight: normal;
-    position: relative;  
-    color: #5b5751;
-}
+
 .vi_reporter{
     color: #5b5751;
     font-size: 2em;
@@ -126,19 +117,20 @@ footer{
 }
 
 #vi_article {
+    position: relative;
     
-    width: 50em;
     height:15em;
     margin-bottom: 2em;
     display: inline-block;
-    left: 40em;
+   
     
 }
 #vi_i{
-    
+    margin-left: 30em;
+    margin-top: 2em;
     height:5em;
-    
-    display: block;
+    position: relative;
+    display: inline-block;
 }
 #vi_ar_i01{
     display: inline-block;
@@ -196,7 +188,10 @@ footer{
 }
 #vi_bottom{
     margin-top:4em;
-    display: block; 
+    position: relative;
+    display: inline-block;
+   
+    
 }
 .other{
     display: inline;
@@ -204,16 +199,17 @@ footer{
     font-size: 1.8em;
     padding-top:5em; 
     text-align: center;
+    margin-left: 3em;
     
     }
     .vi_line1{
         border: 0;
         height: 2.5px;
         background-image: linear-gradient(to right, #3AAB97, #3AAB97, #3AAB97);
-        width: 20em;
+        width: 27em;
         display: inline-block;
         position: relative;
-        left:-2em;
+        margin-left:0em;
     }
     .vi_line2{
       
@@ -221,10 +217,10 @@ footer{
         border: 0;
         height: 2.5px;
         background-image: linear-gradient(to right, #3AAB97, #3AAB97, #3AAB97);
-        width: 20em;
+        width: 27em;
         display: inline-block;
         position: relative;
-        left:2em;
+        margin-left:4.5em;
     }
 
     .vi_head{
@@ -238,7 +234,9 @@ footer{
     }
     #vi_bo_t00{
         width: 100%;
-
+        display: inline-block;
+        position: relative;
+        
     }
     
     .se_img_article{
@@ -284,9 +282,14 @@ footer{
     }
     #vi_bo_t01{
         margin-top:2em; 
-        height: 30em;
+       
+        width: 23.5em;
         display: inline-block;
-       width: 25em;
-        text-align: left;
+        position: relative;
     }
-  
+    .vi_bo{
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        margin-left:0em;
+    }

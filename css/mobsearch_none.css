@@ -13,7 +13,7 @@
     }
 section{
     position: relative;
-    top: 18em;
+    top: 3em;
     text-align: center;
     display: block;
     
@@ -29,7 +29,7 @@ footer{
 }
 .se_no{
     position: relative;
-    top: 1em;
+    top: 2em;
     text-align: center;
     display: block;
     font-weight: lighter;

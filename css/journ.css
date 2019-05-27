@@ -1,7 +1,7 @@
 section{
     margin-left: 5em;
     position: relative;
-    margin-top: 20.6em;
+    margin-top: 16.6em;
 }
 footer{
     margin-top: 12em;
@@ -12,7 +12,7 @@ footer{
     width: 30em;
     position: relative;
     top: 2em;
-    left: 35em;
+    margin-left: 30em;
 }
 .jo_depart{
     position: relative;
@@ -25,7 +25,7 @@ footer{
 .jo_box{
     width: 7em;
     height: 8em;
-    margin: 1.5em 3em;
+    margin: 1.5em 2em;
     display: inline-block;
 }
 .jo_member{
@@ -79,30 +79,13 @@ footer{
     width: 40em;
     position: relative;
 }
-.jo_img_teacher01{
+.jo_img_01{
     border-radius: 50%;
     width: 6.5em;
     display: block;
     position: relative;
 }
-.jo_img_teacher02{
-    border-radius: 50%;
-    width: 6.5em;
-    display: block;
-    position: relative;
-}
-.jo_img_teacher03{
-    border-radius: 50%;
-    width: 6.5em;
-    display: block;
-    position: relative;
-}
-.jo_img_teacher04{
-    border-radius: 50%;
-    width: 6.5em;
-    display: block;
-    position: relative;
-}
+
 .jo_p_teacher01{
     font-size: 1em;
     font-weight: normal;
@@ -112,58 +95,8 @@ footer{
     width: 100%;
     text-align: center;
 }
-.jo_p_teacher02{
+.jo_p_01{
     font-size: 1em;
-    font-weight: normal;
-    position: relative;
-    display: inline-block;
-    margin-top: 1em;
-    width: 100%;
-    text-align: center;
-}
-.jo_p_teacher03{
-    font-size: 1em;
-    font-weight: normal;
-    position: relative;
-    display: inline-block;
-    margin-top: 1em;
-    width: 100%;
-    text-align: center;
-}
-.jo_p_teacher04{
-    font-size: 1em;
-    font-weight: normal;
-    position: relative;
-    display: inline-block;
-    margin-top: 1em;
-    width: 100%;
-    text-align: center;
-}
-
-.jo_img_assistant01{
-    border-radius: 50%;
-    width: 6.5em;
-    display: inline-block;
-    position: relative;
-}
-.jo_img_assistant02{
-    border-radius: 50%;
-    width: 6.5em;
-    display: inline-block;
-    position: relative;
-}
-.jo_p_assistant01{
-    font-size: 0.8m;
-    font-weight: normal;
-    position: relative;
-    display: inline-block;
-    margin-top: 1em;
-    width: 100%;
-    text-align: center;
-}
-    
-.jo_p_assistant02{
-    font-size: 0.8m;
     font-weight: normal;
     position: relative;
     display: inline-block;
@@ -174,23 +107,23 @@ footer{
 
 .jo_div_t01{
     display: inline-block;
-    width: 51em;
+    width: 40em;
     margin-top: 3em;
     position: relative;
 }
 .jo_div_t02{
-    width: 27em;
-    margin-left: 1.5em;
+    width: 20em;
+    margin-left: 4.8em;
     margin-top: 3em;
     position: relative;
     display: inline-block;
 }
 
 .jo_div_t03{
-    width: 80em;
+    width: 70em;
     position: relative;
     margin: 0 auto;
-    margin-top: 3em;
+    margin-top: 0em;
     margin-left: 0em;
     display: inline-block;
 }
@@ -214,28 +147,15 @@ footer{
     left: 0em;
 }
 
-.jo_img_reporter{
-    border-radius: 50%;
-    width: 6.5em;
-    display: block;
-    position: relative;
-}
+
 
 .jo_div_journ{
     width: 100%;
     height: 60em;
-    margin: auto;
+    margin-top: 4em;
 }
 
-.jo_p_reporter{
-    font-size: 1em;
-    margin-top: 1em;
-    width: 100%;
-    text-align: center;
-    font-weight: normal;
-    position: relative;
-    display: inline-block;
-}
+
  .jo_other{
         top: 5em;
     display:block;
@@ -248,17 +168,17 @@ footer{
     font-size: 1.8em;
     padding-top:5em; 
     text-align: center;
-    left: 0.5em;
+    left: 1.5em;
     
     }
     .jo_line1{
         border: 0;
         height: 2.5px;
         background-image: linear-gradient(to right, #3AAB97, #3AAB97, #3AAB97);
-        width: 30em;
+        width: 25em;
         display: inline-block;
         position: relative;
-        left:-3em;
+        left:-2em;
     }
     .jo_line2{
       
@@ -266,10 +186,10 @@ footer{
         border: 0;
         height: 2.5px;
         background-image: linear-gradient(to right, #3AAB97, #3AAB97, #3AAB97);
-        width: 30em;
+        width: 25em;
         display: inline-block;
         position: relative;
-        left:5em;
+        left:6em;
     }
    
     .jo_t01{
@@ -294,7 +214,7 @@ footer{
              border-style: solid;
              border-width: 2px;
              position: relative;
-             left: -2.7em;
+             left: -1.7em;
              top: -0.5em;
              display: inline-block;
          }
@@ -310,7 +230,7 @@ footer{
             border-width: 2px;
             position: relative;
             display: inline-block;
-            left: -3.3em;
+            left: -2.3em;
             top: -0.5em;
         }
         .small_cir03 {
@@ -325,7 +245,7 @@ footer{
             border-width: 2px;
             position: relative;
             display: inline-block;
-            left: 5.3em;
+            left: 6.3em;
             top: -0.5em;
         }
         .small_cir04 {
@@ -339,7 +259,7 @@ footer{
             border-style: solid;
             border-width: 2px;
             position: relative;
-            left: 4.7em;
+            left: 5.7em;
             top: -0.5em;
             display: inline-block;
         }
@@ -404,12 +324,14 @@ footer{
             left: -1em;
         }
         .group_swiper-container .group_swiper-button-next {
-            right: 0em;
+            right: -0.7em;
         }
         
         .journ_years01{
-            margin-top: 1.1em;
-            font-size: 2.7em;
+            margin-left: 2em;
+            margin-top: 1.6em;
+            font-size: 1.8em;
+            width: 3em;
             font-weight: bold;
             position: relative;
             text-align: center;
@@ -421,18 +343,7 @@ footer{
             position: relative;
             text-align: center;
         }
-        #jo_i_01{
-            display: inline-block;
-            position: relative;
-            margin-right: 0em;
-            top: 2em;
-        }
-        #jo_i_02{
-            display: inline-block;
-            position: relative;
-            margin-left: 0em;
-            top: 2em;
-        }
+        
         .small_circle01{
             width: 20px;
             height: 20px;
