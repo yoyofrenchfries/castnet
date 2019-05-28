@@ -1,658 +1,657 @@
-        * {
-            font-family: 'Noto Sans TC', sans-serif;
-            color: #5b5751;
-            /*border:solid 1px black;*/
-            /*font-size: 12px;*/
-        }
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #5b5751;
+    /*border:solid 1px black;*/
+    /*font-size: 12px;*/
+}
 
-        /*all page start*/
-       
-        /*all page end*/
-        
-        .toprow{
-            margin-top: 5em;
-        }
-        /*音頻 清除按鈕預設樣式*/
-        .cleanbtnstyle{
-            margin: 0;
-            padding: 0;
-            border: 1px solid transparent;
-            outline: none; 
-            background: transparent;
-        }
-        #progress{
-            height: 15px;
-            width:250px;
-            background-color: #5B5751;
-            position: relative;
-        }
+/*all page start*/
 
-        #progressbar{
-            height:8px;
-            width:10px;
-            background-color: #bcbcbc;
-            /*padding-top: 5px;*/
-            /*margin:0 auto;*/
-            position: absolute;
-            top: 25%;
-        }
-        .littlecircle{
-            /*一起調*/
-            height: 20px;
-            width: 20px;
-            margin-left: calc(100% - 12.5px);
-            margin-bottom: 20px;
-            padding-right: -25px; 
-            background-color: white;
-            /*直接調小圓的位置*/
-            border-radius: 50%;
-            /*調小圓的位置*/
-            
-            position: absolute;
-            top: -50%;
-        }
+/*all page end*/
 
-        /*小標*/
-        .smalltitle{
-            font-size: 14px;
-            font-weight: 100;
-        }
-        .greenbar{
-            border-left-style: solid;
-            border-left-width: 2px;
-            border-left-color: #3AAB97;
-            padding: 0 0.75em;
-        }
-
-        .imgbox{
-            margin-top: 1em;
-            text-align: center;
-            /*justify-content: center;
-            align-content: center;*/
-            /*position: relative;
-            width: 20em;
-            height: 20em;*/
-        }
-        .imgbox_01 img{
-            /*width: 20em;  */
-            width: 100%;
-        }
-        @media (min-width: 540px){
-            .imgbox_01 img{
-            width: 30em;    
-        }
-        }
-        @media (min-width: 960px){
-            .imgbox_01 img{
-            width: 40em;    
-        }
-        }
-        /*內文橫圖*/
-        .imgbox_02 img{
-            width: 20em;    
-            /*width: 100%;*/
-        }
-        @media (min-width: 540px){
-            .imgbox_02 img{
-            width: 30em;    
-            /*width: 100%;*/
-        }
-        }
-        @media (min-width: 960px){
-            .imgbox_02 img{
-            width: 40em;    
-        }
-        }
-        /*內文直圖*/
-        .imgbox_03 img{
-            width: 20em;    
-        }
-        
-        /*圖片下面的框框*/
-        .ar_div_04{
-            border:solid 1px #3aab97;
-            width: 100%;
-            align-content: center;
-            padding: 1em 4em;
-        }
-        @media (min-width: 960px){
-        .ar_div_04{
-            width: 75%;
-        }
-        }
-        /*文章*/
-        .ar_div_05{
-            flex-basis: 50%;
-            align-items: center;
-        }
-        .content{
-            width: 100%;
-            margin-top: 1em;
-            align-content: center;
-            font-weight: lighter;
-        }
-        @media (min-width: 540px){
-        .content{
-            width: 75%;
-        }
-        }
-        .greenline{
-            border:solid 1px #3aab97;
-            padding: 1em;
-            margin-top: 1em;
-            text-align: center;
-        }
-        .bigtitle{
-            margin-top: 2em;
-            font-size: 24px;
-            color:#3aab97;
-            font-weight: bold;
-        }
-        /*icon那裏*/
-        .ar_div_06{
-            justify-content: center;
-            margin-top: 2em;
-            /*width: 50%;*/
-        }
-        .ar_div_06 i{
-            /*text-align: center;*/
-            margin-right: 1em;
-            font-size: 40px;
-            color: black;
-
-        }
-        .greenline_b{
-            border:solid 1px #3aab97;
-            margin-top: 1em;
-            text-align: center;
-        }
-
-        /*延伸閱讀*/
-
-        .greenlongbar{
-            /*position: absolute;*/
-            /*top: 50%;*/
-            margin-top: 10px;
-            width: 20em;
-            height: 4px;
-            background-color: #3AAB97;
-            margin-top: 2.6em;
-
-        }
-        .readmore{
-            /*死都不換行*/
-            white-space:nowrap;
-            letter-spacing: 10px;
-            margin-top: 2em;
-        }
-
-        /*最下面的九宮格*/
-        .imgbox_04 > div{
-            /*display: inline-flex;*/
-        }
-        .imgbox_04{
-            flex-wrap: wrap;
-
-        }
-        .imgbox_04 img{
-            /*margin-top: 0.5em;*/
-        }
-
-        /*最下面的小小圖*/
-        .imgbox_04 img{
-            width: 10em;    
-        }
-        @media (min-width: 576px){
-            .imgbox_04 img{
-                width: 16em;
-            }
-            
-        }
-        @media (min-width: 1295px){
-            .imgbox_04 img{
-                width: 12em;
-            }
-        
-        }
-
-        .side{
-            /*margin-top: 1em;*/
-            margin-left: 1em;
-            font-size: 16px;
-            width: 8em;
-            /*margin-left: 0.5em;*/
-        }
-        
-        .tside-1{
-            margin-top: 1em;
-        }
-        @media (min-width: 576px){
-            .tside-1{
-                margin-top: 2em;
-            }
-        
-        }
-        @media (min-width: 1295px){
-            .tside-1{
-                margin-top: 1.5em;
-            }
-        
-        }
-        .tside-2{
-            margin-top: 0.5em;
-        }
-        @media (min-width: 576px){
-            .tside-2{
-                margin-top: 4em;
-            }
-        
-        }
-        @media (min-width: 1295px){
-            .tside-2{
-                margin-top: 1.5em;
-            }
-        
-        }
-        .tside-3{
-            margin-top: 0.5em;
-        }
-        @media (min-width: 576px){
-            .tside-3{
-                margin-top: 4em;
-            }
-        
-        }
-        @media (min-width: 1295px){
-            .tside-3{
-                margin-top: 1.5em;
-            }
-        
-        }
-        
-        
-
-        /*最下面那一行*/
-
-        /*甚麼時候變成一欄而已*/
-        @media (max-width: 1295px){
-
-        .ar_div_07{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-         }
-        .ar_div_08{
-            justify-content: center;
-            /*margin:0 auto;*/
-         }
-        
-        }
-        /*音樂裡面的東西*/
-        #play{
-            font-size: 20px;
-        }
-        #volume{
-            font-size: 20px;
-        }
-        #download{
-            font-size: 20px;
-        }
-        #progress{
-            display: inline-block;
-        }
-        #tracktime{
-            margin-right: 2em;
-        }
-        .audiobox{
-            margin-top: 20em;
-            text-align: center;
-        }
-        #onair{
-            width:5em;
-            margin-bottom: 1em;
-            margin-right: 1em;
-        }
-
-        footer{
+.toprow{
     margin-top: 5em;
 }
-        /*all page end*/
-        
-        /*小標*/
-        .smalltitle{
-            font-size: 14px;
-            font-weight: 100;
-        }
-        .greenbar{
-            border-left-style: solid;
-            border-left-width: 2px;
-            border-left-color: #3AAB97;
-            padding: 0 0.75em;
-        }
+/*音頻 清除按鈕預設樣式*/
+.cleanbtnstyle{
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent;
+    outline: none; 
+    background: transparent;
+}
+#progress{
+    height: 15px;
+    width:250px;
+    background-color: #5B5751;
+    position: relative;
+}
 
-        .imgbox{
-            margin-top: 1em;
-            text-align: center;
-            /*justify-content: center;
-            align-content: center;*/
-            /*position: relative;
-            width: 20em;
-            height: 20em;*/
-        }
-        .imgbox_01 img{
-            /*width: 20em;  */
-            width: 100%;
-        }
-        @media (min-width: 540px){
-            .imgbox_01 img{
-            width: 30em;    
-        }
-        }
-        @media (min-width: 960px){
-            .imgbox_01 img{
-            width: 40em;    
-        }
-        }
-        /*內文橫圖*/
-        .imgbox_02 img{
-            width: 20em;    
-            /*width: 100%;*/
-        }
-        @media (min-width: 540px){
-            .imgbox_02 img{
-            width: 30em;    
-            /*width: 100%;*/
-        }
-        }
-        @media (min-width: 960px){
-            .imgbox_02 img{
-            width: 40em;    
-        }
-        }
-        /*內文直圖*/
-        .imgbox_03 img{
-            width: 20em;    
-        }
-        
-        /*圖片下面的框框*/
-        .ar_div_04{
-            border:solid 1px #3aab97;
-            width: 100%;
-            align-content: center;
-            padding: 1em 4em;
-        }
-        @media (min-width: 960px){
-        .ar_div_04{
-            width: 75%;
-        }
-        }
-        /*文章*/
-        .ar_div_05{
-            flex-basis: 50%;
-            align-items: center;
-        }
-        .content{
-            width: 100%;
-            margin-top: 1em;
-            align-content: center;
-            font-weight: lighter;
-        }
-        @media (min-width: 540px){
-        .content{
-            width: 75%;
-        }
-        }
-        .greenline{
-            border:solid 1px #3aab97;
-            padding: 1em;
-            margin-top: 1em;
-            text-align: center;
-        }
-        .bigtitle{
-            margin-top: 2em;
-            font-size: 24px;
-            color:#3aab97;
-            font-weight: bold;
-        }
-        /*icon那裏*/
-        .ar_div_06{
-            justify-content: center;
-            margin-top: 2em;
-            /*width: 50%;*/
-        }
-        .ar_div_06 i{
-            /*text-align: center;*/
-            margin-right: 1em;
-            font-size: 40px;
-            color: black;
+#progressbar{
+    height:8px;
+    width:10px;
+    background-color: #bcbcbc;
+    /*padding-top: 5px;*/
+    /*margin:0 auto;*/
+    position: absolute;
+    top: 25%;
+}
+.littlecircle{
+    /*一起調*/
+    height: 20px;
+    width: 20px;
+    margin-left: calc(100% - 12.5px);
+    margin-bottom: 20px;
+    padding-right: -25px; 
+    background-color: white;
+    /*直接調小圓的位置*/
+    border-radius: 50%;
+    /*調小圓的位置*/
+    
+    position: absolute;
+    top: -50%;
+}
 
-        }
-        .greenline_b{
-            border:solid 1px #3aab97;
-            margin-top: 1em;
-            text-align: center;
-        }
+/*小標*/
+.smalltitle{
+    font-size: 14px;
+    font-weight: 100;
+}
+.greenbar{
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: #3AAB97;
+    padding: 0 0.75em;
+}
 
-        /*延伸閱讀*/
+.imgbox{
+    margin-top: 1em;
+    text-align: center;
+    /*justify-content: center;
+    align-content: center;*/
+    /*position: relative;
+    width: 20em;
+    height: 20em;*/
+}
+.imgbox_01 img{
+    /*width: 20em;  */
+    width: 100%;
+}
+@media (min-width: 540px){
+    .imgbox_01 img{
+    width: 30em;    
+}
+}
+@media (min-width: 960px){
+    .imgbox_01 img{
+    width: 40em;    
+}
+}
+/*內文橫圖*/
+.imgbox_02 img{
+    width: 20em;    
+    /*width: 100%;*/
+}
+@media (min-width: 540px){
+    .imgbox_02 img{
+    width: 30em;    
+    /*width: 100%;*/
+}
+}
+@media (min-width: 960px){
+    .imgbox_02 img{
+    width: 40em;    
+}
+}
+/*內文直圖*/
+.imgbox_03 img{
+    width: 20em;    
+}
 
-        .greenlongbar{
-            /*position: absolute;*/
-            /*top: 50%;*/
-            margin-top: 10px;
-            width: 20em;
-            height: 4px;
-            background-color: #3AAB97;
-            margin-top: 2.6em;
+/*圖片下面的框框*/
+.ar_div_04{
+    border:solid 1px #3aab97;
+    width: 100%;
+    align-content: center;
+    padding: 1em 4em;
+}
+@media (min-width: 960px){
+.ar_div_04{
+    width: 75%;
+}
+}
+/*文章*/
+.ar_div_05{
+    flex-basis: 50%;
+    align-items: center;
+}
+.content{
+    width: 100%;
+    margin-top: 1em;
+    align-content: center;
+    font-weight: lighter;
+}
+@media (min-width: 540px){
+.content{
+    width: 75%;
+}
+}
+.greenline{
+    border:solid 1px #3aab97;
+    padding: 1em;
+    margin-top: 1em;
+    text-align: center;
+}
+.bigtitle{
+    margin-top: 2em;
+    font-size: 24px;
+    color:#3aab97;
+    font-weight: bold;
+}
+/*icon那裏*/
+.ar_div_06{
+    justify-content: center;
+    margin-top: 2em;
+    /*width: 50%;*/
+}
+.ar_div_06 i{
+    /*text-align: center;*/
+    margin-right: 1em;
+    font-size: 40px;
+    color: black;
 
-        }
-        .readmore{
-            /*死都不換行*/
-            white-space:nowrap;
-            letter-spacing: 10px;
-            margin-top: 2em;
-        }
+}
+.greenline_b{
+    border:solid 1px #3aab97;
+    margin-top: 1em;
+    text-align: center;
+}
 
-        /*最下面的九宮格*/
-        .imgbox_04 > div{
-            /*display: inline-flex;*/
-        }
-        .imgbox_04{
-            flex-wrap: wrap;
+/*延伸閱讀*/
 
-        }
-        .imgbox_04 img{
-            /*margin-top: 0.5em;*/
-        }
+.greenlongbar{
+    /*position: absolute;*/
+    /*top: 50%;*/
+    margin-top: 10px;
+    width: 20em;
+    height: 4px;
+    background-color: #3AAB97;
+    margin-top: 2.6em;
 
-        /*最下面的小小圖*/
-        .imgbox_04 img{
-            width: 10em;    
-        }
-        @media (min-width: 576px){
-            .imgbox_04 img{
-                width: 16em;
-            }
-            
-        }
-        @media (min-width: 1295px){
-            .imgbox_04 img{
-                width: 12em;
-            }
-        
-        }
+}
+.readmore{
+    /*死都不換行*/
+    white-space:nowrap;
+    letter-spacing: 10px;
+    margin-top: 2em;
+}
 
-        .side{
-            /*margin-top: 1em;*/
-            margin-left: 1em;
-            font-size: 16px;
-            width: 8em;
-            /*margin-left: 0.5em;*/
-        }
-        
-        .tside-1{
-            margin-top: 1em;
-        }
-        @media (min-width: 576px){
-            .tside-1{
-                margin-top: 2em;
-            }
-        
-        }
-        @media (min-width: 1295px){
-            .tside-1{
-                margin-top: 1.5em;
-            }
-        
-        }
-        .tside-2{
-            margin-top: 0.5em;
-        }
-        @media (min-width: 576px){
-            .tside-2{
-                margin-top: 4em;
-            }
-        
-        }
-        @media (min-width: 1295px){
-            .tside-2{
-                margin-top: 1.5em;
-            }
-        
-        }
-        .tside-3{
-            margin-top: 0.5em;
-        }
-        @media (min-width: 576px){
-            .tside-3{
-                margin-top: 4em;
-            }
-        
-        }
-        @media (min-width: 1295px){
-            .tside-3{
-                margin-top: 1.5em;
-            }
-        
-        }
-        
-        
+/*最下面的九宮格*/
+.imgbox_04 > div{
+    /*display: inline-flex;*/
+}
+.imgbox_04{
+    flex-wrap: wrap;
 
-        /*最下面那一行*/
+}
+.imgbox_04 img{
+    /*margin-top: 0.5em;*/
+}
 
-        /*甚麼時候變成一欄而已*/
-        @media (max-width: 1295px){
+/*最下面的小小圖*/
+.imgbox_04 img{
+    width: 10em;    
+}
+@media (min-width: 576px){
+    .imgbox_04 img{
+        width: 16em;
+    }
+    
+}
+@media (min-width: 1295px){
+    .imgbox_04 img{
+        width: 12em;
+    }
 
-        .ar_div_07{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-         }
-        .ar_div_08{
-            justify-content: center;
-            /*margin:0 auto;*/
-         }
-        
-        }
-        /*他裡面的東西*/
+}
+
+.side{
+    /*margin-top: 1em;*/
+    margin-left: 1em;
+    font-size: 16px;
+    width: 8em;
+    /*margin-left: 0.5em;*/
+}
+
+.tside-1{
+    margin-top: 1em;
+}
+@media (min-width: 576px){
+    .tside-1{
+        margin-top: 2em;
+    }
+
+}
+@media (min-width: 1295px){
+    .tside-1{
+        margin-top: 1.5em;
+    }
+
+}
+.tside-2{
+    margin-top: 0.5em;
+}
+@media (min-width: 576px){
+    .tside-2{
+        margin-top: 4em;
+    }
+
+}
+@media (min-width: 1295px){
+    .tside-2{
+        margin-top: 1.5em;
+    }
+
+}
+.tside-3{
+    margin-top: 0.5em;
+}
+@media (min-width: 576px){
+    .tside-3{
+        margin-top: 4em;
+    }
+
+}
+@media (min-width: 1295px){
+    .tside-3{
+        margin-top: 1.5em;
+    }
+
+}
 
 
-        /*抓資料的css*/
-        article{
-            text-align: center;
-            display: flex;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            margin-right: -15px;
-            margin-left: -15px;
-            justify-content: center !important;
-            width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
-            margin-right: auto;
-            margin-left: auto;
 
-        }
-        @media (min-width: 540px){
-            article {
-                width: 88%;
-            }
-        }
+/*最下面那一行*/
 
-        article h1{
-            font-size: 2em;
-        }
-        
-        article p{
-            text-align: left;
-            width: 100%;
-            margin-top: 1em;
-            align-content: center;
-            font-weight: lighter;
-            font-size: 1.2em;
-        }
+/*甚麼時候變成一欄而已*/
+@media (max-width: 1295px){
 
-        .picture-box p{
-            border:solid 1px #3aab97;
-            padding: 1em;
-            margin-top: 1em;
-            text-align: center;
-        }
+.ar_div_07{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+.ar_div_08{
+    justify-content: center;
+    /*margin:0 auto;*/
+ }
 
-        @media (max-width: 575px){
-            article p{
-                font-size: 1em;
-            }
-        }
-        article img{
-            width: 20em;    
-        }
-        @media (max-width: 540px){
-            article img{
-            width: 30em;    
-            /*width: 100%;*/
-        }
-        }
-        @media (min-width: 960px){
-            article img{
-            width: 40em;    
-        }
-        }
+}
+/*音樂裡面的東西*/
+#play{
+    font-size: 20px;
+}
+#volume{
+    font-size: 20px;
+}
+#download{
+    font-size: 20px;
+}
+#progress{
+    display: inline-block;
+}
+#tracktime{
+    margin-right: 2em;
+}
+.audiobox{
+    margin-top: 20em;
+    text-align: center;
+}
+#onair{
+    width:5em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
 
-        article h2{
-            margin-top: 2em;
-            font-size: 24px;
-            color:#3aab97;
-            font-weight: bold;
-        }
-        .reports{
-            font-size: 1em;
-            font-weight: 100;
-        }
-        .reports span{
-            border-left-style: solid;
-            border-left-width: 2px;
-            border-left-color: #3AAB97;
-            padding: 0 0.75em;
-            /*font-size: 14px;
-            font-weight: 100;*/
-        }
-        @media screen and (max-width: 575px){
-            footer{
-                margin-top: 20em;
-            }
-            section {
-                position: relative;
-                top: 11.86em;
-                margin-top: 0;
-            }
-            
-            #section02 {
-                top: 0;
-            }
-            article{
-                margin-top: 2em;
-            }
-            article img {
-                width: 20em;
-            }
-        }
+footer{
+margin-top: 5em;
+}
+/*all page end*/
+
+/*小標*/
+.smalltitle{
+    font-size: 14px;
+    font-weight: 100;
+}
+.greenbar{
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: #3AAB97;
+    padding: 0 0.75em;
+}
+
+.imgbox{
+    margin-top: 1em;
+    text-align: center;
+    /*justify-content: center;
+    align-content: center;*/
+    /*position: relative;
+    width: 20em;
+    height: 20em;*/
+}
+.imgbox_01 img{
+    /*width: 20em;  */
+    width: 100%;
+}
+@media (min-width: 540px){
+    .imgbox_01 img{
+    width: 30em;    
+}
+}
+@media (min-width: 960px){
+    .imgbox_01 img{
+    width: 40em;    
+}
+}
+/*內文橫圖*/
+.imgbox_02 img{
+    width: 20em;    
+    /*width: 100%;*/
+}
+@media (min-width: 540px){
+    .imgbox_02 img{
+    width: 30em;    
+    /*width: 100%;*/
+}
+}
+@media (min-width: 960px){
+    .imgbox_02 img{
+    width: 40em;    
+}
+}
+/*內文直圖*/
+.imgbox_03 img{
+    width: 20em;    
+}
+
+/*圖片下面的框框*/
+.ar_div_04{
+    border:solid 1px #3aab97;
+    width: 100%;
+    align-content: center;
+    padding: 1em 4em;
+}
+@media (min-width: 960px){
+.ar_div_04{
+    width: 75%;
+}
+}
+/*文章*/
+.ar_div_05{
+    flex-basis: 50%;
+    align-items: center;
+}
+.content{
+    width: 100%;
+    margin-top: 1em;
+    align-content: center;
+    font-weight: lighter;
+}
+@media (min-width: 540px){
+.content{
+    width: 75%;
+}
+}
+.greenline{
+    border:solid 1px #3aab97;
+    padding: 1em;
+    margin-top: 1em;
+    text-align: center;
+}
+.bigtitle{
+    margin-top: 2em;
+    font-size: 24px;
+    color:#3aab97;
+    font-weight: bold;
+}
+/*icon那裏*/
+.ar_div_06{
+    justify-content: center;
+    margin-top: 2em;
+    /*width: 50%;*/
+}
+.ar_div_06 i{
+    /*text-align: center;*/
+    margin-right: 1em;
+    font-size: 40px;
+    color: black;
+
+}
+.greenline_b{
+    border:solid 1px #3aab97;
+    margin-top: 1em;
+    text-align: center;
+}
+
+/*延伸閱讀*/
+
+.greenlongbar{
+    /*position: absolute;*/
+    /*top: 50%;*/
+    margin-top: 10px;
+    width: 20em;
+    height: 4px;
+    background-color: #3AAB97;
+    margin-top: 2.6em;
+
+}
+.readmore{
+    /*死都不換行*/
+    white-space:nowrap;
+    letter-spacing: 10px;
+    margin-top: 2em;
+}
+
+/*最下面的九宮格*/
+.imgbox_04 > div{
+    /*display: inline-flex;*/
+}
+.imgbox_04{
+    flex-wrap: wrap;
+
+}
+.imgbox_04 img{
+    /*margin-top: 0.5em;*/
+}
+
+/*最下面的小小圖*/
+.imgbox_04 img{
+    width: 10em;    
+}
+@media (min-width: 576px){
+    .imgbox_04 img{
+        width: 16em;
+    }
+    
+}
+@media (min-width: 1295px){
+    .imgbox_04 img{
+        width: 12em;
+    }
+
+}
+
+.side{
+    /*margin-top: 1em;*/
+    margin-left: 1em;
+    font-size: 16px;
+    width: 8em;
+    /*margin-left: 0.5em;*/
+}
+
+.tside-1{
+    margin-top: 1em;
+}
+@media (min-width: 576px){
+    .tside-1{
+        margin-top: 2em;
+    }
+
+}
+@media (min-width: 1295px){
+    .tside-1{
+        margin-top: 1.5em;
+    }
+
+}
+.tside-2{
+    margin-top: 0.5em;
+}
+@media (min-width: 576px){
+    .tside-2{
+        margin-top: 4em;
+    }
+
+}
+@media (min-width: 1295px){
+    .tside-2{
+        margin-top: 1.5em;
+    }
+
+}
+.tside-3{
+    margin-top: 0.5em;
+}
+@media (min-width: 576px){
+    .tside-3{
+        margin-top: 4em;
+    }
+
+}
+@media (min-width: 1295px){
+    .tside-3{
+        margin-top: 1.5em;
+    }
+
+}
+
+
+
+/*最下面那一行*/
+
+/*甚麼時候變成一欄而已*/
+@media (max-width: 1295px){
+
+.ar_div_07{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+.ar_div_08{
+    justify-content: center;
+    /*margin:0 auto;*/
+ }
+
+}
+/*他裡面的東西*/
+
+/*抓資料的css*/
+article{
+    text-align: center;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center !important;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+@media (min-width: 540px){
+    article {
+        width: 88%;
+    }
+}
+
+article h1{
+    font-size: 2em;
+}
+
+article p{
+    text-align: left;
+    width: 100%;
+    margin-top: 1em;
+    align-content: center;
+    font-weight: lighter;
+    font-size: 1.2em;
+}
+
+.picture-box p{
+    border:solid 1px #3aab97;
+    padding: 1em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+@media (max-width: 575px){
+    article p{
+        font-size: 1em;
+    }
+}
+article img{
+    width: 20em;    
+}
+@media (max-width: 540px){
+    article img{
+    width: 30em;    
+    /*width: 100%;*/
+}
+}
+@media (min-width: 960px){
+    article img{
+    width: 40em;    
+}
+}
+
+article h2{
+    margin-top: 2em;
+    font-size: 24px;
+    color:#3aab97;
+    font-weight: bold;
+}
+.reports{
+    font-size: 1em;
+    font-weight: 100;
+}
+.reports span{
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: #3AAB97;
+    padding: 0 0.75em;
+    /*font-size: 14px;
+    font-weight: 100;*/
+}
+@media screen and (max-width: 575px){
+    footer{
+        margin-top: 20em;
+    }
+    section {
+        position: relative;
+        top: 11.86em;
+        margin-top: 0;
+    }
+    
+    #section02 {
+        top: 0;
+    }
+    article{
+        margin-top: 2em;
+    }
+    article img {
+        width: 20em;
+    }
+}
