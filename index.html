@@ -13,7 +13,8 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"> -->
     <link rel="stylesheet" href="css/all_pages.css">
     <link rel="stylesheet" href="css/frontpage.css">
     <link rel="stylesheet" href="css/mobFrontPage.css">
@@ -36,7 +37,7 @@
                     <i class="fas fa-times fa-2x"></i>
                 </div>
             </div>
-            <div class="search-bar">
+            <div class="desk-">
                 <input type="text" name="keyword" id="keyword" autocomplete="off">
                 <i class="fas fa-search"></i>
             </div>
@@ -70,6 +71,12 @@
                     <a href="/">
                         <img src="image/castnet.png">
                     </a>
+                </div>
+                <div class="desk-search-bar">
+                    <form action="" method="get">
+                        <input type="text" placeholder="關鍵字" name="keyword" id="desk-keyword" autocomplete="off">
+                    </form>
+                    <i class="fas fa-times"></i>
                 </div>
                 <div class="func">
                     <div class="button" action="search">
@@ -472,7 +479,14 @@
                 if (action === 'about') {
                     window.location.href = '/about.html';
                 }
+                if (action === 'search') {
+                    $('.desk-search-bar').toggle("slide", { direction: "right" }, 500);
+                    $('.desk-search-bar input[type=text]').focus();
+                }
             });
+        });
+        document.querySelector('.desk-search-bar > i').addEventListener('click', e => {
+            document.querySelector('.desk-search-bar input[type=text]').value = '';
         });
         window.addEventListener('scroll', e => {
             if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
