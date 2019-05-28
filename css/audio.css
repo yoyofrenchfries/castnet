@@ -304,7 +304,7 @@
             margin-right: 2em;
         }
         .audiobox{
-            margin-top: 1em;
+            margin-top: 20em;
             text-align: center;
         }
         #onair{
@@ -579,10 +579,11 @@
         }
 
         article h1{
-            font-size: 3em;
+            font-size: 2em;
         }
         
         article p{
+            text-align: left;
             width: 100%;
             margin-top: 1em;
             align-content: center;
@@ -599,7 +600,7 @@
 
         @media (max-width: 575px){
             article p{
-                font-size: 1.7em;
+                font-size: 1em;
             }
         }
         article img{
@@ -624,7 +625,7 @@
             font-weight: bold;
         }
         .reports{
-            font-size: 2em;
+            font-size: 1em;
             font-weight: 100;
         }
         .reports span{

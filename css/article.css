@@ -252,8 +252,8 @@ footer{
 
 /*抓資料的css*/
 article{
-	margin-top: 22em;
-	text-align: center;
+	/* margin-top: 20em; */
+	/* text-align: center; */
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
@@ -274,7 +274,7 @@ article{
 }
 
 article h1{
-	font-size: 3em;
+	font-size: 2em;
 }
 
 article p{
@@ -282,7 +282,7 @@ article p{
 	margin-top: 1em;
 	align-content: center;
 	font-weight: lighter;
-	font-size: 1.7em;
+	font-size: 1em;
 }
 
 .picture-box p{
@@ -314,14 +314,17 @@ article h2{
 	font-weight: bold;
 }
 .reports{
-	font-size: 2em;
+	font-size: 1em;
 	font-weight: 100;
+	text-align: center;
 }
 .reports span{
 	border-left-style: solid;
 	border-left-width: 2px;
 	border-left-color: #3AAB97;
 	padding: 0 0.75em;
+	/* text-align: center; */
+	align-items: center;
 	/*font-size: 14px;
 	font-weight: 100;*/
 }
