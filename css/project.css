@@ -98,8 +98,8 @@ section a {
     margin: 0 0.5em;
   }
   .project .pj_info .pj_author {
-    display: inline;
-    font-size: 0.5em;
+    display: inline-block;
+    font-size: 0.6em;
   }
   .project .pj_info .pj_author .pj_reporter {
     font-size: 1.1em;
@@ -121,7 +121,7 @@ section a {
   }
 
   .pj_article_title {
-    margin: 1em 2em;
+    margin: 1em -1em;
     text-align: center;
   }
 
