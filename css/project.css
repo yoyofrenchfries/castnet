@@ -27,7 +27,7 @@
   font-size: 1em;
 }
 .pj_author {
-  display: inline;
+  display: inline-block;
   font-size: 1.1em;
 }
 .pj_abstract {
