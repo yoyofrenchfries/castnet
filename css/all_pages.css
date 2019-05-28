@@ -253,6 +253,7 @@ header .top .desk-search-bar i {
     transform: translateY(-50%);
     color: #f5f5f5;
     cursor: pointer;
+    display: none;
 }
 header .top .func {
     position: absolute;

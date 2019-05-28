@@ -454,6 +454,7 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script>
+        // 捲到最頂的箭頭按鈕
         document.querySelector("#top-arrow").addEventListener('click', () => {
             $('html').animate({
                 scrollTop: 0
@@ -465,6 +466,7 @@
         document.querySelector('#close-btn').addEventListener('click', () => {
             $('.menu').slideToggle();
         });
+        // 桌面版右上，三個功能鈕
         document.querySelectorAll('header .func .button').forEach(btn => {
             $(btn).hover( e => { // mouse in
                 $(e.currentTarget.children[0]).toggleClass('img_transform');
@@ -485,9 +487,21 @@
                 }
             });
         });
+        // 桌面的search-bar ，按裡面的icon，清空，對焦，icon消失
         document.querySelector('.desk-search-bar > i').addEventListener('click', e => {
             document.querySelector('.desk-search-bar input[type=text]').value = '';
+            $('.desk-search-bar input[type=text]').focus();
+            $('header .top .desk-search-bar i').fadeOut();
         });
+        // 桌面的search-bar，若有輸入值，則顯示叉叉icon
+        document.querySelector('.desk-search-bar input[type=text]').addEventListener('keyup', e => {
+            if (document.querySelector('.desk-search-bar input[type=text]').value.length == 0) {
+                $('header .top .desk-search-bar i').fadeOut();    
+            } else {
+                $('header .top .desk-search-bar i').fadeIn();                
+            }
+        });
+        // 視窗往下滑，往上箭頭才出現
         window.addEventListener('scroll', e => {
             if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
                 $("#top-arrow").fadeIn();
