@@ -93,7 +93,7 @@ section a {
     border-left-style: solid;
     
     border-left-width: 2px;
-    border-right-width: 2px;
+    border-right-width: 0px;
     border-color: #3aab97;
     margin: 0 0.5em;
   }
