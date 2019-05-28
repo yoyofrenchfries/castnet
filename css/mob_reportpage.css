@@ -1,6 +1,6 @@
 @media screen and (max-width: 576px){
     section{
-        top: 16em;
+        top: 12em;
         margin: 0em;
         margin-left:0em;
         width: 20em;
@@ -99,21 +99,22 @@
         background-color:#ECE2D5; 
     }
     .re_p_article{
-        width: 13em;
+        top:0em;
         font-size:1em;
         font-weight: normal;
-        margin-left: 1.3em;
+        margin-left: 0em;
         position: relative; 
+        display: inline-block;
     }
 
     .re_div_t01{
         margin-left: 0em;
         left: 0;
-        width: 70%;
+        width: 88%;
         height: 7.57em;
         position: relative;  
         background-color:#ECE2D5;
-        
+        display: inline-block;
     }
  
   
