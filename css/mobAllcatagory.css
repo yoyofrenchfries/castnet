@@ -30,15 +30,20 @@
         font-size: 1em;
     }
     #ca_div_c01{
-        width: 35%;
+        width: 33%;
     }
     #ca_div_c02{
-        width: 35%;
-        left: 12%;
+        width: 33%;
+        left: 0%;
+        margin-left: 0%;
     }
     #ca_a_c01{
+        display: inline-block;
         font-size: 1em;
-        left: 8%;
+        left: 0%;
+        width: 31%;
+        padding: 0 5%;
+        margin-right: 0em;
     }
 
     #ca_div_d{
