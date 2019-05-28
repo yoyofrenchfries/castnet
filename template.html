@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>castnet next</title>
+    <title>Template</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
@@ -15,8 +15,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="css/all_pages.css">
-    <!-- 下面加上各頁面需要的js/css檔 -->
-    
 
 </head>
 
@@ -26,6 +24,7 @@
         <i class="fas fa-chevron-up fa-3x"></i>
     </div>
 
+    <!-- 手機版選單 -->
     <div class="menu">
         <div class="container">
             <div class="top">
@@ -67,21 +66,21 @@
         <div class="container">
             <div class="top">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="/">
                         <img src="image/castnet.png">
                     </a>
                 </div>
                 <div class="func">
-                    <div class="button">
-                        <i class="fas fa-search fa-2x"></i>
+                    <div class="button" action="search">
+                        <img src="css/icon/search.png" alt="search">
                         <span>搜尋</span>
                     </div>
-                    <div class="button">
-                        <img src="image/tree01.png">
+                    <div class="button" action="about">
+                        <img src="css/icon/about.png" alt="about">
                         <span>關於</span>
                     </div>
-                    <div class="button">
-                        <i class="fas fa-ellipsis-v fa-2x"></i>
+                    <div class="button" action="publish">
+                        <img src="css/icon/points.png" alt="publish">
                         <span>卷別</span>
                     </div>
                 </div>
@@ -157,16 +156,23 @@
 
 
     <section class="container">
-       <!--內容需要修改的部分-->
-       
+        <!-- 各頁面內容 -->
     </section>
 
     <footer>
         <div class="container">
             <div class="top">
-                <div class="img-wrapper">
-                    <img src="image/logo01.png" alt="castnet logo">
+                <div class="logo-category">
+                    <div class="img-wrapper">
+                        <img src="image/logo01.png" alt="castnet logo">
+                    </div>
+                    <div class="all-category">
+                        <div class="wrapper">
+                            <a href="all_catagory.html">所有期別</a>
+                        </div>
+                    </div>
                 </div>
+
 
                 <div class="links">
                     <div class="wrapper">
@@ -208,6 +214,22 @@
         document.querySelector('#close-btn').addEventListener('click', () => {
             $('.menu').slideToggle();
         });
+        document.querySelectorAll('header .func .button').forEach(btn => {
+            $(btn).hover(e => { // mouse in
+                $(e.currentTarget.children[0]).toggleClass('img_transform');
+                $(e.currentTarget.children[1]).toggleClass('span_transform');
+            },
+                e => { // mouse out
+                    $(e.currentTarget.children[0]).toggleClass('img_transform');
+                    $(e.currentTarget.children[1]).toggleClass('span_transform');
+                });
+            $(btn).click(e => {
+                let action = e.currentTarget.getAttribute('action');
+                if (action === 'about') {
+                    window.location.href = '/about.html';
+                }
+            });
+        });
         window.addEventListener('scroll', e => {
             if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
                 $("#top-arrow").fadeIn();
@@ -247,7 +269,7 @@
 
     </script>
     <script>
-        // 各頁面需要的javascript寫這裡
+        // 各頁面需要用到的javascript
     </script>
 </body>
 

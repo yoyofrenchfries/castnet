@@ -1,2 +1,5 @@
 .DS_Store
-.vscode/*
+.vscode
+.Rhistory
+_Rhistory
+_gitignore
