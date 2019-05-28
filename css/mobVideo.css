@@ -171,31 +171,33 @@
         display: inline-block;
         font-weight: lighter;
         font-size: 1.2em;
-        margin-left: 3em;
+        margin-left: 1em;
         margin-top: 0em;
         text-align: center;
         
         }
         .vi_line1{
-            
+            top: 0.5em;
             border: 0;
             height: 2px;
             background-image: linear-gradient(to right, #3AAB97, #3AAB97, #3AAB97);
-            width: 11em;
+            width: 30%;
             display: inline-block;
             position: relative;
-            
+            margin-top: 0em;
         }
         .vi_line2{
           
-            
+            top: 0.5em;
             border: 0;
             height: 2px;
             background-image: linear-gradient(to right, #3AAB97, #3AAB97, #3AAB97);
-            width: 11em;
+            width: 30%;
             display: inline-block;
             position: relative;
-           
+            margin-right:0em;
+            margin-left:1em;
+            margin-top: 0em;
         }
     
         .vi_head{
