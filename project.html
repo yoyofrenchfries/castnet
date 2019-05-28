@@ -15,10 +15,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="css/all_pages.css">
-    <!-- 下面加上各頁面需要的js/css檔 -->
     <link rel="stylesheet" href="css/project.css">
     <link rel="stylesheet" href="css/mobProject.css">
-
+    
 </head>
 
 <body>
@@ -27,6 +26,7 @@
         <i class="fas fa-chevron-up fa-3x"></i>
     </div>
 
+    <!-- 手機版選單 -->
     <div class="menu">
         <div class="container">
             <div class="top">
@@ -68,21 +68,21 @@
         <div class="container">
             <div class="top">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="/">
                         <img src="image/castnet.png">
                     </a>
                 </div>
                 <div class="func">
-                    <div class="button">
-                        <i class="fas fa-search fa-2x"></i>
+                    <div class="button" action="search">
+                        <img src="css/icon/search.png" alt="search">
                         <span>搜尋</span>
                     </div>
-                    <div class="button">
-                        <img src="image/tree01.png">
+                    <div class="button" action="about">
+                        <img src="css/icon/about.png" alt="about">
                         <span>關於</span>
                     </div>
-                    <div class="button">
-                        <i class="fas fa-ellipsis-v fa-2x"></i>
+                    <div class="button" action="publish">
+                        <img src="css/icon/points.png" alt="publish">
                         <span>卷別</span>
                     </div>
                 </div>
@@ -158,7 +158,7 @@
 
 
     <section class="container">
-      <div class="project">
+    <div class="project">
         <div class="pj_info">
           <span class="pj_project_word">專題</span>
           <div class="pj_title">
@@ -330,9 +330,17 @@
     <footer>
         <div class="container">
             <div class="top">
-                <div class="img-wrapper">
-                    <img src="image/logo01.png" alt="castnet logo">
+                <div class="logo-category">
+                    <div class="img-wrapper">
+                        <img src="image/logo01.png" alt="castnet logo">
+                    </div>
+                    <div class="all-category">
+                        <div class="wrapper">
+                            <a href="all_catagory.html">所有期別</a>
+                        </div>
+                    </div>
                 </div>
+                
 
                 <div class="links">
                     <div class="wrapper">
@@ -374,6 +382,22 @@
         document.querySelector('#close-btn').addEventListener('click', () => {
             $('.menu').slideToggle();
         });
+        document.querySelectorAll('header .func .button').forEach(btn => {
+            $(btn).hover( e => { // mouse in
+                $(e.currentTarget.children[0]).toggleClass('img_transform');
+                $(e.currentTarget.children[1]).toggleClass('span_transform');
+            },
+            e => { // mouse out
+                $(e.currentTarget.children[0]).toggleClass('img_transform');
+                $(e.currentTarget.children[1]).toggleClass('span_transform');
+            });
+            $(btn).click(e => {
+                let action = e.currentTarget.getAttribute('action');
+                if (action === 'about') {
+                    window.location.href = '/about.html';
+                }
+            });
+        });
         window.addEventListener('scroll', e => {
             if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
                 $("#top-arrow").fadeIn();
@@ -412,26 +436,9 @@
         });
 
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script>
-      var swiper = new Swiper(".swiper-container", {
-        slidesPerView: 4,
-        spaceBetween: 10,
-        slidesPerGroup: 1,
-        loop: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        },
-        breakpoints: {
-          575: {
-            slidesPerView: 1,
-            spaceBetween: 3,
-          }
-        }
-      });
+
     </script>
 </body>
 
 </html>
-

@@ -1,12 +1,5 @@
 
-* {
-  margin: 0;
-  padding: 0;
-}
-section {
-  margin-top: 20em;
-  display: block;
-}
+s
 .pj_info {
   display: inline;
 }
@@ -74,7 +67,7 @@ section {
   margin: 1em auto;
 }
 
-a {
+section a {
   color: #5b5751;
   margin: 1em;
 }
@@ -82,21 +75,8 @@ a {
   margin: 1em 0em;
 }
 
-footer {
-  /* margin-top: 100em; */
-}
 
 @media screen and (max-width: 575px) {
-  html,
-  body {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-  }
-  section {
-    display: block;
-    margin-top: -2em;
-  }
   .project {
     background-color: antiquewhite;
     height: auto;
@@ -158,7 +138,4 @@ footer {
     font-size: 0.8em;
   }
 
-  footer {
-    margin-top: 50em;
-  }
 }

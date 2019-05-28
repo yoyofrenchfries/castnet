@@ -325,6 +325,15 @@ article h2{
 	/*font-size: 14px;
 	font-weight: 100;*/
 }
+#section02 {
+	margin-top: 0;
+	top: 0;
+}
+section {
+	position: relative;
+	top: 0em;
+	margin-top: 0;
+}
 @media screen and (max-width: 575px){
 	footer {
 		position: relative;
@@ -337,9 +346,7 @@ article h2{
 		top: 0em;
 		margin-top: 0;
 	}
-	#section02 {
-		top: 0;
-	}
+	
 	.vi_line1,.vi_line2{
 		width: 8em;
 	}
@@ -352,5 +359,9 @@ article h2{
 		margin-left: 1em;
 		margin-right: 0;
 		font-size: 2em;
+	}
+	#section02 {
+		margin-top: 0;
+		top: 0;
 	}
 }
