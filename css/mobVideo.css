@@ -24,6 +24,7 @@
        
     }
     .vi_video{
+        margin-left: 0%;
         width:100%;
         position: relative;
         display: inline-block;
@@ -31,16 +32,18 @@
     
     .vi_title{
         font-weight: normal;
-        font-size:2em;
+        font-size:1.45em;
         position: relative;
+        width: 100%;
+        text-align: center;
         
     }
     
     .vi_category{
-        font-size: 1.2em;
+        font-size: 1.1em;
         font-weight: normal;
         position: relative;
-        margin-left:0em;  
+        margin-left:0%;  
         padding-right:0.5em;
         color: #5b5751;
         border-right-style: solid;
@@ -48,7 +51,7 @@
         border-right-color: #3AAB97;
         text-align: left;
         font-weight: lighter;
-        width:40em;
+        width:100%;
         
     }
     .vi_article{
@@ -56,25 +59,25 @@
         border-left-style: solid;
         border-left-width: 1px;
         border-left-color: #3AAB97;
-        font-size: 1.2em;
+        font-size: 1.1em;
         font-weight: normal;
         position: relative;  
         color: #5b5751;
-        margin-left:0em;  
+        margin-left:0%;  
     }
     .vi_reporter{
         color: #5b5751;
-        font-size: 1.2em;
+        font-size: 1.1em;
         font-weight: lighter;
         position: relative;  
-        margin-left:0em;  
+        margin-left:0%;  
         padding-left:0.6em;
         display: inline;
         padding-right:0.3em;
     }
     .vi_report{
         color: #5b5751;
-        font-size: 1.2em;
+        font-size: 1.1em;
         font-weight: lighter;
         position: relative;     
         padding-left:0.65em;
@@ -83,26 +86,25 @@
         border-right-style: solid;
         border-right-width: 1px;
         border-right-color: #3AAB97;
-        margin-left:0em;  
+        margin-left:0%;  
     }
     .vi_date{
-        font-size: 1.2em;
+        font-size: 1.1em;
         font-weight: lighter;
         display: inline-block;
-        margin-left:0em;  
+        margin-left:0%;  
     }
     .vi_no{
         position: relative;
         display: inline-block;
-        
+    
         font-size:0.8em;
         font-weight: lighter;
         color: #5b5751;
         border-style: solid;
         border-width: 0.8px;
         border-color: #3AAB97;
-        
-        margin-left:0em;  
+        margin-left:0%;  
     }
     
     
@@ -110,29 +112,30 @@
     
     #vi_article {
         
-        width: 25em;
-        height:15em;
-        margin-bottom: 2em;
+        width: 100%;
+        height:15%;
+        margin-bottom: 2%;
         display: inline-block;
-        margin-left:0em;  
+        margin-left:0%;
+        text-align: center;  
         
     }
     
     #vi_ar_i01{
         display: inline-block;
-        margin-right: 0.8em;
+        margin-right: 10%;
     }
     #vi_ar_i02{
-        margin-right: 0.8em;
+        margin-right: 10%;
     }
     #vi_ar_i03{
-        margin-right: 0.8em;
+        margin-right: 10%;
     }
     .vi_ar_t01{
         
         margin-top:2em;
-        width: 20em;
-        height: 10em;
+        width: 100%;
+        height: 10%;
         font-size: 1.2em;
         font-weight: lighter;
         text-align: center;
@@ -156,7 +159,7 @@
     }
     #vi_i{
         display: block;
-        height:10em;
+        
         position: relative;
         width: 100%;
         margin-left: 0em;
@@ -165,16 +168,18 @@
     #vi_bottom{
         position: relative;
         display: block; 
-        margin-top: 0em;
+        margin-top: 0%;
+        width: 100%;
     }
     .other{
         display: inline-block;
         font-weight: lighter;
         font-size: 1.2em;
-        margin-left: 1em;
-        margin-top: 0em;
+        margin-left: 5%;
+        margin-top: 0%;
         text-align: center;
-        
+        padding-top: 0%;
+        top: 0%;
         }
         .vi_line1{
             top: 0.5em;
@@ -204,41 +209,42 @@
             text-align: center;
             font-size: 1.4em;
             display:block;
-            width:17em;
+            width:100%;
             border-style: solid;
             border-width: 0.8px;
             border-color: #3AAB97;
-            top: -3.5em;
+            top: 0%;
             position: relative;
         }
         #vi_bo_t00{
             width: 100%;
-            display:inline-block;
-            
+            display:block;
+            top: 0em;
+        
             position: relative;
-            top: -3em;
+            
         }
         
         .se_img_article{
             display: inline-block;
-            width:13em;
-            top: 1em;
-           height: 9em;
+            width:50%;
+            
+            
             
         }
         #vi_bo_t000{
             
             display: inline-block;
             position: relative;
-            top: -8.4em;
+            top: 0em;
+            
         }
         #vi_bo_t001{
             position: relative;
             display: inline-block;
-            width: 10em;
-            top: -5em;
+            top: -9em;
             height: 11em;
-            left: 1em;
+            left: 56%;
         }
         .vi_bo_ar1{
             
@@ -269,7 +275,14 @@
             
             height: 30em;
             display: inline-block;
-            width: 25em;
+            width: 100%;
             
+        }
+        .vi_bo{
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            margin-top: 0%;
+            text-align: left;
         }
     }
