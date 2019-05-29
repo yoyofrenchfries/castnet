@@ -1,11 +1,12 @@
 section{
-    margin-left: 5em;
     position: relative;
-    margin-top: 16.6em;
 }
 footer{
-    margin-top: 12em;
-
+    margin-top: 3em;
+}
+#jo_01{
+    width: 68em;
+    margin: 0 auto;
 }
 
 .jo_div_t00{
@@ -49,17 +50,7 @@ footer{
     font-weight: normal;
     display: inline-block;
 }
-.jo_tea01{
-    left: -1.3em;
-    padding-left: 0.65em;
-    border-left-style: solid;
-    border-left-width: 2.5px;
-    border-left-color: #3AAB97;
-    position: relative;
-    font-size: 1.4em;
-    font-weight: normal;
-    display: inline-block;
-}
+
 .jo_assistant{
     margin-left: 1.5em;
     padding-left: 0.65em;
@@ -157,7 +148,7 @@ footer{
 
 
  .jo_other{
-        top: 5em;
+    margin-top: 5em;
     display:block;
     position: relative;
 }
@@ -168,7 +159,6 @@ footer{
     font-size: 1.8em;
     padding-top:5em; 
     text-align: center;
-    left: 1.5em;
     
     }
     .jo_line1{
@@ -178,22 +168,18 @@ footer{
         width: 25em;
         display: inline-block;
         position: relative;
-        left:-2em;
     }
-    .jo_line2{
-      
-        
+    .jo_line2{ 
         border: 0;
         height: 2.5px;
         background-image: linear-gradient(to right, #3AAB97, #3AAB97, #3AAB97);
         width: 25em;
         display: inline-block;
         position: relative;
-        left:6em;
+        margin-top: 1em;
     }
    
     .jo_t01{
-        
         width: 100%;
         display:block;
         position: relative;
@@ -206,7 +192,6 @@ footer{
     .small_cir01 {
              width: 20px;
              height: 20px;
-            
              -moz-border-radius: 50px;
             -webkit-border-radius: 50px;
              border-radius: 50px;
@@ -214,9 +199,8 @@ footer{
              border-style: solid;
              border-width: 2px;
              position: relative;
-             left: -1.7em;
-             top: -0.5em;
              display: inline-block;
+             margin-top: 0em;
          }
          .small_cir02 {
             width: 20px;
@@ -230,8 +214,7 @@ footer{
             border-width: 2px;
             position: relative;
             display: inline-block;
-            left: -2.3em;
-            top: -0.5em;
+            margin-top: 0em;
         }
         .small_cir03 {
             width: 20px;
@@ -245,8 +228,7 @@ footer{
             border-width: 2px;
             position: relative;
             display: inline-block;
-            left: 6.3em;
-            top: -0.5em;
+            margin-top: 0em;
         }
         .small_cir04 {
             width: 20px;
@@ -259,15 +241,15 @@ footer{
             border-style: solid;
             border-width: 2px;
             position: relative;
-            left: 5.7em;
-            top: -0.5em;
             display: inline-block;
+            margin-top: 0em;
         }
         .group_swiper-container {
             overflow-x: hidden;
             
         }
         .group_swiper-container .group_swiper-pagination {
+            margin-top: 3em;
             text-align: center;
         }
         .group_swiper-container .group1 {
@@ -324,21 +306,19 @@ footer{
             left: -1em;
         }
         .group_swiper-container .group_swiper-button-next {
-            right: -0.7em;
+            right: -1em;
         }
         
         .journ_years01{
-            margin-left: 2em;
-            margin-top: 1.6em;
             font-size: 1.8em;
             width: 3em;
+            display: block;
+            margin: 3em auto;
             font-weight: bold;
             position: relative;
             text-align: center;
         }
         .journ_years02{
-            margin-top: -1em;
-            font-size: 1.5em;
             font-weight: normal;
             position: relative;
             text-align: center;
