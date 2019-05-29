@@ -283,6 +283,11 @@ article p{
     font-size: 1em;
 }
 
+
+.picture-box{
+    text-align: center;
+}
+
 .picture-box p{
     border:solid 1px #3aab97;
     padding: 1em;
