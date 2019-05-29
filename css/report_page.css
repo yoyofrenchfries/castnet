@@ -32,34 +32,29 @@ footer{
 #re_img_reporter{
     position: relative;
     border-radius: 50%;
+    margin: 0 auto;
     width: 15em;
-    display: inline-block;
-    margin-left: 18em;
-    top: -5em;
+    display: block;
 }
-
-    
 
 #re_intro{
-    margin-top: 0em;
+    margin: 0 auto;
     position: relative;
-    display: inline-block;
+    display: block;
 }
 #re_div_t00{
-    margin-left: 4em;
-    width: 25em;
     position: relative;
-    margin-top: 10em;
-    display: inline-block;
+    width: 19.5em;
+    margin: 3em auto;
+    display: block;
     top: 0em;
 }
 
 #re_history_article{
     position: relative;
-    margin-top: 2em;
-    margin-left: 1em;
-    width: 100%;
-    display: inline-block;
+    width: 70em;
+    margin: 0 auto;
+    display: block;
     
 }
 
