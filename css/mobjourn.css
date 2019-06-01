@@ -67,7 +67,7 @@ section{
     position: relative;
     width: 23%;
     height: 50%;
-    margin-left:4%;
+    margin-left:3%;
     float: left;
 }
 .jo_box:nth-of-type(3n+1){
@@ -174,7 +174,7 @@ section{
     display: inline;
     font-weight: bold;
     font-size: 1.8em;
-    padding-top:6%; 
+    padding-top: 6%; 
     text-align: center;
     left: 0%;
     top: 0%;
@@ -184,10 +184,11 @@ section{
         border: 0;
         height: 2px;
         background-image: linear-gradient(to right, #3AAB97, #3AAB97, #3AAB97);
-        width: 24%;
+        width: 22%;
         margin-top: 0%;
+        margin-bottom: 0.5em;
         
-        margin-left: -1%;
+        margin-left: 0%;
         
         display: inline-block;
         position: relative;
@@ -195,10 +196,11 @@ section{
     .jo_line2{
         left:0%;
         margin-left: 0%;
+        margin-bottom: 0.5em;
         border: 0;
         height: 2px;
         background-image: linear-gradient(to right, #3AAB97, #3AAB97, #3AAB97);
-        width: 24%;
+        width: 22%;
         display: inline-block;
         position: relative;
     }
@@ -211,14 +213,12 @@ section{
         
     }
     .jo_t01{
-        
-        display:inline-block;
+        display:block;
         position: relative;
-        
         margin-top: 0%;
-        width: 100%;
+        margin: auto;
+        width: 29em;
         left: 0%;
-        height: 2em;
     }
    
     
@@ -232,7 +232,7 @@ section{
         position: relative;
         margin-left: 0%;
         top: 0em;
-        left: 0%;
+        /* left: 0%; */
         
         display: inline-block;
          }
@@ -247,7 +247,7 @@ section{
             display: inline-block;
             top: 0em;
             margin-left: 0%;
-            left: -0.3em;
+            /* left: -0.3em; */
            
         }
         .small_cir03 {
@@ -260,7 +260,7 @@ section{
             position: relative;
             display: inline-block;
             margin-left: 0%;
-           left: 1%;
+           /* left: 1%; */
         }
         .small_cir04 {
             width: 15px;
@@ -271,12 +271,12 @@ section{
             border-width: 2px;
             position: relative;
             margin-left: 0%;
-            left: -1%;
+            /* left: -1%; */
             display: inline-block;
         }
         .group_swiper-container {
             overflow-x: hidden;
-            
+            width: 100%;
         }
         .group_swiper-container .group_swiper-pagination {
             text-align: center;
@@ -312,7 +312,7 @@ section{
         }
         .group_swiper-container .swiper-slide {
             text-align: center;
-            
+            width: 33%;
         }
         .group_swiper-container .group p {
             text-align: center;
@@ -332,16 +332,11 @@ section{
             text-align: center;
         }
         .group_swiper-container .group_swiper-button-prev {
-            left:  -22%;
-            position: relative;
-            top: -3.5em;
-            
+            margin-left:  0em;
+            left: 0em;            
         }
         .group_swiper-container .group_swiper-button-next {
-            left: 90%;
-            position: relative;
-
-            top: -3.5em;
+            right: 0em;
         }
         
         .journ_years01{
@@ -367,14 +362,12 @@ section{
         height: 1em;
         font-size: 0.5em;
         margin-top: 3em;
-        margin-left: 0em;
-        
+        margin-left: 1.5em;
     }
     .fa-caret-left{
         margin-top: 3em;
         width: 1em;
         height: 1em;
         font-size: 0.5em;
-        margin-left: 0em;
-
+        margin-left: -1.5em;
     }}

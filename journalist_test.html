@@ -472,7 +472,7 @@
                         </div>
                     </div>
                 </div>
-
+                
 
                 <div class="links">
                     <div class="wrapper">
@@ -550,9 +550,7 @@
                 }
             }
         });
-
     </script>
-    <script>
         // 各頁面需要的javascript寫這裡
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script>
@@ -571,7 +569,6 @@
         prevEl: ".swiper-button-prev"
       }
     });
-
     var group_swiper = new Swiper(".group_swiper-container", {
       slidesPerView: 3,
       spaceBetween: 0,
@@ -604,7 +601,6 @@
       document.getElementsByTagName("ul")[0].style.overflow = "auto";
       document.getElementById("fp_i_nav").style.display = "none";
       document.getElementById("fp_i_t03").style.display = "none";
-
       var li = document.getElementsByClassName("fp_li_t");
       for (let i = 0; i < li.length; i++) {
         li[i].style.display = "inline-block";
@@ -628,20 +624,17 @@
         i_can.setAttribute("id", "create_i");
         i_can.setAttribute("onclick", "cancel();");
         acc = acc + 1;
-
         var green_bar = document.createElement("div");
         green_bar.style.height = "3px";
         green_bar.style.backgroundColor = "#3AAB97";
         green_bar.style.position = "relative";
         green_bar.style.top = "-9em";
         document.getElementsByTagName("nav")[0].appendChild(green_bar);
-
         var container = document.createElement("div");
         container.style.position = "relative";
         container.style.marginTop = "-8em";
         container.setAttribute("id", "contain_create");
         document.getElementsByTagName("nav")[0].appendChild(container);
-
         var foote = ["所有期別", "關於我們", "喀報成員", "Facebook"];
         for (let i = 0; i < foote.length; i++) {
           var foot_top = document.createElement("a");
@@ -651,7 +644,6 @@
           foot_top.className = "foot_top";
           foot_top.style.textAlign = "center";
           foot_top.color = "#3AAB97";
-
           if (i == 0) {
             foot_top.href = "all_catagory.html";
           } else if (i == 1) {
@@ -666,7 +658,6 @@
         }
       }
     }
-
     function cancel() {
       document.getElementsByTagName("nav")[0].style.display = "none";
       document.getElementById("fp_i_t03").style.display = "block";
