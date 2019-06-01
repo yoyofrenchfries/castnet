@@ -5,19 +5,24 @@
         border-width: 1px; */
     }
 section{
-    top:25em;
+    top:12em;
     position: relative;
-    
     width: 100%;
     margin:0 auto;
     
     }
+    footer{
+        margin-top: 15em;
+}
 #jo_01{
     width: 100%;
+    position: relative;
+    display: block;
 }
 
 .jo_div_t00{
-    width: 22%;
+    width: 17em;;
+    left: 0%;
     display: block;
     position: relative;
     margin:2em auto;
@@ -60,11 +65,9 @@ section{
 .jo_box{
     display: inline-block;
     position: relative;
-    width: 11%;
+    width: 23%;
     height: 50%;
-    margin-left: 10%;
-    margin-right: 0%;
-    margin-top: 3%;
+    margin-left:4%;
     float: left;
 }
 .jo_box:nth-of-type(3n+1){
@@ -79,10 +82,11 @@ section{
     font-size: 1.8em;
     font-weight: normal;
     display: block;
+    margin-left: 0em;
 }
 .jo_img_01{
     border-radius: 50%;
-    width: 7.5em;
+    width: 100%;
     display: inline-block;
     position: relative;
 }
@@ -95,7 +99,7 @@ section{
     left: 0%;
     margin-left: 0%;
     margin-top: 0%;
-    width: 7.5em;
+    
     
     text-align: center;
 }
@@ -162,7 +166,7 @@ section{
     width: 100%;
     margin-top: 1em;
     top: 0%;
-    width: 100%;
+    
     margin: auto;
 }
 .jo_year{
@@ -172,7 +176,7 @@ section{
     font-size: 1.8em;
     padding-top:6%; 
     text-align: center;
-    left: 1.5%;
+    left: 0%;
     top: 0%;
     
     }
@@ -180,21 +184,21 @@ section{
         border: 0;
         height: 2px;
         background-image: linear-gradient(to right, #3AAB97, #3AAB97, #3AAB97);
-        width: 18%;
+        width: 24%;
         margin-top: 0%;
         
-        margin-left: 5%;
+        margin-left: -1%;
         
         display: inline-block;
         position: relative;
     }
     .jo_line2{
-        left:9%;
+        left:0%;
         margin-left: 0%;
         border: 0;
         height: 2px;
         background-image: linear-gradient(to right, #3AAB97, #3AAB97, #3AAB97);
-        width: 18%;
+        width: 24%;
         display: inline-block;
         position: relative;
     }
@@ -204,14 +208,17 @@ section{
         margin-top: 0%;
         display:inline-block;
         position: relative;
+        
     }
     .jo_t01{
         
-        display:block;
+        display:inline-block;
         position: relative;
-        margin: auto;
+        
         margin-top: 0%;
         width: 100%;
+        left: 0%;
+        height: 2em;
     }
    
     
@@ -224,7 +231,7 @@ section{
         border-width: 2px;
         position: relative;
         margin-left: 0%;
-        
+        top: 0em;
         left: 0%;
         
         display: inline-block;
@@ -238,8 +245,9 @@ section{
             border-width: 2px;
             position: relative;
             display: inline-block;
-            
+            top: 0em;
             margin-left: 0%;
+            left: -0.3em;
            
         }
         .small_cir03 {
@@ -252,7 +260,7 @@ section{
             position: relative;
             display: inline-block;
             margin-left: 0%;
-           left: 10%;
+           left: 1%;
         }
         .small_cir04 {
             width: 15px;
@@ -263,7 +271,7 @@ section{
             border-width: 2px;
             position: relative;
             margin-left: 0%;
-            left: 8%;
+            left: -1%;
             display: inline-block;
         }
         .group_swiper-container {
@@ -276,8 +284,8 @@ section{
         .group_swiper-container .group1 {
             margin-top: 10%;
             
-            width: 80px;
-            height: 80px;
+            width:70px;
+            height: 70px;
             background: #6EBFB1;
             position: relative;
             border-radius: 50%;
@@ -286,8 +294,8 @@ section{
         .group_swiper-container .group2 {
             margin-top: 10%;
             
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
             background: #A3A093;
             position: relative;
             border-radius: 50%;
@@ -295,8 +303,8 @@ section{
         }
         .group_swiper-container .group3 {
             margin-top: 10%;
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
             background: #9FB7B3;
             position: relative;
             border-radius: 50%;
@@ -315,23 +323,29 @@ section{
         .group_swiper-container .group_swiper-button-next {
             display: inline-block;
             cursor: pointer;
-            width: 2em;
-            height: 2em;
+            width: 1em;
+            height: 1em;
             font-size: 5em;
             position: absolute;
-            top: -7%;
+            top: 0%;
             z-index: 1;
             text-align: center;
         }
         .group_swiper-container .group_swiper-button-prev {
-            left: -18%;
+            left:  -22%;
+            position: relative;
+            top: -3.5em;
+            
         }
         .group_swiper-container .group_swiper-button-next {
-            right: -18%;
+            left: 90%;
+            position: relative;
+
+            top: -3.5em;
         }
         
         .journ_years01{
-            margin-left: 22%;
+            margin-left: 25%;
             margin-top: 18%;
             font-size: 1.5em;
             font-weight: bold;
@@ -349,17 +363,18 @@ section{
             
         }
     .fa-caret-right{
-        width: 2em;
-        height: 2em;
+        width: 1em;
+        height: 1em;
         font-size: 0.5em;
         margin-top: 3em;
+        margin-left: 0em;
         
     }
     .fa-caret-left{
         margin-top: 3em;
-        width: 2em;
-        height: 2em;
+        width: 1em;
+        height: 1em;
         font-size: 0.5em;
-        
+        margin-left: 0em;
 
     }}

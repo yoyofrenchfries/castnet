@@ -32,9 +32,10 @@ footer{
 #re_img_reporter{
     position: relative;
     border-radius: 50%;
-    margin: 0 auto;
+    margin-left:16em;
     width: 15em;
     display: block;
+   
 }
 
 #re_intro{
@@ -45,9 +46,9 @@ footer{
 #re_div_t00{
     position: relative;
     width: 19.5em;
-    margin: 3em auto;
+    left: 34em;
     display: block;
-    top: 0em;
+    top: -12em;
 }
 
 #re_history_article{
@@ -55,7 +56,7 @@ footer{
     width: 70em;
     margin: 0 auto;
     display: block;
-    
+    margin-top: 0em;
 }
 
 .re_img_article{
