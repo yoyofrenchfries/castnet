@@ -24,12 +24,17 @@
         margin-top: 10em;
         
     }
-    
+    .search{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100em;
+    }
     .se_category{
         left: 0em;
         margin-left: 0em;
-        display: inline-block;
-        font-size: 1em;
+        display: inline;
+        font-size: 0.85em;
         font-weight: normal;
         position: relative;
         padding-left:0em;
@@ -43,18 +48,18 @@
         border-left-style: solid;
         border-left-width: 1.5px;
         border-left-color: #3AAB97;
-        font-size: 0.95em;
+        font-size: 0.85em;
         font-weight: normal;
         position: relative;
         color: #5b5751;
-    
+   
         left: 0em;
         padding-left: 0.3em
         
     }
     .se_reporter{
         color: #3AAB97;
-        font-size: 0.9em;
+        font-size: 0.85em;
         font-weight: lighter;
         position: relative;  
         padding-right:1em;
@@ -68,30 +73,31 @@
         border-left-style: solid;
         border-left-width: 1.5px;
         border-left-color: #3AAB97;
-        font-size: 1em;
+        font-size: 0.85em;
         font-weight: lighter;
         position: relative;  
         display: inline-block;
         left: -0.5em;
-        margin-bottom: 1em;
+        margin-bottom: 0em;
     }
     .se_img_article{
         margin: auto;
-        display:block;
+        display:flex;
         position: relative;
         left:0em;
-        width: 19.5em;
-        margin-top: -1em;
-        top: -6em;   
+        width: 16em;
+        height: 10em;
+        margin-top: 0em;
+        top: 0em;   
     }
     .se_p_article{
-        font-size: 1em;
+        font-size: 0.9em;
         font-weight: lighter;
         margin: auto;
         display: block;
         position: relative;
         left: 0em;
-        top: 13.5em;
+        top: 0.5em;
         width: 100%;
         margin:  auto;
     
@@ -100,11 +106,26 @@
     .se_div_t01 {
         top: 5em;
         margin-top: 0em;
-        display: block;
-        height:25em;
+        display: inline-block;
+        height:21em;
         margin-bottom: 2em;
         width:100%;
         position: relative;
+    }
+    .se_div_t001{
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        margin-bottom: 0em;
+        margin: auto;
+    }
+    .se_div_t002{
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        margin: auto;
+        margin-top: 0.2em;
+        
     }
 }
 .search{

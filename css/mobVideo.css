@@ -162,7 +162,7 @@
         
         position: relative;
         width: 100%;
-        margin-left: 0em;
+        margin-left: 1em;
     }
     
     #vi_bottom{
@@ -174,7 +174,7 @@
     .other{
         display: inline-block;
         font-weight: lighter;
-        font-size: 1.2em;
+        font-size: 1em;
         margin-left: 5%;
         margin-top: 0%;
         text-align: center;
@@ -207,7 +207,7 @@
     
         .vi_head{
             text-align: center;
-            font-size: 1.4em;
+            font-size: 1.2em;
             display:block;
             width:100%;
             border-style: solid;
@@ -229,15 +229,15 @@
         
         .se_img_article{
             display: inline-block;
-            width:18.5em;
-            height: 12em;            
+            width:16em;;
+                        
             margin-left: 0em;
             top: 0em;
-            margin-top: -1em;
+            margin-top: 0em;
             
         }
         #vi_bo_t000{
-            
+            width:100%;
             display: block;
             position: relative;
             top: 0em;
@@ -245,38 +245,45 @@
             
         }
         #vi_bo_t001{
+            width:30%;
             position: relative;
             display: inline-block;
-            margin-top: 0em;
-            height: 11em;
+            margin-left: 0em;
+            height: 10em;
             left: 2%;
             margin-top: -1.5em;
             top: 2em;
         }
+        #vi_bo_t002{
+            width:52%;
+            position: relative;
+            display: inline-block;
+        }
         .vi_bo_ar1{
             
             font-weight: lighter;
-            font-size: 1.4em;
+            font-size: 120%;
             display: inline;
-             
+            
         }
         .vi_bo_ar2{
-            margin-top: 0.3em;
+           
             font-weight: lighter;
-            font-size: 1.2em;
+            font-size: 120%;
             display: inline-block;
             border-left-style: solid;
             border-left-width: 0.8px;
             border-left-color: #3AAB97;
             padding-left: 0.5em;
-            
+            width: 8em;
         }
         .vi_bo_ar3{
-            margin-top: -0.5em;
+            width: 9em;
             font-weight: normal;
-            font-size: 1.3em;
+            font-size: 120%;
             top: 0.25em;
             display: inline-block;
+            
         }
         #vi_bo_t01{
             margin-bottom: 0em;

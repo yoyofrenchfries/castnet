@@ -12,6 +12,8 @@
         position: relative;
         width: 100%;
 
+        
+
     }
     footer{
         margin-top: 6em;
@@ -94,14 +96,16 @@
         width: 7em;
         display: inline-block;
         position: relative;
-        margin: 0.8em;
-        height: 5.35em;
+        margin: 0.7em;
+        height: 5.5em;
         background-color:#ECE2D5; 
     }
     .re_p_article{
-        top:0em;
-        font-size:1.1em;
-        width: 52%;
+        top:-0.5em;
+        font-size:1em;
+        width: 45%;
+        height: 5em;
+        margin: auto;
         font-weight: normal;
         margin-left: 0em;
         display: inline-flex;
