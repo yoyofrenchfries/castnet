@@ -1,11 +1,3 @@
-section{
-    position: relative;
-    
-}
-footer{
-    margin-top: 10em;
-}
-
 #re_div_t00 > h2{
     font-size: 1.3em;
     width: 10em;
@@ -29,43 +21,44 @@ footer{
     margin-right: 0.1em;
 }
 
-#re_img_reporter{
-    position: relative;
-    border-radius: 50%;
-    margin-left:16em;
-    width: 15em;
-    display: block;
-   
-}
+
 
 #re_intro{
     margin: 0 auto;
     position: relative;
-    display: block;
+    display: flex;
+}
+#re_intro > .img-wrapper {
+    flex: 1;
+    text-align: right;
+    padding-right: 1em;
 }
 #re_div_t00{
     position: relative;
-    width: 19.5em;
-    left: 34em;
     display: block;
-    top: -12em;
+    flex:1;
+    padding-left: 1em;
 }
-
+#re_img_reporter{
+    position: relative;
+    border-radius: 50%;
+    width: 250px;
+}
 #re_history_article{
     position: relative;
-    width: 70em;
+    width: 100%;
     margin: 0 auto;
     display: block;
-    margin-top: 0em;
+    margin-top: 3em;
 }
 
 .re_img_article{
     width: 11em;
-    display: inline-block;
     position: relative;
-    margin-top: 0.8em;
-    margin-left: 1.5em;
     height: 8em;
+    margin: 1em;
+    object-fit: cover;
+    object-position: center;
     background-color:#E7E7E7; 
 }
 .re_a_article{
@@ -85,20 +78,24 @@ footer{
 .re_p_article{
     font-size:1.3em;
     font-weight: lighter;
-    display: inline-block;
     position: relative;
-    top:10%;
-    margin-left: 0.5em;
+    align-self: center;
+    padding-right: 1em;
+    margin-bottom: 0px;
 }
 
+.articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .re_div_t01{
-    display: inline-block;
     position: relative;
     margin-top: 2em;
-    margin-left:2em;
-    width: 32em;
-    height: 10em;
+    flex-basis: 48%;
+    display: inline-flex;
     background-color:#ECE2D5; 
 }
 

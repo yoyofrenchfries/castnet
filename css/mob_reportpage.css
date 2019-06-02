@@ -1,22 +1,10 @@
 @media screen and (max-width: 576px){
-    section{
-        top: 2em;
-        margin: 0%;
-        margin-top: calc(150px + 3em);
-        width: 100%;
-        text-align: left;
-        
-        }
     #re_intro{
         display: inline-block;
         position: relative;
         width: 100%;
 
     }
-    footer{
-        margin-top: 6em;
-    }
-    
     #re_img_reporter{
         border-radius: 50%;
         width: 12em;
@@ -99,22 +87,18 @@
         background-color:#ECE2D5; 
     }
     .re_p_article{
-        top:0em;
         font-size:1.1em;
-        width: 52%;
         font-weight: normal;
-        margin-left: 0em;
-        display: inline-flex;
     }
 
     .re_div_t01{
         margin-left: 0em;
         left: 0;
         width: 100%;
-        height: 7.57em;
         position: relative;  
         background-color:#ECE2D5;
-        display: inline-block;
+        display: flex;
+        flex-basis: 100%;
     }
  
   
