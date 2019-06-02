@@ -1,24 +1,10 @@
 @media screen and (max-width: 576px){
-    section{
-        top: 2em;
-        margin: 0%;
-        margin-top: calc(150px + 3em);
-        width: 100%;
-        text-align: left;
-        
-        }
     #re_intro{
         display: inline-block;
         position: relative;
         width: 100%;
 
-        
-
     }
-    footer{
-        margin-top: 6em;
-    }
-    
     #re_img_reporter{
         border-radius: 50%;
         width: 12em;
@@ -31,11 +17,8 @@
     #re_div_t00{
         display: block;
         position: relative;
-        margin-top: 2em;
         margin: 2em auto;
-        width: 12em;
-        left: 1em;
-        top: 0em;
+        padding-left: 0px;
     }
     #re_div_t00 > a{
         display: inline;
@@ -43,7 +26,6 @@
         font-weight: bold;
         padding-left: 0.75em;
         position: relative;
-        left: 0;
     }
     #re_div_t00 > h2{
         font-size: 1em;
@@ -61,99 +43,52 @@
     }
     
     .re_a_report{
-        padding-left: 0.35em;
         border-left-style: solid;
         border-left-width: 2px;
         border-left-color: #3AAB97;
         font-size: 1.2em;
         font-weight: bolder;
         position: relative;  
-        left:-8%;
     }
     
     #re_history_article{
         display: inline-block;
         position: relative;
         width: 100%;
-        
-        margin-left:1%;
-        top: 0em;
         margin-top: 2em;
-        
-       
     }
     #re_history_article > a {
-        padding-left: 0.65em;
+        padding-left: 1rem;
         border-left-style: solid;
         border-left-width: 2px;
         border-left-color: #3AAB97;
         position: relative; 
         font-size: 1.2em;
-        margin-left: 1em;
+        margin-left: 0px;
         font-weight: bold;
     }
     .re_img_article{
         width: 7em;
         display: inline-block;
         position: relative;
-        margin: 0.7em;
-        height: 5.5em;
+        margin: 0.8em;
+        height: 5.35em;
         background-color:#ECE2D5; 
     }
     .re_p_article{
-        top:-0.5em;
-        font-size:1em;
-        width: 45%;
-        height: 5em;
-        margin: auto;
+        font-size:1.1em;
         font-weight: normal;
-        margin-left: 0em;
-        display: inline-flex;
     }
 
     .re_div_t01{
         margin-left: 0em;
         left: 0;
         width: 100%;
-        height: 7.57em;
         position: relative;  
         background-color:#ECE2D5;
-        display: inline-block;
+        display: flex;
+        flex-basis: 100%;
     }
  
   
 }
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
