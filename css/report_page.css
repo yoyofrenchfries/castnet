@@ -62,7 +62,7 @@
     background-color:#E7E7E7; 
 }
 .re_a_article{
-    padding-left: 0.65em;
+    padding-left: 1rem;
     border-left-style: solid;
     border-left-width: 3px;
     border-left-color: #3AAB97;
@@ -71,7 +71,6 @@
     font-weight: normal;
     display: block;
     top:10%;
-    margin-left: 3em;
 }
 
 

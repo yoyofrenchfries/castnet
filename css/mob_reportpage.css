@@ -17,11 +17,8 @@
     #re_div_t00{
         display: block;
         position: relative;
-        margin-top: 2em;
         margin: 2em auto;
-        width: 12em;
-        left: 1em;
-        top: 0em;
+        padding-left: 0px;
     }
     #re_div_t00 > a{
         display: inline;
@@ -29,7 +26,6 @@
         font-weight: bold;
         padding-left: 0.75em;
         position: relative;
-        left: 0;
     }
     #re_div_t00 > h2{
         font-size: 1em;
@@ -47,35 +43,28 @@
     }
     
     .re_a_report{
-        padding-left: 0.35em;
         border-left-style: solid;
         border-left-width: 2px;
         border-left-color: #3AAB97;
         font-size: 1.2em;
         font-weight: bolder;
         position: relative;  
-        left:-8%;
     }
     
     #re_history_article{
         display: inline-block;
         position: relative;
         width: 100%;
-        
-        margin-left:1%;
-        top: 0em;
         margin-top: 2em;
-        
-       
     }
     #re_history_article > a {
-        padding-left: 0.65em;
+        padding-left: 1rem;
         border-left-style: solid;
         border-left-width: 2px;
         border-left-color: #3AAB97;
         position: relative; 
         font-size: 1.2em;
-        margin-left: 1em;
+        margin-left: 0px;
         font-weight: bold;
     }
     .re_img_article{
