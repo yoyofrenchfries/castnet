@@ -38,6 +38,7 @@
     display: block;
     flex:1;
     padding-left: 1em;
+    align-self: center;
 }
 #re_img_reporter{
     position: relative;
@@ -50,6 +51,7 @@
     margin: 0 auto;
     display: block;
     margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 .re_img_article{
@@ -100,3 +102,8 @@
 
 
 
+@media screen and (max-width: 767px) {
+    .re_div_t01 {
+        flex-basis: 100%;
+    }
+}
