@@ -1,79 +1,71 @@
-footer{
-    margin-top: 5em;
+section h2 {
+  font-size: 2em;
+  padding-left: 1rem;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: #3aab97;
 }
-h2{
-    font-size: 2.83em;
-    padding-left: 0.75em;
-    border-left-style: solid;
-    border-left-width: 2px;
-    border-left-color: #3AAB97;
+section a {
+  font-size: 1.125em;
+  margin-right: 0.5em;
 }
-a{
-    font-size: 1.125em;
-    margin-right: 0.5em;
+.all-issue {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.ca_div{
-    display: inline-block;
-    width: 18.6em;
-    margin-top: 3em;
-    margin-left: 2.45em;
-    margin-right: 2.45em;
+.ca_div {
+  margin-top: 3em;
+  flex-basis: 31%;
 }
-.ca_div a{
-    color: #5b5751;
+.ca_div a {
+  color: #5b5751;
 }
-.ca_div a:hover, .ca_div a:visited{
-    color: #5b5751;
+.ca_div a:hover,
+.ca_div a:visited {
+  color: #5b5751;
 }
-.ca_a_time{
-    padding-left: 0.75em;
-    border-left-style: solid;
-    border-left-width: 2px;
-    border-left-color: #3AAB97;
+.ca_a_time {
+  padding-left: 0.75em;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: #3aab97;
 }
-.ca_div img{
-    display: inline-block;
-    width: 18.6em;
-    margin-top: 1em;
+.ca_div img {
+  width: 100%;
+  margin-top: 1em;
 }
-h4{
-    font-weight: normal;
-    margin-top: 1em;
-    padding-left: 0.5em;
-    border-left-style: solid;
-    border-left-width: 2px;
-    border-left-color: #3AAB97;
+section h4 {
+  font-weight: normal;
+  margin-top: 1em;
+  padding-left: 1rem;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: #3aab97;
 }
-.ca_div p{
-    font-size: 1.0625em;
-    line-height: 2.25;
-    font-weight: lighter;
+
+.ca_div p {
+  font-size: 1.0625em;
+  line-height: 2;
+  font-weight: lighter;
 }
-#ca_div_c01{
-    background-color: #3AAB97;
-    width: 33%;
-    height: 2px;
-    display: inline-block;
-    position: relative;
+#ca_a_c01 {
+  font-size: 1.5em;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  color: #5b5751;
+  transform: translateY(-50%);
+  padding: 0 0.5em;
 }
-#ca_div_c02{
-    background-color: #3AAB97;
-    width: 33%;
-    height: 2px;
-    display: inline-block;
-    position: relative;
-    left: 23%;
+
+#ca_div_d {
+  display: flex;
+  margin: 2em 0;
 }
-#ca_a_c01{
-    font-size: 1.5em;
-    text-align: center;
-    position: relative;
-    left: 13%;
-    top: 0.25em;
-    width: 5em;
-    text-decoration: none;
-    color: #5b5751;
+#ca_div_d .line {
+  flex: 1;
+  background-color: #3aab97;
+  height: 2px;
 }
-#ca_div_d{
-    margin-top: 5em;
-}
+ß
