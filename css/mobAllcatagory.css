@@ -9,6 +9,7 @@
         width: 45%;
         margin-left: 2%;
         margin-right: 2%;
+        margin-top: 1em;
     }
     a{
         font-size: 1em;
@@ -41,7 +42,7 @@
         display: inline-block;
         font-size: 1em;
         left: 0%;
-        width: 31%;
+        width: 28%;
         text-align: center;
         margin-right: 0em;
     }
