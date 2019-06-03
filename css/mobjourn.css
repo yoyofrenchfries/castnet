@@ -65,9 +65,9 @@ section{
 .jo_box{
     display: inline-block;
     position: relative;
-    width: 23%;
+    width: 32%;
     height: 50%;
-    margin-left:3%;
+    margin: 1.5em 0.15em;
     float: left;
 }
 .jo_box:nth-of-type(3n+1){
@@ -86,8 +86,10 @@ section{
 }
 .jo_img_01{
     border-radius: 50%;
-    width: 100%;
-    display: inline-block;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    display: block;
     position: relative;
 }
 .jo_p_01{
@@ -98,9 +100,7 @@ section{
     top: 0%;
     left: 0%;
     margin-left: 0%;
-    margin-top: 0%;
-    
-    
+    margin-top: 1em;
     text-align: center;
 }
 
@@ -174,37 +174,46 @@ section{
     display: inline;
     font-weight: bold;
     font-size: 1.5em;
-    padding-top: 6%; 
+    padding: 1em 0;
     text-align: center;
     left: 0%;
     top: 0%;
     margin: auto;
     
     }
+
+    .jo_left{
+        width: 34%;
+    }
+
     .jo_line1{
         border: 0;
         height: 2px;
-        background-image: linear-gradient(to right, #3AAB97, #3AAB97, #3AAB97);
-        width: 50%;
-        margin-top: 0%;
-        margin-bottom: 0.5em;
-        
-        margin-left: 0%;
-        
+        width: 100%;
+        margin: 0.5em 0em;
         display: inline-block;
         position: relative;
     }
+
+    .jo_right{
+        width: 34%;
+    }
+
     .jo_line2{
         left:0%;
-        margin-left: 0%;
-        margin-bottom: 0.5em;
         border: 0;
         height: 2px;
-        background-image: linear-gradient(to right, #3AAB97, #3AAB97, #3AAB97);
-        width: 50%;
+        width: 100%;
+        margin: 0.5em 0em;
         display: inline-block;
         position: relative;
     }
+
+    .jo_tt01{
+        display: flex;
+        margin: auto;
+    }
+
     .jo_other{
         top: 5%;
         width:100%;
@@ -214,30 +223,14 @@ section{
         
     }
     .jo_t01{
-        display:block;
+        display:inline-block;
         position: relative;
         margin-top: 0%;
         margin: auto;
         width: 100%;
         
     }
-   
-    .jo_t02{
-        display:inline-block;
-        position: relative;
-        margin-top: 0%;
-        margin: auto;
-        left: 0%;
-        width: 35%;
-    }
-    .jo_t03{
-        display:inline-block;
-        position: relative;
-        margin-top: 0%;
-        margin: auto;
-        left: 10%;
-        width: 35%;
-    }
+
     .small_cir01 {
         width: 13px;
         height: 13px;
@@ -292,7 +285,7 @@ section{
         }
         .group_swiper-container {
             overflow-x: hidden;
-            width: 92%;
+            width: 100%;
         }
         .group_swiper-container .group_swiper-pagination {
             text-align: center;
@@ -377,13 +370,11 @@ section{
         width: 1em;
         height: 1em;
         font-size: 0.5em;
-        margin-top: 3em;
-        margin-left: 1.5em;
+        margin-top: 7em;
     }
     .fa-caret-left{
-        margin-top: 3em;
+        margin-top: 7em;
         width: 1em;
         height: 1em;
         font-size: 0.5em;
-        margin-left: -1.5em;
     }}
