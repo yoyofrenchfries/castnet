@@ -9,7 +9,7 @@
     position: relative;
     text-align: center;
     top: 20.6em;
-  
+    width: 100%;
 }
 
 footer{
@@ -28,11 +28,12 @@ footer{
 
 .vi_title{
     font-weight: normal;
-    font-size:3em;
+    font-size:2em;
+    width: 100%;
 }
 
 .vi_category{
-    font-size: 2em;
+    font-size: 1.3em;
     font-weight: normal;
     position: relative;
     left:1em;  
@@ -43,23 +44,24 @@ footer{
     border-right-color: #3AAB97;
     text-align: left;
     font-weight: lighter;
-    width:40em;
-    
+   
+    width: 100%;
 }
 
 .vi_reporter{
     color: #5b5751;
-    font-size: 2em;
+    font-size: 1.3em;
     font-weight: lighter;
     position: relative;  
     left:0.8em;
     padding-left:0.6em;
     display: inline;
     padding-right:0.3em;
+
 }
 .vi_report{
     color: #5b5751;
-    font-size: 2em;
+    font-size: 1.3em;
     font-weight: lighter;
     position: relative;     
     padding-left:0.6em;
@@ -73,7 +75,7 @@ footer{
     padding-right: 0.65em;
     padding-left: 0.65em;
     
-    font-size: 1.8em;
+    font-size: 1.3em;
     font-weight: lighter;
     position: relative;  
     display: inline-block;
@@ -81,7 +83,7 @@ footer{
 .vi_no{
     
     display: inline-block;
-    font-size: 1.7em;
+    font-size: 1.3em;
     font-weight: lighter;
     text-align: center;
     color: #5b5751;
@@ -94,31 +96,15 @@ footer{
     
 }
 .article-content video{
-    width:80%;
-    
-}
-.vi_img_article{
-    width: 18em;
-    display: inline-block;
-    position: relative;
-    margin-left: 1.8em;
-    height: 12em;
-    left: 65em;
-    top:-10em;
-    
-}
-.vi_p_article{
-    font-size: 1.2em;
-    font-weight: lighter;
-    position: relative; left:1.8em;
-    text-align: left;
-    width:50em;
+    width:100%;
     
 }
 
+
+
 #vi_article {
     position: relative;
-    
+    width: 100%;
     height:15em;
     margin-bottom: 2em;
     display: inline-block;
@@ -126,7 +112,8 @@ footer{
     
 }
 #vi_i{
-    margin-left: 30em;
+    width: 100%;
+    text-align: center;
     margin-top: 2em;
     height:5em;
     position: relative;
@@ -134,17 +121,19 @@ footer{
 }
 #vi_ar_i01{
     display: inline-block;
-    margin-right: 0.8em;
+    margin-right: 1.5em;
+    
+
 }
 #vi_ar_i02{
-    margin-right: 0.8em;
+    margin-right: 1.5em;
 }
 #vi_ar_i03{
-    margin-right: 0.8em;
+    margin-right: 1.5em;
 }
 .vi_ar_t01{
     margin-top:2em;
-    font-size: 1.7em;
+    font-size: 1.2em;
     font-weight: lighter;
     text-align: center;
     color: #5b5751;
@@ -154,23 +143,23 @@ footer{
     border-style: solid;
     border-width: 1.5px;
     border-color: #3AAB97;
-    
+    width: 100%;
 }
 .vi_ar_t02{
     display: inline-block;
-    font-size: 1.7em;
+    font-size: 1.2em;
     font-weight: lighter;
     text-align: left;
     color: #5b5751;
-   
+    width: 100%;
 }
 #vi_div_t02 {
     height:15em;
     margin-top: 0.2em;
-    
+    width: 100%;
 }
 #vi_div_t03 {
-    
+    width: 100%;
     height:15em;
     margin-top: 0.2em;
     
@@ -178,38 +167,40 @@ footer{
 #vi_div_t04 {
     height:15em;
     margin-top: 0.2em;
-    
+    width: 100%;
 }
 #vi_div_t05 {
-    
+    width: 100%;
     height:15em;
     margin-top: 0.6em;
     
 }
 #vi_bottom{
-    margin-top:4em;
+    margin-top:0em;
     position: relative;
     display: inline-block;
-   
+    width: 100%;
     
 }
 .other{
-    display: inline;
+    display: inline-block;
     font-weight: lighter;
-    font-size: 1.8em;
-    padding-top:5em; 
+    font-size: 110%;;
+    width: 4em;
+    padding-top:2em; 
     text-align: center;
-    margin-left: 3em;
-    
+    margin-left: 1em;
+    margin: 0 auto;
+    top: 0em;
     }
     .vi_line1{
         border: 0;
         height: 2.5px;
         background-image: linear-gradient(to right, #3AAB97, #3AAB97, #3AAB97);
-        width: 27em;
+        width: 38%;
         display: inline-block;
         position: relative;
-        margin-left:0em;
+        margin-right: 2em;
     }
     .vi_line2{
       
@@ -217,15 +208,15 @@ footer{
         border: 0;
         height: 2.5px;
         background-image: linear-gradient(to right, #3AAB97, #3AAB97, #3AAB97);
-        width: 27em;
+        width: 38%;
         display: inline-block;
         position: relative;
-        margin-left:4.5em;
+        margin-left: 2em;
     }
 
     .vi_head{
         text-align: center;
-        font-size: 2em;
+        font-size: 1.3em;
         display:block;
         width:5em;
         border-style: solid;
@@ -236,13 +227,13 @@ footer{
         width: 100%;
         display: inline-block;
         position: relative;
-        
+        margin-left: 2.3em;
     }
     
     .se_img_article{
         display: inline-block;
         width:13em;
-        top: 1em;
+        top: 0em;
        height: 9em;
         
     }
@@ -259,6 +250,13 @@ footer{
         top: 2em;
         height: 11em;
         left: 1em;
+        margin-left: 0.5em;
+    }
+    #vi_bo_t002{
+        width:52%;
+        position: relative;
+        display: inline-block;
+        top: -1em;
     }
     .vi_bo_ar1{
         

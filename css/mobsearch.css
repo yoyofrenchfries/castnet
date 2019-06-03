@@ -9,7 +9,7 @@
     
     section{
         width: 100%;
-        top: 5em;
+        top: 10em;
         left: 0;
         position: relative;
         margin-top: 0em;
@@ -21,7 +21,7 @@
     
     }
     footer{
-        margin-top: 10em;
+        margin-top: 55em;
         
     }
     .search{
@@ -81,14 +81,15 @@
         margin-bottom: 0em;
     }
     .se_img_article{
-        margin: auto;
-        display:flex;
-        position: relative;
+        
+        width: 100%;;
+        display: block;
+        position:relative;
+        top: 0em;
+        margin: 0 auto;
         left:0em;
-        width: 16em;
-        height: 10em;
-        margin-top: 0em;
-        top: 0em;   
+        
+        
     }
     .se_p_article{
         font-size: 0.9em;
@@ -97,15 +98,15 @@
         display: block;
         position: relative;
         left: 0em;
-        top: 0.5em;
+        top: 0%;
         width: 100%;
         margin:  auto;
-    
+       
     }
     
     .se_div_t01 {
-        top: 5em;
-        margin-top: 0em;
+        top: 0em;
+        margin-top: 1em;
         display: inline-block;
         height:21em;
         margin-bottom: 2em;
@@ -125,8 +126,9 @@
         width: 100%;
         margin: auto;
         margin-top: 0.2em;
-        
+        height: 20em;
     }
+    
 }
 .search{
     width: 100%;

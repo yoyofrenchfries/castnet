@@ -86,7 +86,7 @@ section{
 }
 .jo_img_01{
     border-radius: 50%;
-    width: 90%;
+    width: 70%;
     height: 90%;
     margin: 0 auto;
     display: block;
@@ -336,16 +336,16 @@ section{
             height: 1em;
             font-size: 5em;
             position: absolute;
-            top: 0%;
+            top: -10%;
             z-index: 1;
             text-align: center;
         }
         .group_swiper-container .group_swiper-button-prev {
             margin-left:  0em;
-            left: 0em;            
+            left: 1.4em;            
         }
         .group_swiper-container .group_swiper-button-next {
-            right: 0em;
+            right: 1.4em;
         }
         
         .journ_years01{
