@@ -340,6 +340,9 @@ section {
     top: 0em;
     margin-top: 0;
 }
+.margin{
+    margin-top: 20em;
+}
 @media screen and (max-width: 575px){
     footer {
         position: relative;
@@ -370,4 +373,8 @@ section {
         margin-top: 0;
         top: 0;
     }
+    .margin{
+        margin-top: 10em;
+    }
 }
+
