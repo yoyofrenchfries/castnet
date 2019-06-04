@@ -594,7 +594,7 @@ article p{
     border:solid 1px #3aab97;
     padding: 1em;
     margin-top: 1em;
-    text-align: center;
+    text-align: left;
 }
 
 @media (max-width: 575px){
