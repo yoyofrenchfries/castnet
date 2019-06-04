@@ -587,7 +587,7 @@ article p{
     margin-top: 1em;
     align-content: center;
     font-weight: lighter;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .picture-box p{
@@ -600,7 +600,7 @@ article p{
 
 @media (max-width: 575px){
     article p{
-        font-size: 1em;
+        font-size: 1.3em;
     }
 }
 article img{
