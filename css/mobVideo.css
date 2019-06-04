@@ -17,7 +17,11 @@
         margin-top: 1em;
         
     }
-    
+    .vi_div_top{
+        position: relative;
+        width:100%;
+        text-align: left;
+    }
     #vi_div_t00{
         position: relative;
         width:100%;
@@ -35,7 +39,7 @@
         font-size:1.2em;
         position: relative;
         width: 100%;
-        text-align: center;
+        text-align: left;
         
     }
     
@@ -43,27 +47,29 @@
         font-size: 0.9em;
         font-weight: normal;
         position: relative;
-        margin-left:0%;  
+        margin-left:-6%;  
         padding-right:0.5em;
         color: #5b5751;
         border-right-style: solid;
         border-right-width: 1px;
         border-right-color: #3AAB97;
-        text-align: left;
+        display: inline-block;
         font-weight: lighter;
-        width:100%;
-        
+        text-align: left;
+        width: 15%;
     }
     .vi_article{
         padding-left: 0.65em;
         border-left-style: solid;
         border-left-width: 1px;
         border-left-color: #3AAB97;
-        font-size: 0.em;
+        font-size: 0.9em;
         font-weight: normal;
         position: relative;  
         color: #5b5751;
         margin-left:0%;  
+        text-align: left;
+       
     }
     .vi_reporter{
         color: #5b5751;
@@ -74,6 +80,9 @@
         padding-left:0.6em;
         display: inline;
         padding-right:0.3em;
+        text-align: left;
+        margin-left: 0em;
+        
     }
     .vi_report{
         color: #5b5751;
@@ -86,25 +95,29 @@
         border-right-style: solid;
         border-right-width: 1px;
         border-right-color: #3AAB97;
-        margin-left:0%;  
+        margin-left: 0em;
+        
     }
     .vi_date{
         font-size: 0.9em;
         font-weight: lighter;
-        display: inline-block;
-        margin-left:0%;  
+        display: inline;
+        width: 20%;
+        text-align: left;
+        margin-left: 0em;
     }
     .vi_no{
         position: relative;
         display: inline-block;
-    
-        font-size:0.9em;
+        text-align: left;
+        font-size:0.7em;
         font-weight: lighter;
         color: #5b5751;
         border-style: solid;
         border-width: 0.8px;
         border-color: #3AAB97;
         margin-left:0%;  
+        
     }
     
     
@@ -117,7 +130,7 @@
         margin-bottom: 2%;
         display: inline-block;
         margin-left:0%;
-        text-align: center;  
+        text-align: left;
         
     }
     
@@ -147,13 +160,13 @@
         border-width: 1px;
         border-color: #3AAB97;
         line-height: 200%;
-        
+        text-align: left;
     }
     .vi_ar_t02{
         display: inline-block;
         font-size: 0.9em;
         font-weight: lighter;
-        text-align: center;
+        text-align: left;
         color: #5b5751;
         line-height: 200%;
     }
