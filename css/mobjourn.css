@@ -342,11 +342,13 @@ section{
         }
         .group_swiper-container .group_swiper-button-prev {
             margin-left:  0em;
-            left: 1em;            
+            left: 1.6em;
+            margin-top: -0.25em;            
         }
         .group_swiper-container .group_swiper-button-next {
             margin-left:  0em;
-            right: 1em;
+            right: 1.1em;
+            margin-top: -0.25em;
         }
         .group_swiper-container .group_swiper-pagination {
             margin-top: 1.75em
