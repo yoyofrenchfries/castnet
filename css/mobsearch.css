@@ -34,7 +34,7 @@
         left: 0em;
         margin-left: 0em;
         display: inline;
-        font-size: 0.85em;
+        font-size: 1em;
         font-weight: normal;
         position: relative;
         padding-left:0em;
@@ -48,7 +48,7 @@
         border-left-style: solid;
         border-left-width: 1.5px;
         border-left-color: #3AAB97;
-        font-size: 0.85em;
+        font-size: 1em;
         font-weight: normal;
         position: relative;
         color: #5b5751;
@@ -59,7 +59,7 @@
     }
     .se_reporter{
         color: #3AAB97;
-        font-size: 0.85em;
+        font-size: 0.9em;
         font-weight: lighter;
         position: relative;  
         padding-right:1em;
@@ -73,7 +73,7 @@
         border-left-style: solid;
         border-left-width: 1.5px;
         border-left-color: #3AAB97;
-        font-size: 0.85em;
+        font-size: 0.9em;
         font-weight: lighter;
         position: relative;  
         display: inline-block;
@@ -109,7 +109,7 @@
         margin-top: 1em;
         display: inline-block;
         height:21em;
-        margin-bottom: 2em;
+        margin-bottom: 3.5em;
         width:100%;
         position: relative;
     }
