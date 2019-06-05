@@ -1,3 +1,6 @@
+.tip {
+    font-size: 1.2rem;
+}
 .result {
   display: flex;
   position: relative;
