@@ -357,7 +357,7 @@ section {
         margin-top: 0;
     }
     
-    .vi_line1,.vi_line2{
+    /* .vi_line1,.vi_line2{
         width: 8em;
     }
     
@@ -369,7 +369,7 @@ section {
         margin-left: 1em;
         margin-right: 0;
         font-size: 2em;
-    }
+    } */
     #section02 {
         margin-top: 0;
         top: 0;
