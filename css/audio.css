@@ -314,7 +314,7 @@
 }
 
 footer{
-margin-top: 5em;
+margin-top: 0em;
 }
 /*all page end*/
 
@@ -658,5 +658,4 @@ article h2{
     .audiobox{
         margin-top: 0;
     }
-}
 }

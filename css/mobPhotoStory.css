@@ -35,11 +35,12 @@
         margin-top: 11em;
     }
     #ps_div_section01{
-        width: 26.2em;
+        width: 100%;
+        text-align: left;
     }
     #ps_section01 h2{
         font-size: 2em;
-        /* text-align: center;  */
+        text-align: left;
     }
     #ps_div_section01 a, #ps_div_section01 p{
         font-size: 1.1em;
