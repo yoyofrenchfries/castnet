@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Template</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/all_pages.css">
+    <link rel="stylesheet" href="css/article_template.css">
+</head>
+
+<body>
+
+    <div id="top-arrow">
+        <i class="fas fa-chevron-up fa-3x"></i>
+    </div>
+
+    <!-- 手機版選單 -->
+    <div class="menu">
+        <div class="container">
+            <div class="top">
+                <div class="logo">
+                    <img src="image/castnet.png" alt="castnet logo">
+                </div>
+                <div id="close-btn">
+                    <i class="fas fa-times fa-2x"></i>
+                </div>
+            </div>
+            <div class="search-bar">
+                <input type="text" name="keyword" id="keyword" autocomplete="off">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="categories">
+                <a href="#">社會議題</a>
+                <a href="#">藝文評論</a>
+                <a href="#">文化現象</a>
+                <a href="#">照片故事</a>
+                <a href="#">科技新知</a>
+                <a href="#">影音新聞</a>
+                <a href="#">人物特寫</a>
+                <a href="#">自由創作</a>
+                <a href="#">本期專題</a>
+            </div>
+            <hr size="3">
+            <div class="links">
+                <a href="#">所有期別</a>
+                <a href="#">關於我們</a>
+                <a href="#">喀報成員</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="top">
+                <div class="logo">
+                    <a href="/">
+                        <img src="image/castnet.png">
+                    </a>
+                </div>
+                <div class="func">
+                    <div class="button" action="search">
+                        <img src="css/icon/search.png" alt="search">
+                        <span>搜尋</span>
+                    </div>
+                    <div class="button" action="about">
+                        <img src="css/icon/about.png" alt="about">
+                        <span>關於</span>
+                    </div>
+                    <div class="button" action="publish">
+                        <img src="css/icon/points.png" alt="publish">
+                        <span>卷別</span>
+                    </div>
+                </div>
+                <div id="open-btn">
+                    <i class="fas fa-bars fa-2x"></i>
+                </div>
+            </div>
+
+
+
+            <nav>
+                <!-- 這裡的列表應該是getAllPublish 取得的卷別 id下的getCategoty 顯示的為show_front:1 -->
+                <!-- 目前除了八大類目是常駐議題之外，其他校友專刊等等其他類目應該是有出現的時候才會show_front:2 -->
+                <div class="nav_swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- 常駐議題 -->
+                        <div class="swiper-slide">
+                            <!-- getCategoty.show_front:1 -->
+                            <a class="category" href="catagory.html">社會議題</a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <!-- getCategoty.show_front:1 -->
+                            <a class="category" href="https://castnet.nctu.edu.tw/castnet/category/180">科技新知</a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <!-- getCategoty.show_front:1 -->
+                            <a class="category" href="https://castnet.nctu.edu.tw/castnet/category/81">文化現象</a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <!-- getCategoty.show_front:1 -->
+                            <a class="category" href="https://castnet.nctu.edu.tw/castnet/category/83">人物特寫</a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <!-- getCategoty.show_front:1 -->
+                            <a class="category" href="https://castnet.nctu.edu.tw/castnet/category/191">藝文評論</a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <!-- getCategoty.show_front:1 -->
+                            <a class="category" href="https://castnet.nctu.edu.tw/castnet/category/29">照片故事</a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <!-- getCategoty.show_front:1 -->
+                            <a class="category" href="https://castnet.nctu.edu.tw/castnet/category/85">影音新聞</a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <!-- getCategoty.show_front:1 -->
+                            <a class="category" href="https://castnet.nctu.edu.tw/castnet/category/77">自由創作</a>
+                        </div>
+                        <!-- 有時候才會出現的議題 -->
+                        <div class="swiper-slide">
+                            <!-- getCategoty.show_front:1 -->
+                            <a class="category" href="專題頁">專題</a>
+                        </div>
+
+                    </div>
+
+
+                    <!-- <div class="swiper-button-prev"></div> -->
+                    <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+                </div>
+
+            </nav>
+        </div>
+
+    </header>
+
+
+    <section class="container">
+        <article>
+            <div class="info">
+                <h1 class="title">不一樣的萬聖節　快樂做公益</h1>
+                <div class="wrapper">
+                    <div class="category">
+                        <a href="#">影音新聞</a>
+                    </div>
+                    <div class="reporters">
+                        <a href="#">reporter1</a>
+                        <a href="#">reporter1</a>
+                        <a href="#">reporter1</a>
+                    </div>
+                    <div class="post-action">
+                        <span>報導</span>
+                    </div>
+                    <div class="date">
+                        <span>2018/11/04</span>
+                    </div>
+                    <div class="issue">
+                        <a href="#">第300期</a>
+                    </div>
+                </div>
+            </div>
+            <video class="vi_video"
+                src="https://castnet.nctu.edu.tw/files/article/881/multimedia/20190505151926_1557040766_R3EQvNzpuV.mp4"
+                controls=".article-content video"
+                poster="https://castnet.nctu.edu.tw/files/article/881/thumb/20190504131917_1556947157_VSqEX4ujVB.jpg"></video>
+            <div class="abstract">
+                <p>提到萬聖節，除了變裝遊行，扮鬼討糖，你還會聯想到什麼？10月27日在碧潭東岸廣場舉辦的「讓EYE看得見　萬聖瞳樂會」讓民眾不僅感受歡快的節日氣氛，同時盡一份自己的愛心。</p>
+            </div>
+            <div class="content">
+                <p>是否曾聽到家中長輩們不斷叮嚀：睡覺時手機不要放床邊、不要經常放在口袋裡？多數人總是擔心手機所散發出來的輻射對身體造成不良的影響，甚至導致癌症，讓手機致癌的言論與消息廣泛被流傳。然而事實真的如傳言一般？那人手一機的我們，難道都將面臨罹癌的命運嗎？美國食品藥品管理局最近發出的<a
+                        href="http://www.fda.gov/NewsEvents/Newsroom/PressAnnouncements/ucm624809.htm"
+                        target="_blank">聲明稿</a>，否定手機輻射與致癌的絕對關聯性。</p>
+
+                <h2>人心惶惶　此輻射非彼輻射</h2>
+
+                <p>手機逐漸成為我們日常生活中不可或缺的產品，甚至我們一天之中起床第一眼看的是手機、睡覺前最後一眼也是手機，分分秒秒都離不開。隨著手機的使用頻率與用戶增加，人們也更加關注手機所帶來的種種負面影響。然而在手機所造成的眾多危害當中，手機散發的射頻輻射所帶來的致癌問題與影響仍是極具爭議性的，許多謠言與說法都使得人心惶惶，在手機使用上增添陰影與畏懼。但在了解問題之前，我們或許應該先釐清手機輻射。
+                </p>
+
+                <p>人們面對「輻射」一詞總會有許多負面的想像與理解，但輻射其實分為「游離輻射」與「非游離輻射」兩種，前者是經常被討論以及在媒體上出現的，是已知可能會危害人類的輻射，例如：伽瑪射線、X光等能量較高的輻射。而所謂的「游離」是指這些高能量的電磁輻射穿透到人體時，會將電子從人體內的原子裡游離出來，造成原子的不穩定，進而造成一些永久性病變，因此讓人們聞風喪膽。但是手機所產生出的輻射是屬於後者的「非游離輻射」，由於能量較低，不會引起物質的游離，雖然不會有強烈且直接的傷害，但不能就此覺得安心，仍有其他的潛在危害。
+                </p>
+
+                <div class="picture-box"><img alt=""
+                        src="http://dodo.nctu.edu.tw/files/images_db/651/20181202063646_1543703806_GTaUPIgdNk.jpg" />
+                    <p>游離輻射與非游離輻射的比較。（圖片來源／程安瑜製）資料來源：<a
+                            href="https://www.aec.gov.tw/%E7%B7%8A%E6%80%A5%E6%87%89%E8%AE%8A/%E5%B0%8D%E4%BA%BA%E7%9A%84%E5%BD%B1%E9%9F%BF/%E4%BB%80%E9%BA%BC%E6%98%AF%E8%BC%BB%E5%B0%84--5_40_868.html"
+                            target="_blank">行政原子能委員會</a></p>
+                </div>
+
+                <p>不過會造成人們有致癌疑慮的原因之一，是國際癌症研究機構將手機輻射列為「2B類致癌物」，另外是美國國家毒理學計畫（簡稱NTP）的<a
+                        href="https://ntp.niehs.nih.gov/results/areas/cellphones/index.html?fbclid=IwAR0XUZbJg2gu9PbASz1JjD_cYYvJnjGWTQi0cuQWFhVcZlaXqs7cIUuvxTc"
+                        target="_blank">研究結果</a>顯示出成鼠暴露在手機輻射下會增加腫瘤的產生，讓大眾對於「手機致癌」增添更多負面的印象。但其實2B類致癌物根據定義是指對人體致癌的可能性較低的物質，其中生活較常見的咖啡和泡菜也有上榜。且在NTP動物實驗中發現的致癌證據尚不充足，是否會對人體致癌的證據也有限。該實驗結果因此被美國食品藥品管理局（簡稱FDA）近期的聲明稿認為無法直接適用於人類。
+                </p>
+
+                <div class="picture-box"><img alt=""
+                        src="http://dodo.nctu.edu.tw/files/images_db/651/20181202063240_1543703560_rRzfB5jaiT.jpg" />
+                    <p>國際癌症研究機構所制定的致癌物分類。（圖片來源／程安瑜製）資料來源：<a
+                            href="https://monographs.iarc.fr/agents-classified-by-the-iarc/" target="_blank">國際癌症機構</a>
+                    </p>
+                </div>
+
+                <h2>手機輻射重大研究　備受質疑</h2>
+
+                <p>NTP隸屬於美國國家環境研究所，進行數百種物質的毒性評估，而他們這項手機輻射與致癌性的因果關聯研究，歷時10年、耗資3000萬美元，是至今針對此議題最為大型的研究。研究中他們讓齧齒動物連續兩年每天曝曬在輻射下九個小時，發現雄鼠在高劑量的手機輻射下會產生心臟腫瘤（惡性神經鞘瘤）的明確證據，同時也有大腦腫瘤（惡性膠質瘤）和腎上腺腫瘤（嗜鉻細胞瘤）的部分證據，而得出暴露在手機輻射對於齧齒動物致癌性的明確依據，然而FDA經過全面評估後，並不認同這樣的結果。
+                </p>
+
+                <p>FDA指出，在NTP的實驗當中，囓齒動物所曝曬的手機輻射劑量是聯邦通信委員會所限制的暴露量的50倍以上，而且每日的暴露時間比典型的成年人來的更高，種種實驗設計被認為只是針對在老鼠上的研究，並不適用於人類。除此之外也有不尋常的研究發現，例如：只有雄鼠會明確產生出心臟腫瘤，母鼠與小錢鼠都不顯著，以及曝曬在手機輻射的老鼠反而比未暴露在手機輻射的老鼠們有更長的壽命等，都無法明確證實手機輻射是否會有致癌性。
+                </p>
+
+                <p>但FDA只是否定這項研究，並沒有給出一個新的發現或是結論去證明手機輻射不會致癌，也沒有全然否定受手機輻射會對人類致癌的可能性，他們仍然鼓勵新的研究去驗證這項假說，也會繼續審查有關手機輻射曝曬對人類或動物的不良影響的科學和醫學證據來源。
+                </p>
+
+                <h2>預防手機輻射危害　從自身做起</h2>
+
+                <p>儘管如此，手機輻射就完全不用擔心了嗎？隨著科技的發展，未來的無線技術，像是5G等通信系統，仍然可能會潛在著新的危害，是我們難以預測的。此外，逐漸廣泛的手機使用，導致使用族群年輕化的趨勢，手機輻射對於兒童的影響是否更為劇烈，都是我們仍無法掌握的潛在影響。手機輻射仍被列為是可能導致致癌的物質，往後若有更完整的研究指出兩者關聯性的充分證據，或許已經為時已晚，因此我們仍應該注意如何去避免暴露在過多的手機輻射下。
+                </p>
+
+                <div class="picture-box"><img alt=""
+                        src="http://dodo.nctu.edu.tw/files/images_db/651/20181202063958_1543703998_HTBfUTmqLh.jpg" />
+                    <p>降低手機輻射的方法。（圖片來源／程安瑜製）資料來源：<a
+                            href="https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/CDPH%20Document%20Library/Cell-Phone-Guidance.pdf"
+                            target="_blank">美國加州公衛部</a></p>
+                </div>
+
+                <p>手機會隨時聯繫著最近的塔台，釋放出輻射，因此將手機遠離身體便可以減少被暴露的可能。對於手機不離身的現代人聽來很困難，但可以從一些小地方開始做改變，像是減少用手持通話，而改用藍芽裝置或耳機講電話、或直接使用簡訊代替講電話，避免頭部接觸手機的機會。而當手機在訊號只有一兩格、使用串流音樂或下載大型檔案時都會釋出特別大量的輻射，因此在這些情況下應盡量減少使用。另外在高速移動的交通工具下，手機會不斷切換塔台聯繫，釋放出更多輻射，此時最直接降低輻射量的方法便是將手機切換至飛航模式或關機。種種好習慣都能讓大家更安全的使用手機。
+                </p>
+
+                <p>手機輻射是否會致癌仍需等待新的有力研究結果去證實，然而我們也不能就此忽視其危險性，長時間的使用仍會帶來其他的負面影響。適時地使用手機，才是我們與科技共存最安全與健康的方式。</p>
+
+                <p>縮圖來源：程安瑜製</p>
+            </div>
+        </article>
+        <div class="func-icon">
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fas fa-link fa-2x"></i>
+        </div>
+        <div class="more-line">
+            <div class="line"></div>
+            <span>延伸閱讀</span>
+            <div class="line"></div>
+        </div>
+
+        <div class="more">
+            <div class="article-set">
+                <div class="title">
+                    <span>共同類目</span>
+                </div>
+                <div class="articles">
+                    <div class="article">
+                        <div class="thumbnail">
+                            <img src="https://castnet.nctu.edu.tw/files/article/881/thumb/20190330170118_1553936478_wRhkvc323H.jpg"
+                                alt="">
+                        </div>
+                        <div class="info">
+                            <div class="category">
+                                <a href="#">影音新聞</a>
+                            </div>
+                            <div class="reporters">
+                                <div class="reporter"><a href="#">唐安安</a></div>
+                                <div class="reporter"><a href="#">唐安安</a></div>
+                            </div>
+                            <div class="title"><a href="#">圖解遊戲敘事：阿驢老師說故事</a></div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="thumbnail">
+                            <img src="https://castnet.nctu.edu.tw/files/article/881/thumb/20190330170118_1553936478_wRhkvc323H.jpg"
+                                alt="">
+                        </div>
+                        <div class="info">
+                            <div class="category">
+                                <a href="#">影音新聞</a>
+                            </div>
+                            <div class="reporters">
+                                <div class="reporter"><a href="#">唐安安</a></div>
+                                <div class="reporter"><a href="#">唐安安</a></div>
+                            </div>
+                            <div class="title">
+                                <a href="#">圖解遊戲敘事：阿驢老師說故事</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="thumbnail">
+                            <img src="https://castnet.nctu.edu.tw/files/article/881/thumb/20190330170118_1553936478_wRhkvc323H.jpg"
+                                alt="">
+                        </div>
+                        <div class="info">
+                            <div class="category">
+                                <a href="#">影音新聞</a>
+                            </div>
+                            <div class="reporters">
+                                <div class="reporter"><a href="#">唐安安</a></div>
+                                <div class="reporter"><a href="#">唐安安</a></div>
+                            </div>
+                            <div class="title"><a href="#">圖解遊戲敘事：阿驢老師說故事</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-set">
+                <div class="title">
+                    <span>本期其他</span>
+                </div>
+                <div class="articles">
+                    <div class="article">
+                        <div class="thumbnail">
+                            <img src="https://castnet.nctu.edu.tw/files/article/881/thumb/20190330170118_1553936478_wRhkvc323H.jpg"
+                                alt="">
+                        </div>
+                        <div class="info">
+                            <div class="category">
+                                <a href="#">影音新聞</a>
+                            </div>
+                            <div class="reporters">
+                                <div class="reporter"><a href="#">唐安安</a></div>
+                                <div class="reporter"><a href="#">唐安安</a></div>
+                            </div>
+                            <div class="title"><a href="#">圖解遊戲敘事：阿驢老師說故事</a></div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="thumbnail">
+                            <img src="https://castnet.nctu.edu.tw/files/article/881/thumb/20190330170118_1553936478_wRhkvc323H.jpg"
+                                alt="">
+                        </div>
+                        <div class="info">
+                            <div class="category">
+                                <a href="#">影音新聞</a>
+                            </div>
+                            <div class="reporters">
+                                <div class="reporter"><a href="#">唐安安</a></div>
+                                <div class="reporter"><a href="#">唐安安</a></div>
+                            </div>
+                            <div class="title">
+                                <a href="#">圖解遊戲敘事：阿驢老師說故事</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="thumbnail">
+                            <img src="https://castnet.nctu.edu.tw/files/article/881/thumb/20190330170118_1553936478_wRhkvc323H.jpg"
+                                alt="">
+                        </div>
+                        <div class="info">
+                            <div class="category">
+                                <a href="#">影音新聞</a>
+                            </div>
+                            <div class="reporters">
+                                <div class="reporter"><a href="#">唐安安</a></div>
+                                <div class="reporter"><a href="#">唐安安</a></div>
+                            </div>
+                            <div class="title"><a href="#">圖解遊戲敘事：阿驢老師說故事</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-set">
+                <div class="title">
+                    <span>作者其他</span>
+                </div>
+                <div class="articles">
+                    <div class="article">
+                        <div class="thumbnail">
+                            <img src="https://castnet.nctu.edu.tw/files/article/881/thumb/20190330170118_1553936478_wRhkvc323H.jpg"
+                                alt="">
+                        </div>
+                        <div class="info">
+                            <div class="category">
+                                <a href="#">影音新聞</a>
+                            </div>
+                            <div class="reporters">
+                                <div class="reporter"><a href="#">唐安安</a></div>
+                                <div class="reporter"><a href="#">唐安安</a></div>
+                            </div>
+                            <div class="title"><a href="#">圖解遊戲敘事：阿驢老師說故事</a></div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="thumbnail">
+                            <img src="https://castnet.nctu.edu.tw/files/article/881/thumb/20190330170118_1553936478_wRhkvc323H.jpg"
+                                alt="">
+                        </div>
+                        <div class="info">
+                            <div class="category">
+                                <a href="#">影音新聞</a>
+                            </div>
+                            <div class="reporters">
+                                <div class="reporter"><a href="#">唐安安</a></div>
+                                <div class="reporter"><a href="#">唐安安</a></div>
+                            </div>
+                            <div class="title">
+                                <a href="#">圖解遊戲敘事：阿驢老師說故事</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="thumbnail">
+                            <img src="https://castnet.nctu.edu.tw/files/article/881/thumb/20190330170118_1553936478_wRhkvc323H.jpg"
+                                alt="">
+                        </div>
+                        <div class="info">
+                            <div class="category">
+                                <a href="#">影音新聞</a>
+                            </div>
+                            <div class="reporters">
+                                <div class="reporter"><a href="#">唐安安</a></div>
+                                <div class="reporter"><a href="#">唐安安</a></div>
+                            </div>
+                            <div class="title"><a href="#">圖解遊戲敘事：阿驢老師說故事</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="top">
+                <div class="logo-category">
+                    <div class="img-wrapper">
+                        <img src="image/logo01.png" alt="castnet logo">
+                    </div>
+                    <div class="all-category">
+                        <div class="wrapper">
+                            <a href="all_catagory.html">所有期別</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="links">
+                    <div class="wrapper">
+                        <a href="aboutCT.html">關於我們</a>
+                        <a href="https://castnet.nctu.edu.tw/group/63">喀報成員</a>
+                        <a href="https://www.facebook.com/messages/t/castnet.castnet">聯絡我們</a>
+                        <a href="https://www.facebook.com/messages/t/castnet.castnet">加入我們</a>
+                        <a href="https://www.facebook.com/castnet.nctu/">Facebook</a>
+                        <a href="https://www.instagram.com/castnet.nctu/?hl=zh-tw">Instagram</a>
+                    </div>
+
+                </div>
+
+                <div class="all-category">
+                    <div class="wrapper">
+                        <a href="all_catagory.html">所有期別</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="copyright">
+                <p>2007-2019 &copy; 國立交通大學傳播與科技學系 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script>
+        document.querySelector("#top-arrow").addEventListener('click', () => {
+            $('html').animate({
+                scrollTop: 0
+            }, 600);
+        });
+        document.querySelector('#open-btn').addEventListener('click', () => {
+            $('.menu').slideToggle();
+        });
+        document.querySelector('#close-btn').addEventListener('click', () => {
+            $('.menu').slideToggle();
+        });
+        document.querySelectorAll('header .func .button').forEach(btn => {
+            $(btn).hover(e => { // mouse in
+                $(e.currentTarget.children[0]).toggleClass('img_transform');
+                $(e.currentTarget.children[1]).toggleClass('span_transform');
+            },
+                e => { // mouse out
+                    $(e.currentTarget.children[0]).toggleClass('img_transform');
+                    $(e.currentTarget.children[1]).toggleClass('span_transform');
+                });
+            $(btn).click(e => {
+                let action = e.currentTarget.getAttribute('action');
+                if (action === 'about') {
+                    window.location.href = '/about.html';
+                }
+            });
+        });
+        window.addEventListener('scroll', e => {
+            if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+                $("#top-arrow").fadeIn();
+            } else {
+                $("#top-arrow").fadeOut();
+            }
+        })
+        var nav_swiper = new Swiper('.nav_swiper-container', {
+            slidesPerView: 8,
+            spaceBetween: 10,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                950: {
+                    slidesPerView: 6,
+                    spaceBetween: 10,
+                },
+                800: {
+                    slidesPerView: 5,
+                    spaceBetween: 10,
+                },
+                650: {
+                    slidesPerView: 4,
+                    spaceBetween: 10
+                }
+            }
+        });
+
+    </script>
+    <script>
+        // 各頁面需要用到的javascript
+    </script>
+</body>
+
+</html>
