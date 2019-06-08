@@ -1,26 +1,31 @@
-@media screen and (max-width: 575px){
-    .top-article {
-        flex-direction: column;
-    }
-    .all-article-line a {
-        flex: 1.5;
-    }
-    .category-recommend .articles .article {
-        width: 40%;
-    }
-    .animate {
-        display: none;
-    }
-    #fp_i_t01, #fp_span_t01, #fp_img_header, #fp_span_t02, #fp_i_t02, #fp_span_t03{
-        display: none;
-    }
-    .issue-info h2 {
-        font-size: 1em;
-    }
-    .top-article .text .title {
-        font-size: 1.5em;
-    }
-    .top-article .text .abstract {
-        font-size: 1.1em;
-    }
+@media screen and (max-width: 575px) {
+  .top-article {
+    flex-direction: column;
+  }
+  .all-article-line a {
+    flex: 1.5;
+  }
+  .category-recommend .articles .article {
+    width: 40%;
+  }
+  .animate {
+    display: none;
+  }
+  #fp_i_t01,
+  #fp_span_t01,
+  #fp_img_header,
+  #fp_span_t02,
+  #fp_i_t02,
+  #fp_span_t03 {
+    display: none;
+  }
+  .issue-info h2 {
+    font-size: 1em;
+  }
+  .top-article .text .title {
+    font-size: 1.5em;
+  }
+  .top-article .text .abstract {
+    font-size: 1.1em;
+  }
 }

@@ -1,167 +1,173 @@
-@media screen and (max-width: 575px){
-    body{
-        overflow-x: hidden;
-    }
-    .abstract{
-        margin: 2em;
-    }
-    article p{
-        margin: 1em 2em;
-    }
-    #ps_lrbtn{
-        margin-top: 12em;
-    }
-    #ps_lrbtn i{
-        font-size: 2em;
-        margin-left: 83%;
-        top: 75%;
-    }
-    #ps_lrbtn .fa-chevron-left{
-        position: relative;
-        left: 5%;
-        background-color: rgba(255,255,255,0.8);
-        border-radius: 50%;
-        padding: 7px;
-    }
-    #ps_lrbtn .fa-chevron-right{
-        position: relative;
-        left: 90%;
-        background-color: rgba(255,255,255,0.8);
-        border-radius: 50%;
-        padding: 7px;
-    }
-    #ps_section01{
-        top: 0;
-        margin-top: 11em;
-    }
-    #ps_div_section01{
-        width: 100%;
-        text-align: left;
-    }
-    #ps_section01 h2{
-        font-size: 2em;
-        text-align: left;
-    }
-    #ps_div_section01 a, #ps_div_section01 p{
-        font-size: 1.1em;
-    }
-    #ps_div_t{
-        position: absolute;
-        width:100%;
-        margin-top: 2em;
-        height: 27em;
-    }
-    #ps_div_div_t{
-        width: 23em;
-        margin-left: -8em;
-        margin-top: -1.5em;
-        height: 5em;
-    }
-    #ps_div_div_t div p{
-        font-size: 1em;
-        width: 20em;
-        padding: 0.2em;
-    }
-    #ps_div_div_t i{
-        position: relative;
-        display: inline-block;
-        color: rgba(255 , 255, 255, 0.8);
-        margin-left: 16.25em;
-        font-size: 1.25em;
-        top: -3em;
-    }
-    .abstract{
-        font-size: 1.2em;
-    }
-    article{
-        position: relative;
-        /* margin-top: 33em; */
-        width: 100%;
-    }
-    article p{
-        font-size: 1.3em;
-    }
-    #ps_div_links{
-        margin: 0 auto;
-        width: 13em;
-    }
-    #ps_div_links i{
-        margin-left: 1em;
-        margin-right: 0;
-        font-size: 2em;
-    }
-    #ps_div_section02 p{
-        font-size: 1.6em;
-        padding: 0;
-    }
-    #ps_div_section02{
-        margin-top: 0;
-    }
-    #section02{
-        top: 0;
-        margin-top: 2em;
-    }
-    .ps_div_d div{
-        margin-top: 1.5em;
-        vertical-align: bottom;
-        position: relative;
-        top: -1.5em;
-    }
-    .ps_div_d h2{
-        font-size: 1.5em;
-        width: 85%;
-        text-align: center;
-        margin-bottom: 2em;
-    }
-    .ps_div_d img{
-        width: 11.67em;
-        height: 7.35em;
-    }
-    .ps_div_d a{
-        font-size: 1.33em;
-        display: inline-block;
-        border-left-style: solid;
-        border-left-color: #3AAB97;
-        border-left-width: 1px;
-        padding-left: 0.5em;
-        margin-right: 0.5em;
-    }
-    .ps_div_d h4{
-        font-size: 1.5em;
-    }
-    footer{
-        position: relative;
-        top: 0;
-        /* margin-top: 20em; */
-    }
+@media screen and (max-width: 575px) {
+  body {
+    overflow-x: hidden;
+  }
+  .abstract {
+    margin: 2em;
+  }
+  article p {
+    margin: 1em 2em;
+  }
+  #ps_lrbtn {
+    margin-top: 12em;
+  }
+  #ps_lrbtn i {
+    font-size: 2em;
+    margin-left: 83%;
+    top: 75%;
+  }
+  #ps_lrbtn .fa-chevron-left {
+    position: relative;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 7px;
+  }
+  #ps_lrbtn .fa-chevron-right {
+    position: relative;
+    left: 90%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 7px;
+  }
+  #ps_section01 {
+    top: 0;
+    margin-top: 11em;
+  }
+  #ps_div_section01 {
+    width: 100%;
+    text-align: left;
+  }
+  #ps_section01 h2 {
+    font-size: 2em;
+    text-align: left;
+  }
+  #ps_div_section01 a,
+  #ps_div_section01 p {
+    font-size: 1.1em;
+  }
+  #ps_div_t {
+    position: absolute;
+    width: 100%;
+    margin-top: 2em;
+    height: 27em;
+  }
+  #ps_div_div_t {
+    width: 23em;
+    margin-left: -8em;
+    margin-top: -1.5em;
+    height: 5em;
+  }
+  #ps_div_div_t div p {
+    font-size: 1em;
+    width: 20em;
+    padding: 0.2em;
+  }
+  #ps_div_div_t i {
+    position: relative;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 16.25em;
+    font-size: 1.25em;
+    top: -3em;
+  }
+  .abstract {
+    font-size: 1.2em;
+  }
+  article {
+    position: relative;
+    /* margin-top: 33em; */
+    width: 100%;
+  }
+  article p {
+    font-size: 1.3em;
+  }
+  #ps_div_links {
+    margin: 0 auto;
+    width: 13em;
+  }
+  #ps_div_links i {
+    margin-left: 1em;
+    margin-right: 0;
+    font-size: 2em;
+  }
+  #ps_div_section02 p {
+    font-size: 1.6em;
+    padding: 0;
+  }
+  #ps_div_section02 {
+    margin-top: 0;
+  }
+  #section02 {
+    top: 0;
+    margin-top: 2em;
+  }
+  .ps_div_d div {
+    margin-top: 1.5em;
+    vertical-align: bottom;
+    position: relative;
+    top: -1.5em;
+  }
+  .ps_div_d h2 {
+    font-size: 1.5em;
+    width: 85%;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .ps_div_d img {
+    width: 11.67em;
+    height: 7.35em;
+  }
+  .ps_div_d a {
+    font-size: 1.33em;
+    display: inline-block;
+    border-left-style: solid;
+    border-left-color: #3aab97;
+    border-left-width: 1px;
+    padding-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  .ps_div_d h4 {
+    font-size: 1.5em;
+  }
+  footer {
+    position: relative;
+    top: 0;
+    /* margin-top: 20em; */
+  }
 
-    .photo_swiper-container {
-        position: relative;
-        margin-top: -8em;
-    }
-    /* 照片大小 */
-    .ps_div_t01,.ps_div_t02,.ps_div_t03{
-        height: 20em;
-    }
+  .photo_swiper-container {
+    position: relative;
+    margin-top: -8em;
+  }
+  /* 照片大小 */
+  .ps_div_t01,
+  .ps_div_t02,
+  .ps_div_t03 {
+    height: 20em;
+  }
 
-    .photo_swiper-button-prev, .photo_swiper-button-next {
-        width: 30px;
-        height: 30px;
-    }
+  .photo_swiper-button-prev,
+  .photo_swiper-button-next {
+    width: 30px;
+    height: 30px;
+  }
 
-    .photo_swiper-button-prev i, .photo_swiper-button-next i {
-        font-size: 20px;
-        line-height: 20px;
-        margin-left: 25%;
-        margin-top: 10%;
-    }
+  .photo_swiper-button-prev i,
+  .photo_swiper-button-next i {
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 25%;
+    margin-top: 10%;
+  }
 
-    /* 延伸閱讀 淳妤的東西調整 */
-    .vi_line1,.vi_line2{
-        width: 8em;
-    }
-    
-    .vi_head{
-        margin-top: 1.5em;
-    }
+  /* 延伸閱讀 淳妤的東西調整 */
+  .vi_line1,
+  .vi_line2 {
+    width: 8em;
+  }
+
+  .vi_head {
+    margin-top: 1.5em;
+  }
 }

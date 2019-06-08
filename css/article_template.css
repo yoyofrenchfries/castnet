@@ -176,16 +176,16 @@ section video {
   }
 }
 @media screen and (max-width: 767px) {
-    .more .article-set {
-      flex-basis: 100%;
-    }
+  .more .article-set {
+    flex-basis: 100%;
   }
+}
 @media screen and (max-width: 576px) {
   .more .article-set > .title {
     display: block;
     text-align: center;
   }
-  .more .article-set .article .info a ,
+  .more .article-set .article .info a,
   .more .article-set .article .info .reporter a {
     font-size: 1em;
   }

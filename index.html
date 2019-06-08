@@ -423,7 +423,7 @@
                         </div>
                     </div>
                 </div>
-                
+
 
                 <div class="links">
                     <div class="wrapper">
@@ -468,14 +468,14 @@
         });
         // 桌面版右上，三個功能鈕
         document.querySelectorAll('header .func .button').forEach(btn => {
-            $(btn).hover( e => { // mouse in
+            $(btn).hover(e => { // mouse in
                 $(e.currentTarget.children[0]).toggleClass('img_transform');
                 $(e.currentTarget.children[1]).toggleClass('span_transform');
             },
-            e => { // mouse out
-                $(e.currentTarget.children[0]).toggleClass('img_transform');
-                $(e.currentTarget.children[1]).toggleClass('span_transform');
-            });
+                e => { // mouse out
+                    $(e.currentTarget.children[0]).toggleClass('img_transform');
+                    $(e.currentTarget.children[1]).toggleClass('span_transform');
+                });
             $(btn).click(e => {
                 let action = e.currentTarget.getAttribute('action');
                 if (action === 'about') {
@@ -496,9 +496,9 @@
         // 桌面的search-bar，若有輸入值，則顯示叉叉icon
         document.querySelector('.desk-search-bar input[type=text]').addEventListener('keyup', e => {
             if (document.querySelector('.desk-search-bar input[type=text]').value.length == 0) {
-                $('header .top .desk-search-bar i').fadeOut();    
+                $('header .top .desk-search-bar i').fadeOut();
             } else {
-                $('header .top .desk-search-bar i').fadeIn();                
+                $('header .top .desk-search-bar i').fadeIn();
             }
         });
         // 視窗往下滑，往上箭頭才出現

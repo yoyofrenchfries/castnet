@@ -1,4 +1,3 @@
-
 .pj_info {
   display: inline;
 }
@@ -74,7 +73,6 @@ section a {
   margin: 1em 0em;
 }
 
-
 @media screen and (max-width: 575px) {
   .project {
     background-color: antiquewhite;
@@ -136,5 +134,4 @@ section a {
   .pj_project_word {
     font-size: 0.8em;
   }
-
 }
